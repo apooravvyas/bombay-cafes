@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { getSpots } from "@/lib/spot-data";
-import { SCORE_LABEL, WORK_WEIGHTS, isMapped, ratedCount, type ScoreKey } from "@/lib/spots";
+import { SCORE_LABEL, WORK_WEIGHTS, ratedCount, type ScoreKey } from "@/lib/spots";
 
 export const metadata: Metadata = {
   title: "About",
@@ -13,7 +13,8 @@ export const metadata: Metadata = {
 export default async function AboutPage() {
   const spots = await getSpots();
   const avgRated = spots.reduce((s, x) => s + ratedCount(x.scores), 0) / (spots.length || 1);
-  const mapped = spots.filter(isMapped).length;
+  const approximate = spots.filter((s) => s.locationAccuracy === "approximate").length;
+  const verified = spots.filter((s) => s.locationAccuracy === "verified").length;
   const order: ScoreKey[] = ["work", "wifi", "charging", "seating", "quiet"];
 
   return (
@@ -81,11 +82,19 @@ export default async function AboutPage() {
               something nobody has written down.
             </p>
             <p>
-              Map positions work the same way. A spot has a verified coordinate or none — no
-              neighbourhood centroids standing in for an address, because an approximate pin on a
-              map whose whole job is telling you where to go is worse than no pin.{" "}
-              {mapped} of {spots.length} currently have a verified position; the rest have a
-              confirmed street address and appear everywhere except the map.
+              Map positions are labelled rather than implied. Every pin is anchored to the street
+              named in that cafe&rsquo;s own address — Waroda Road, Tamarind Lane, Sherly Rajan
+              Road — which puts it on the right road, usually within a couple of hundred metres of
+              the door. Good enough to see what is near you; not good enough to navigate by, so
+              each listing says which street it was read from.{" "}
+              {approximate > 0 && (
+                <>
+                  {approximate} of {spots.length} are approximate in that sense
+                  {verified > 0 ? ` and ${verified} are geocoded` : " and none are geocoded yet"}.
+                </>
+              )}{" "}
+              What we do not do is invent one. No randomness, no neighbourhood centroid standing in
+              for an address, and no two cafes sharing a point.
             </p>
           </div>
         </section>

@@ -93,9 +93,14 @@ def build():
                 "area": c["area"],
                 "neighborhood": c["neighborhood"],
                 "address": c["address"],
-                # Still null. scripts/geocode-cafes.ts is the only writer.
+                # Written by scripts/approximate-coords.py at street level, or
+                # by scripts/geocode-cafes.ts once a provider key exists. The
+                # accuracy flag travels with the pair — a coordinate without it
+                # would let "approximate" quietly read as "verified".
                 "latitude": c["lat"],
                 "longitude": c["lng"],
+                "locationAccuracy": c.get("locationAccuracy"),
+                "locationAnchor": c.get("locationAnchor"),
                 "website": c["websiteUrl"],
                 "instagram": c["instagramUrl"],
                 "googleMapsUrl": c["googleMapsUrl"],

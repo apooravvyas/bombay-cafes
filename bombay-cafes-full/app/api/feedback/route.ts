@@ -49,7 +49,17 @@ export async function POST(req: NextRequest) {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
-  if (url && serviceKey) {
+  // No database, no promise. Returning 201 here and telling the reader "noted"
+  // would discard their report while claiming to have filed it — the one thing
+  // this project will not do. Say it is not accepting reports yet instead.
+  if (!url || !serviceKey) {
+    return NextResponse.json(
+      { error: "Reports are not being collected yet — nothing was saved." },
+      { status: 503 },
+    );
+  }
+
+  {
     const supabase = createClient(url, serviceKey);
     const { error } = await supabase.from("spot_feedback").insert({
       spot_slug: slug,
@@ -65,8 +75,6 @@ export async function POST(req: NextRequest) {
         { status: 500 },
       );
     }
-  } else {
-    console.info("[feedback] no database configured; accepted in demo mode:", slug, answers);
   }
 
   return NextResponse.json({ ok: true }, { status: 201 });

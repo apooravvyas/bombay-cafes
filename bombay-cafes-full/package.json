@@ -12,7 +12,8 @@
     "seed": "tsx scripts/seed.ts",
     "geocode": "tsx scripts/geocode-cafes.ts",
     "seed:build": "python3 scripts/build-seed.py",
-    "spots": "python3 scripts/to-spots.py"
+    "spots": "python3 scripts/to-spots.py",
+    "coords": "python3 scripts/approximate-coords.py"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.47.10",

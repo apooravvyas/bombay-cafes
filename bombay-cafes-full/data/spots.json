@@ -6,8 +6,8 @@
       "area": "bandra",
       "neighborhood": "Chapel Road",
       "address": "21A, Ground Floor, Mary Lodge, Ranwar, opposite Saba Heritage Building, Chapel Road, Bandra West",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 19.0575,
+      "longitude": 72.8264,
       "website": "https://www.subko.coffee",
       "instagram": "https://instagram.com/subkocoffee",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Subko%20Coffee%20—%20Mary%20Lodge%2C%2021A%2C%20Ground%20Floor%2C%20Mary%20Lodge%2C%20Ranwar%2C%20opposite%20Saba%20Heritage%20Building%2C%20Chapel%20Road%2C%20Bandra%20West%2C%20Mumbai",
@@ -59,7 +59,9 @@
         "mumbaipune.co.in"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": true
+      "isActive": true,
+      "locationAccuracy": "approximate",
+      "locationAnchor": "Chapel Road, Ranwar"
     },
     {
       "slug": "bombay-coffee-house-waterfield-road",
@@ -67,8 +69,8 @@
       "area": "bandra",
       "neighborhood": "Waterfield Road",
       "address": "248, Neelkamal Building, Waterfield Road, opposite National College, Bandra West, Mumbai 400050",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 19.0568,
+      "longitude": 72.8316,
       "website": "https://bombaycoffeehouse.com",
       "instagram": "https://instagram.com/bchbombay",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bombay%20Coffee%20House%2C%20248%2C%20Neelkamal%20Building%2C%20Waterfield%20Road%2C%20opposite%20National%20College%2C%20Bandra%20West%2C%20Mumbai%20400050%2C%20Mumbai",
@@ -123,7 +125,9 @@
         "coworkingers.com"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": true
+      "isActive": true,
+      "locationAccuracy": "approximate",
+      "locationAnchor": "Waterfield Road, opposite National College"
     },
     {
       "slug": "shelter-cafe-x-coffee-by-javaphile-sherly-rajan-road",
@@ -131,8 +135,8 @@
       "area": "bandra",
       "neighborhood": "Sherly Rajan Road",
       "address": "Ground Floor, Noorie House, 4 Sherly Rajan Road, off Carter Road, Bandra West, Mumbai 400050",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 19.0659,
+      "longitude": 72.8236,
       "website": null,
       "instagram": null,
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Shelter%20Cafe%20x%20Coffee%20by%20Javaphile%2C%20Ground%20Floor%2C%20Noorie%20House%2C%204%20Sherly%20Rajan%20Road%2C%20off%20Carter%20Road%2C%20Bandra%20West%2C%20Mumbai%20400050%2C%20Mumbai",
@@ -185,7 +189,9 @@
         "mumbaipune.co.in"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": true
+      "isActive": true,
+      "locationAccuracy": "approximate",
+      "locationAnchor": "Sherly Rajan Road, off Carter Road"
     },
     {
       "slug": "kitchen-garden-by-suzette-st-john-street",
@@ -193,8 +199,8 @@
       "area": "bandra",
       "neighborhood": "St John Street",
       "address": "Shop 8/9, Gasper Enclave, St John Street, opposite Gold's Gym, Pali Naka, Bandra West",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 19.0671,
+      "longitude": 72.8288,
       "website": "https://www.suzette.in",
       "instagram": "https://instagram.com/kitchengardenbysuzette",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kitchen%20Garden%20by%20Suzette%2C%20Shop%208/9%2C%20Gasper%20Enclave%2C%20St%20John%20Street%2C%20opposite%20Gold's%20Gym%2C%20Pali%20Naka%2C%20Bandra%20West%2C%20Mumbai",
@@ -246,7 +252,9 @@
         "travelkismat.com"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": true
+      "isActive": true,
+      "locationAccuracy": "approximate",
+      "locationAnchor": "St John Street, off Pali Naka"
     },
     {
       "slug": "taj-mahal-tea-house-st-john-baptist-road",
@@ -254,8 +262,8 @@
       "area": "bandra",
       "neighborhood": "St John Baptist Road",
       "address": "36-A, Ground Floor, Sanatan Pereira Bungalow, St John Baptist Road, Bandra West, Mumbai 400050",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 19.0566,
+      "longitude": 72.8256,
       "website": null,
       "instagram": null,
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Taj%20Mahal%20Tea%20House%2C%2036-A%2C%20Ground%20Floor%2C%20Sanatan%20Pereira%20Bungalow%2C%20St%20John%20Baptist%20Road%2C%20Bandra%20West%2C%20Mumbai%20400050%2C%20Mumbai",
@@ -309,7 +317,9 @@
         "eazydiner.com"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": true
+      "isActive": true,
+      "locationAccuracy": "approximate",
+      "locationAnchor": "St John Baptist Road"
     },
     {
       "slug": "candies-pali-hill",
@@ -317,8 +327,8 @@
       "area": "bandra",
       "neighborhood": "Pali Hill",
       "address": "5AA Pali Hill, next to Learners Academy School, Bandra West, Mumbai 400050",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 19.0701,
+      "longitude": 72.8259,
       "website": "https://www.candiescafe.com",
       "instagram": null,
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Candies%2C%205AA%20Pali%20Hill%2C%20next%20to%20Learners%20Academy%20School%2C%20Bandra%20West%2C%20Mumbai%20400050%2C%20Mumbai",
@@ -369,7 +379,9 @@
         "district.in"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": true
+      "isActive": true,
+      "locationAccuracy": "approximate",
+      "locationAnchor": "Pali Hill, by Learners Academy"
     },
     {
       "slug": "the-bagel-shop-carter-road",
@@ -377,8 +389,8 @@
       "area": "bandra",
       "neighborhood": "Carter Road",
       "address": "30, Pali Mala Road, near Carter Road, Bandra West, Mumbai 400050",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 19.0633,
+      "longitude": 72.8221,
       "website": null,
       "instagram": null,
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Bagel%20Shop%2C%2030%2C%20Pali%20Mala%20Road%2C%20near%20Carter%20Road%2C%20Bandra%20West%2C%20Mumbai%20400050%2C%20Mumbai",
@@ -432,7 +444,9 @@
         "coworkingers.com"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": true
+      "isActive": true,
+      "locationAccuracy": "approximate",
+      "locationAnchor": "Pali Mala Road, off Carter Road"
     },
     {
       "slug": "blue-tokai-coffee-roasters-perry-road-perry-road",
@@ -440,8 +454,8 @@
       "area": "bandra",
       "neighborhood": "Perry Road",
       "address": "Shop 1, No. 33, Mayflower Building, Perry Road, New Kantwadi Lane, Bandra West, Mumbai 400050",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 19.0666,
+      "longitude": 72.8267,
       "website": "https://stores.bluetokaicoffee.com/blue-tokai-coffee-roasters-bandra-cafe-bandra-west-mumbai-436738/Home",
       "instagram": null,
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Blue%20Tokai%20Coffee%20Roasters%20—%20Perry%20Road%2C%20Shop%201%2C%20No.%2033%2C%20Mayflower%20Building%2C%20Perry%20Road%2C%20New%20Kantwadi%20Lane%2C%20Bandra%20West%2C%20Mumbai%20400050%2C%20Mumbai",
@@ -493,7 +507,9 @@
         "mumbaipune.co.in"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": true
+      "isActive": true,
+      "locationAccuracy": "approximate",
+      "locationAnchor": "Perry Road at New Kantwadi Lane"
     },
     {
       "slug": "the-yoga-house-sherly-rajan-road",
@@ -501,8 +517,8 @@
       "area": "bandra",
       "neighborhood": "Sherly Rajan Road",
       "address": "Nargis Villa, Sherly Rajan Road, off Carter Road, Bandra West",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 19.0667,
+      "longitude": 72.8228,
       "website": "https://www.yogahouse.in",
       "instagram": null,
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Yoga%20House%2C%20Nargis%20Villa%2C%20Sherly%20Rajan%20Road%2C%20off%20Carter%20Road%2C%20Bandra%20West%2C%20Mumbai",
@@ -553,7 +569,9 @@
         "mumbaipune.co.in"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": true
+      "isActive": true,
+      "locationAccuracy": "approximate",
+      "locationAnchor": "Sherly Rajan Road, sea end"
     },
     {
       "slug": "earth-cafe-waterfield-road",
@@ -561,8 +579,8 @@
       "area": "bandra",
       "neighborhood": "Waterfield Road",
       "address": "Durga Chambers, Waterfield Road, Bandra West, Mumbai 400050",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 19.058,
+      "longitude": 72.8299,
       "website": "https://earthcafeindia.com",
       "instagram": "https://instagram.com/earthcafeindia",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Earth%20Cafe%2C%20Durga%20Chambers%2C%20Waterfield%20Road%2C%20Bandra%20West%2C%20Mumbai%20400050%2C%20Mumbai",
@@ -613,7 +631,9 @@
         "lbb.in"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": true
+      "isActive": true,
+      "locationAccuracy": "approximate",
+      "locationAnchor": "Waterfield Road, Durga Chambers — west of National College"
     },
     {
       "slug": "mokai-pali-naka",
@@ -621,8 +641,8 @@
       "area": "bandra",
       "neighborhood": "Pali Naka",
       "address": "600–602, Hill Crest Building, Ground Floor, Dr Ambedkar Road, next to Arvind Store, Pali Naka, Bandra West",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 19.066,
+      "longitude": 72.8301,
       "website": null,
       "instagram": "https://instagram.com/mokaiindia",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mokai%2C%20600–602%2C%20Hill%20Crest%20Building%2C%20Ground%20Floor%2C%20Dr%20Ambedkar%20Road%2C%20next%20to%20Arvind%20Store%2C%20Pali%20Naka%2C%20Bandra%20West%2C%20Mumbai",
@@ -671,7 +691,9 @@
         "district.in"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": true
+      "isActive": true,
+      "locationAccuracy": "approximate",
+      "locationAnchor": "Pali Naka, Dr Ambedkar Road"
     },
     {
       "slug": "boojee-cafe-perry-road",
@@ -679,8 +701,8 @@
       "area": "bandra",
       "neighborhood": "Perry Road",
       "address": "Shop 6, New Kantwadi Road, off Perry Cross Road, Bandra West, Mumbai 400050",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 19.0673,
+      "longitude": 72.8258,
       "website": "https://boojeecafe.com",
       "instagram": "https://instagram.com/boojeecafe",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Boojee%20Cafe%2C%20Shop%206%2C%20New%20Kantwadi%20Road%2C%20off%20Perry%20Cross%20Road%2C%20Bandra%20West%2C%20Mumbai%20400050%2C%20Mumbai",
@@ -728,7 +750,9 @@
         "mumbaipune.co.in"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": true
+      "isActive": true,
+      "locationAccuracy": "approximate",
+      "locationAnchor": "New Kantwadi Road, off Perry Cross Road"
     },
     {
       "slug": "veronica-s-waroda-road",
@@ -736,8 +760,8 @@
       "area": "bandra",
       "neighborhood": "Waroda Road",
       "address": "Waroda Road, Ranwar, Bandra West, Mumbai 400050",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 19.0584,
+      "longitude": 72.8271,
       "website": "https://veronicasbombay.com",
       "instagram": "https://instagram.com/veronicasbombay",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Veronica's%2C%20Waroda%20Road%2C%20Ranwar%2C%20Bandra%20West%2C%20Mumbai%20400050%2C%20Mumbai",
@@ -786,7 +810,9 @@
         "district.in"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": true
+      "isActive": true,
+      "locationAccuracy": "approximate",
+      "locationAnchor": "Waroda Road, Ranwar"
     },
     {
       "slug": "poetry-by-love-and-cheesecake-24th-road",
@@ -794,8 +820,8 @@
       "area": "bandra",
       "neighborhood": "24th Road",
       "address": "Shop 1–2, Ground Floor, Kamal Vishrantee Kutir, 24th Road, opposite St Theresa's School, Pali Hill, Bandra West",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 19.0707,
+      "longitude": 72.8349,
       "website": "https://loveandcheesecake.com/pages/poetry",
       "instagram": "https://instagram.com/loveandcheesecake",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Poetry%20by%20Love%20and%20Cheesecake%2C%20Shop%201–2%2C%20Ground%20Floor%2C%20Kamal%20Vishrantee%20Kutir%2C%2024th%20Road%2C%20opposite%20St%20Theresa's%20School%2C%20Pali%20Hill%2C%20Bandra%20West%2C%20Mumbai",
@@ -844,7 +870,9 @@
         "eazydiner.com"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": true
+      "isActive": true,
+      "locationAccuracy": "approximate",
+      "locationAnchor": "24th Road, Khar West"
     },
     {
       "slug": "kcroasters-by-koinonia-chuim-village",
@@ -852,8 +880,8 @@
       "area": "bandra",
       "neighborhood": "Chuim Village",
       "address": "66, Chuim Village, off Dr B.R. Ambedkar Road, Khar West, Mumbai 400052",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 19.0654,
+      "longitude": 72.8361,
       "website": "https://kcroasters.com",
       "instagram": null,
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=KCROASTERS%20by%20Koinonia%2C%2066%2C%20Chuim%20Village%2C%20off%20Dr%20B.R.%20Ambedkar%20Road%2C%20Khar%20West%2C%20Mumbai%20400052%2C%20Mumbai",
@@ -901,7 +929,9 @@
         "yappe.in"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": true
+      "isActive": true,
+      "locationAccuracy": "approximate",
+      "locationAnchor": "Chuim Village, off Dr B.R. Ambedkar Road"
     },
     {
       "slug": "kala-ghoda-cafe-kala-ghoda",
@@ -909,8 +939,8 @@
       "area": "south-bombay",
       "neighborhood": "Kala Ghoda",
       "address": "10 Rope Walk Lane, Kala Ghoda, Fort, Mumbai 400001",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 18.9276,
+      "longitude": 72.8317,
       "website": "https://kgcafe.in",
       "instagram": "https://instagram.com/kgcbar",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kala%20Ghoda%20Cafe%2C%2010%20Rope%20Walk%20Lane%2C%20Kala%20Ghoda%2C%20Fort%2C%20Mumbai%20400001%2C%20Mumbai",
@@ -962,7 +992,9 @@
         "mumbaicoworking.com"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": true
+      "isActive": true,
+      "locationAccuracy": "approximate",
+      "locationAnchor": "Rope Walk Lane, Kala Ghoda"
     },
     {
       "slug": "blue-tokai-new-excelsior-fort",
@@ -970,8 +1002,8 @@
       "area": "south-bombay",
       "neighborhood": "Fort",
       "address": "Ground Floor, New Excelsior Cinema 1, A.K. Nayak Marg, Azad Maidan, Fort, Mumbai 400001",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 18.9383,
+      "longitude": 72.8324,
       "website": "https://bluetokaicoffee.com/pages/blue-tokai-coffee-roasters-new-excelsior-cinema-fort",
       "instagram": null,
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Blue%20Tokai%20—%20New%20Excelsior%2C%20Ground%20Floor%2C%20New%20Excelsior%20Cinema%201%2C%20A.K.%20Nayak%20Marg%2C%20Azad%20Maidan%2C%20Fort%2C%20Mumbai%20400001%2C%20Mumbai",
@@ -1022,7 +1054,9 @@
         "bluetokaicoffee.com"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": true
+      "isActive": true,
+      "locationAccuracy": "approximate",
+      "locationAnchor": "A.K. Nayak Marg by Azad Maidan"
     },
     {
       "slug": "araku-coffee-apollo-bunder",
@@ -1030,8 +1064,8 @@
       "area": "south-bombay",
       "neighborhood": "Apollo Bunder",
       "address": "Ground Floor, Sunny House, Mandlik Road, Apollo Bandar, Colaba, Mumbai",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 18.9224,
+      "longitude": 72.8331,
       "website": "https://www.arakucoffee.in",
       "instagram": null,
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Araku%20Coffee%2C%20Ground%20Floor%2C%20Sunny%20House%2C%20Mandlik%20Road%2C%20Apollo%20Bandar%2C%20Colaba%2C%20Mumbai%2C%20Mumbai",
@@ -1083,7 +1117,9 @@
         "baristamagazine.com"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": true
+      "isActive": true,
+      "locationAccuracy": "approximate",
+      "locationAnchor": "Mandlik Road, Apollo Bunder"
     },
     {
       "slug": "subko-the-cacao-mill-colaba",
@@ -1091,8 +1127,8 @@
       "area": "south-bombay",
       "neighborhood": "Colaba",
       "address": "2nd Pasta Lane, Colaba, Mumbai",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 18.9153,
+      "longitude": 72.8288,
       "website": "https://www.subko.coffee",
       "instagram": null,
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Subko%20—%20The%20Cacao%20Mill%2C%202nd%20Pasta%20Lane%2C%20Colaba%2C%20Mumbai%2C%20Mumbai",
@@ -1139,7 +1175,9 @@
         "baristamagazine.com"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": true
+      "isActive": true,
+      "locationAccuracy": "approximate",
+      "locationAnchor": "2nd Pasta Lane, Colaba"
     },
     {
       "slug": "nandan-coffee-kala-ghoda",
@@ -1147,8 +1185,8 @@
       "area": "south-bombay",
       "neighborhood": "Kala Ghoda",
       "address": "Mulla House, 34 Homi Modi Street, opposite Central Bank Head Office, Kala Ghoda, Fort, Mumbai",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 18.9298,
+      "longitude": 72.8339,
       "website": "https://www.nandancoffee.com",
       "instagram": "https://instagram.com/nandancoffee",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nandan%20Coffee%2C%20Mulla%20House%2C%2034%20Homi%20Modi%20Street%2C%20opposite%20Central%20Bank%20Head%20Office%2C%20Kala%20Ghoda%2C%20Fort%2C%20Mumbai%2C%20Mumbai",
@@ -1197,7 +1235,9 @@
         "baristamagazine.com"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": true
+      "isActive": true,
+      "locationAccuracy": "approximate",
+      "locationAnchor": "Homi Modi Street, opposite Central Bank"
     },
     {
       "slug": "starbucks-horniman-circle-horniman-circle",
@@ -1205,8 +1245,8 @@
       "area": "south-bombay",
       "neighborhood": "Horniman Circle",
       "address": "Elphinstone Building, Ground Floor, 10 Horniman Circle, Veer Nariman Road, Fort, Mumbai 400001",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 18.9301,
+      "longitude": 72.8364,
       "website": "https://stores.starbucks.in/store-pages/starbucks-mumbai/",
       "instagram": null,
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Starbucks%20—%20Horniman%20Circle%2C%20Elphinstone%20Building%2C%20Ground%20Floor%2C%2010%20Horniman%20Circle%2C%20Veer%20Nariman%20Road%2C%20Fort%2C%20Mumbai%20400001%2C%20Mumbai",
@@ -1258,7 +1298,9 @@
         "lbb.in"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": true
+      "isActive": true,
+      "locationAccuracy": "approximate",
+      "locationAnchor": "Horniman Circle, Elphinstone Building"
     },
     {
       "slug": "bombay-coffee-house-ballard-estate-ballard-estate",
@@ -1266,8 +1308,8 @@
       "area": "south-bombay",
       "neighborhood": "Ballard Estate",
       "address": "3A Sprotte Road, near Grand Hotel, S.S. Ram Gulam Marg, Ballard Estate, Fort, Mumbai",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 18.9343,
+      "longitude": 72.8397,
       "website": null,
       "instagram": null,
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bombay%20Coffee%20House%20—%20Ballard%20Estate%2C%203A%20Sprotte%20Road%2C%20near%20Grand%20Hotel%2C%20S.S.%20Ram%20Gulam%20Marg%2C%20Ballard%20Estate%2C%20Fort%2C%20Mumbai%2C%20Mumbai",
@@ -1318,7 +1360,9 @@
         "lbb.in"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": true
+      "isActive": true,
+      "locationAccuracy": "approximate",
+      "locationAnchor": "Sprotte Road, Ballard Estate"
     },
     {
       "slug": "kyani-co-marine-lines",
@@ -1326,8 +1370,8 @@
       "area": "south-bombay",
       "neighborhood": "Marine Lines",
       "address": "Jer Mahal Estate, Jagannath Shankar Seth Road, Marine Lines, Mumbai 400002",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 18.9451,
+      "longitude": 72.8269,
       "website": null,
       "instagram": null,
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kyani%20&%20Co.%2C%20Jer%20Mahal%20Estate%2C%20Jagannath%20Shankar%20Seth%20Road%2C%20Marine%20Lines%2C%20Mumbai%20400002%2C%20Mumbai",
@@ -1376,7 +1420,9 @@
         "thetastytales.com"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": true
+      "isActive": true,
+      "locationAccuracy": "approximate",
+      "locationAnchor": "Jagannath Shankar Seth Road, Marine Lines"
     },
     {
       "slug": "cafe-mondegar-colaba",
@@ -1384,8 +1430,8 @@
       "area": "south-bombay",
       "neighborhood": "Colaba",
       "address": "Metro House, Colaba Causeway, near Regal Cinema, Apollo Bandar, Colaba, Mumbai 400001",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 18.9226,
+      "longitude": 72.832,
       "website": null,
       "instagram": null,
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cafe%20Mondegar%2C%20Metro%20House%2C%20Colaba%20Causeway%2C%20near%20Regal%20Cinema%2C%20Apollo%20Bandar%2C%20Colaba%2C%20Mumbai%20400001%2C%20Mumbai",
@@ -1433,7 +1479,9 @@
         "wheree.com"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": true
+      "isActive": true,
+      "locationAccuracy": "approximate",
+      "locationAnchor": "Colaba Causeway by Regal"
     },
     {
       "slug": "leopold-cafe-bar-colaba",
@@ -1441,8 +1489,8 @@
       "area": "south-bombay",
       "neighborhood": "Colaba",
       "address": "Shahid Bhagat Singh Road, Colaba Causeway, Colaba, Mumbai",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 18.9218,
+      "longitude": 72.8311,
       "website": null,
       "instagram": null,
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Leopold%20Cafe%20&%20Bar%2C%20Shahid%20Bhagat%20Singh%20Road%2C%20Colaba%20Causeway%2C%20Colaba%2C%20Mumbai%2C%20Mumbai",
@@ -1490,7 +1538,9 @@
         "eazydiner.com"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": true
+      "isActive": true,
+      "locationAccuracy": "approximate",
+      "locationAnchor": "Shahid Bhagat Singh Road, Colaba Causeway"
     },
     {
       "slug": "cafe-military-fort",
@@ -1498,8 +1548,8 @@
       "area": "south-bombay",
       "neighborhood": "Fort",
       "address": "Ali Chambers, Tamarind Lane, Fort, Mumbai",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 18.9329,
+      "longitude": 72.8349,
       "website": null,
       "instagram": null,
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cafe%20Military%2C%20Ali%20Chambers%2C%20Tamarind%20Lane%2C%20Fort%2C%20Mumbai%2C%20Mumbai",
@@ -1547,7 +1597,9 @@
         "lbb.in"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": true
+      "isActive": true,
+      "locationAccuracy": "approximate",
+      "locationAnchor": "Tamarind Lane, Fort"
     },
     {
       "slug": "ideal-corner-fort",
@@ -1555,8 +1607,8 @@
       "area": "south-bombay",
       "neighborhood": "Fort",
       "address": "12 F/G, Hornby View, Gunbow Street, Fort, Mumbai",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 18.9343,
+      "longitude": 72.8353,
       "website": null,
       "instagram": null,
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ideal%20Corner%2C%2012%20F/G%2C%20Hornby%20View%2C%20Gunbow%20Street%2C%20Fort%2C%20Mumbai%2C%20Mumbai",
@@ -1604,7 +1656,9 @@
         "lbb.in"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": true
+      "isActive": true,
+      "locationAccuracy": "approximate",
+      "locationAnchor": "Gunbow Street, Fort"
     },
     {
       "slug": "yazdani-bakery-fort",
@@ -1612,8 +1666,8 @@
       "area": "south-bombay",
       "neighborhood": "Fort",
       "address": "Cawasji Patel Street, Fort, Mumbai",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 18.9336,
+      "longitude": 72.8332,
       "website": null,
       "instagram": null,
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Yazdani%20Bakery%2C%20Cawasji%20Patel%20Street%2C%20Fort%2C%20Mumbai%2C%20Mumbai",
@@ -1661,7 +1715,9 @@
         "eazydiner.com"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": true
+      "isActive": true,
+      "locationAccuracy": "approximate",
+      "locationAnchor": "Cawasji Patel Street, Fort"
     },
     {
       "slug": "third-wave-coffee-churchgate-churchgate",
@@ -1669,8 +1725,8 @@
       "area": "south-bombay",
       "neighborhood": "Churchgate",
       "address": "Unit 116A, HP Petrol Pump, Jamshedji Tata Road, near Eros Cinema, Churchgate, Mumbai",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 18.9341,
+      "longitude": 72.8264,
       "website": "https://stores.thirdwavecoffeeroasters.com/store-pages/third-wave-coffee-churchgate-mumbai/",
       "instagram": null,
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Third%20Wave%20Coffee%20—%20Churchgate%2C%20Unit%20116A%2C%20HP%20Petrol%20Pump%2C%20Jamshedji%20Tata%20Road%2C%20near%20Eros%20Cinema%2C%20Churchgate%2C%20Mumbai%2C%20Mumbai",
@@ -1720,7 +1776,9 @@
         "thirdwavecoffeeroasters.com"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": true
+      "isActive": true,
+      "locationAccuracy": "approximate",
+      "locationAnchor": "Jamshedji Tata Road, near Eros"
     },
     {
       "slug": "blue-tokai-nariman-point-nariman-point",
@@ -1728,8 +1786,8 @@
       "area": "south-bombay",
       "neighborhood": "Nariman Point",
       "address": "Unit 25 & 26, Commercial Centre, CR2 Mall, Barrister Rajni Patel Marg, Nariman Point, Mumbai",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 18.9286,
+      "longitude": 72.8237,
       "website": "https://stores.bluetokaicoffee.com/blue-tokai-coffee-roasters-nariman-point-cafe-nariman-point-mumbai-436767/Home",
       "instagram": null,
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Blue%20Tokai%20—%20Nariman%20Point%2C%20Unit%2025%20&%2026%2C%20Commercial%20Centre%2C%20CR2%20Mall%2C%20Barrister%20Rajni%20Patel%20Marg%2C%20Nariman%20Point%2C%20Mumbai%2C%20Mumbai",
@@ -1780,7 +1838,9 @@
         "eazydiner.com"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": true
+      "isActive": true,
+      "locationAccuracy": "approximate",
+      "locationAnchor": "CR2, Barrister Rajni Patel Marg, Nariman Point"
     },
     {
       "slug": "abcoffee-hill-road-hill-road",
@@ -1834,7 +1894,8 @@
         "abcoffee.in"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": false
+      "isActive": false,
+      "locationAccuracy": null
     },
     {
       "slug": "third-wave-coffee-bkc-bandra-east",
@@ -1891,7 +1952,8 @@
         "magicpin.in"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": false
+      "isActive": false,
+      "locationAccuracy": null
     },
     {
       "slug": "suzette-creperie-cafe-st-john-street",
@@ -1946,7 +2008,8 @@
         "eazydiner.com"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": false
+      "isActive": false,
+      "locationAccuracy": null
     },
     {
       "slug": "bombay-salad-co-16th-road",
@@ -2000,7 +2063,8 @@
         "bombaysaladco.com"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": false
+      "isActive": false,
+      "locationAccuracy": null
     },
     {
       "slug": "the-nutcracker-bandra-st-john-baptist-road",
@@ -2055,7 +2119,8 @@
         "magicpin.in"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": false
+      "isActive": false,
+      "locationAccuracy": null
     },
     {
       "slug": "sequel-bandra-33rd-road",
@@ -2110,7 +2175,8 @@
         "lbb.in"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": false
+      "isActive": false,
+      "locationAccuracy": null
     },
     {
       "slug": "birdsong-the-organic-cafe-waroda-road",
@@ -2166,7 +2232,8 @@
         "tripadvisor.in"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": false
+      "isActive": false,
+      "locationAccuracy": null
     },
     {
       "slug": "bombay-sweet-shop-kala-ghoda-kala-ghoda",
@@ -2220,7 +2287,8 @@
         "bombaysweetshop.com"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": false
+      "isActive": false,
+      "locationAccuracy": null
     },
     {
       "slug": "sequel-kala-ghoda-kala-ghoda",
@@ -2275,7 +2343,8 @@
         "eazydiner.com"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": false
+      "isActive": false,
+      "locationAccuracy": null
     },
     {
       "slug": "the-nutcracker-kala-ghoda-kala-ghoda",
@@ -2330,7 +2399,8 @@
         "tripadvisor.com"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": false
+      "isActive": false,
+      "locationAccuracy": null
     },
     {
       "slug": "abcoffee-colaba-causeway-colaba",
@@ -2384,7 +2454,8 @@
         "abcoffee.in"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": false
+      "isActive": false,
+      "locationAccuracy": null
     },
     {
       "slug": "mag-st-colaba-colaba",
@@ -2438,7 +2509,8 @@
         "foodmatters.in"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": false
+      "isActive": false,
+      "locationAccuracy": null
     },
     {
       "slug": "mockingbird-cafe-bar-churchgate",
@@ -2493,7 +2565,8 @@
         "mumbaicoworking.com"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": false
+      "isActive": false,
+      "locationAccuracy": null
     },
     {
       "slug": "suzette-nariman-point-nariman-point",
@@ -2548,7 +2621,8 @@
         "suzette.in"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": false
+      "isActive": false,
+      "locationAccuracy": null
     },
     {
       "slug": "sassanian-restaurant-bakery-marine-lines",
@@ -2603,7 +2677,8 @@
         "district.in"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": false
+      "isActive": false,
+      "locationAccuracy": null
     },
     {
       "slug": "cafe-dela-paix-girgaon",
@@ -2658,7 +2733,8 @@
         "district.in"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": false
+      "isActive": false,
+      "locationAccuracy": null
     },
     {
       "slug": "b-merwan-co-grant-road",
@@ -2713,7 +2789,8 @@
         "district.in"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": false
+      "isActive": false,
+      "locationAccuracy": null
     },
     {
       "slug": "subko-the-craftery-byculla",
@@ -2767,7 +2844,8 @@
         "subko.coffee"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": false
+      "isActive": false,
+      "locationAccuracy": null
     },
     {
       "slug": "cafe-excelsior-fort",
@@ -2822,7 +2900,8 @@
         "district.in"
       ],
       "lastVerifiedAt": "2026-08-23",
-      "isActive": false
+      "isActive": false,
+      "locationAccuracy": null
     }
   ]
 }

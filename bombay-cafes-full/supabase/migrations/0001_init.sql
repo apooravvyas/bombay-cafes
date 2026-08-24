@@ -31,6 +31,11 @@ create type data_layer as enum ('curated', 'ai-analysis');
 
 create type verification_status as enum ('unverified', 'editorial', 'verified', 'needs_review');
 
+-- How much to trust a coordinate pair. 'approximate' is street/block level,
+-- read off the cafe's own address; 'verified' means a geocoder resolved the
+-- full address. Stored rather than inferred, so the UI never has to guess.
+create type location_accuracy as enum ('approximate', 'verified');
+
 create type review_status as enum ('pending', 'approved', 'rejected');
 
 create table spots (
@@ -41,10 +46,16 @@ create table spots (
   area                area_group not null,
   neighborhood        text not null,
   address             text not null default '',
-  -- NULL until geocoded. A normal, expected state: the spot shows up
-  -- everywhere except the map. Nothing writes an approximate coordinate here.
+  -- NULL until positioned. A normal, expected state: the spot shows up
+  -- everywhere except the map.
   latitude            double precision,
   longitude           double precision,
+  -- Never NULL when a position exists — see spots_coords_need_accuracy. An
+  -- unlabelled coordinate is the failure this column prevents: it would read
+  -- as surveyed when it was read off a street name.
+  location_accuracy   location_accuracy,
+  -- What the approximate pin was anchored to, e.g. 'Waroda Road, Ranwar'.
+  location_anchor     text,
 
   website             text,
   instagram           text,
@@ -120,11 +131,20 @@ alter table spots
     (seating_score  is null or seating_evidence  is not null)
   );
 
+-- A coordinate must declare how good it is. Without this, an approximate pin
+-- and a surveyed one are indistinguishable in the database, and the honest
+-- label in the UI becomes a matter of who remembered to set it.
+alter table spots
+  add constraint spots_coords_need_accuracy
+  check ((latitude is null) = (location_accuracy is null));
+
 create index spots_active_idx       on spots (is_active);
 create index spots_area_idx         on spots (area) where is_active;
 create index spots_neighborhood_idx on spots (neighborhood) where is_active;
--- Drives scripts/geocode-cafes.ts: everything still missing a position.
-create index spots_ungeocoded_idx   on spots (slug) where latitude is null;
+-- Drives scripts/geocode-cafes.ts: everything not yet surveyed — both the
+-- unpositioned rows and the approximate ones waiting to be upgraded.
+create index spots_unverified_pos_idx on spots (slug)
+  where location_accuracy is distinct from 'verified';
 
 -- ── Feedback ─────────────────────────────────────────────────────────────────
 -- Anonymous by design. Requiring an account before someone can say "the wifi

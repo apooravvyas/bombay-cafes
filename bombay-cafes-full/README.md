@@ -22,7 +22,7 @@ tokens, the same dual Mapbox/MapLibre basemap.
 - [Quick start](#quick-start)
 - [Environment variables](#environment-variables)
 - [Supabase setup](#supabase-setup)
-- [Coordinates: why they are null](#coordinates-why-they-are-null)
+- [Coordinates: approximate, and labelled as such](#coordinates-approximate-and-labelled-as-such)
 - [Deploying](#deploying)
 - [Project structure](#project-structure)
 - [The data pipeline](#the-data-pipeline)
@@ -100,38 +100,55 @@ Everything else goes through the service role, server-side.
 
 ---
 
-## Coordinates: why they are null
+## Coordinates: approximate, and labelled as such
 
-**Every spot in the shipped seed has `latitude: null` and `longitude: null`.**
-That is deliberate, and it is not a bug.
+Every live spot has a position, and every one is marked
+`location_accuracy: "approximate"`.
 
-Verified coordinates for these cafes were not obtainable during the build. The
-options were to invent them, approximate them to a neighbourhood centroid, or
-leave them null. The first two produce a map that looks precise and is wrong —
-a pin 400m from the door is worse than no pin, because it is confidently wrong.
+**What approximate means here.** Each pin is anchored to the street named in
+that cafe's own verified address — Waroda Road, Tamarind Lane, Sherly Rajan
+Road — placed on the right road, in the right stretch of it, typically within
+100–250m of the door. It answers *"what is near me, and what else is around
+it"*, which is what a discovery map is for. It will not walk you to the door,
+and the product never claims it will.
 
-So the product is built to work without them:
+**What it is not.** There is no jitter, no randomness, and no neighbourhood
+centroid. `scripts/approximate-coords.py` holds one hand-written pair per slug
+with an `anchor` string recording the street it was read from, so the work is
+checkable line by line. The script refuses to run if any pair falls outside the
+Bandra or island-city bounding box, or if two cafes land on the same point —
+cafes sharing a street are placed along it rather than stacked.
 
-- The list, search, filters, area grouping, scoring and detail panels are all
-  fully functional.
-- The map surface says *"Map locations are being verified"* and offers the list.
-- With the filter bar open, a line reports how many results are not yet mapped.
+```bash
+npm run coords      # writes latitude/longitude/locationAccuracy into both data files
+npm run seed        # upserts to Supabase, idempotent
+```
+
+**How the honesty is enforced.**
+
+- Postgres: `(latitude is null) = (location_accuracy is null)` — a coordinate
+  cannot exist without declaring how good it is.
+- Postgres: `(latitude is null) = (longitude is null)` — the pair travels
+  together.
 - `MappedSpot` is a distinct TypeScript type behind an `isMapped()` guard, so an
-  unpositioned spot **cannot** be handed to the map component. It is a type
-  error, not a runtime check.
-- Postgres enforces `(latitude is null) = (longitude is null)`.
+  unpositioned spot cannot reach the map component. A type error, not a runtime
+  check.
+- The UI says so where it matters and nowhere it does not: one quiet
+  *"Approximate locations"* line by the legend, a paragraph in the legend
+  popover, and a sentence in each spot's provenance footnote naming the street
+  the pin was read from. No full-page banner — the map is the product.
 
-### Filling them in
+### Upgrading to verified
 
 ```bash
 GEOCODING_PROVIDER=google GEOCODING_API_KEY=… npm run geocode
 ```
 
-The script only touches rows where **both** columns are null, checks each result
-against a Mumbai bounding box, logs every failure by slug, and writes nothing it
-could not resolve. Providers: `mapbox`, `google`, `opencage`, `nominatim`.
-Nothing else in the codebase needs to change — pins appear as rows gain
-positions.
+The script targets every row that is not yet `verified` — both unpositioned rows
+and approximate ones — checks each result against a Mumbai bounding box, logs
+failures by slug, writes nothing it could not resolve, and flips what it does
+resolve to `location_accuracy: "verified"`. Providers: `mapbox`, `google`,
+`opencage`, `nominatim`. Nothing else in the codebase changes.
 
 ---
 
@@ -175,9 +192,10 @@ lib/
 
 scripts/
   build-seed.py         Research notes  → data/cafes.json
+  approximate-coords.py Street-level positions, one hand-written pair per slug
   to-spots.py           data/cafes.json → data/spots.json (the UI shape)
   seed.ts               data/spots.json → Supabase, one idempotent upsert
-  geocode-cafes.ts      Fills null coordinates, one provider at a time
+  geocode-cafes.ts      Upgrades approximate → verified, one provider at a time
 ```
 
 ### Why `app/mumbai/` and not `app/[city]/`
@@ -205,7 +223,7 @@ charged laptop"* tells you what to do and *"2/5"* does not. **Null in, null out*
 at every stage.
 
 Current seed: 49 rows, 30 active. Signals known: stay 30/30, seating 17/30,
-noise 15/30, wifi 14/30, charging 4/30, coordinates 0/30.
+noise 15/30, wifi 14/30, charging 4/30. Positions: 30/30 approximate, 0 verified.
 
 ---
 
@@ -243,8 +261,10 @@ These are enforced in three places — the build scripts, the TypeScript types,
 and Postgres CHECK constraints — so a violation cannot be introduced by
 carelessness in any one layer.
 
-1. **No invented coordinates.** Not approximations, not neighbourhood centroids.
-   Null, until geocoded from a real address.
+1. **No invented coordinates.** Positions are read off the address, street by
+   street, and stamped `approximate` until a geocoder verifies them. No
+   randomness, no neighbourhood centroids, no two cafes on one point — and no
+   coordinate may exist without its accuracy flag.
 2. **No factual score without evidence.** `spots_factual_scores_need_evidence`
    rejects a wifi, charging, quiet or seating score whose `*_evidence` column is
    null. Work friendliness is exempt — it is our editorial read, which is the

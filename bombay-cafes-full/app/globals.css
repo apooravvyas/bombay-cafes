@@ -191,6 +191,12 @@
   transform: rotate(-45deg) scale(1.14);
   z-index: 2;
 }
+/* Same reason as the inline z-index in wa-map: each marker is its own stacking
+   context, so hovering has to raise the wrapper, not the pin inside it. */
+.wa-pin-wrap:hover,
+.wa-pin-wrap:focus-within {
+  z-index: 5;
+}
 .wa-pin.is-selected {
   background: #111;
   transform: rotate(-45deg) scale(1.24);

@@ -29,6 +29,8 @@ interface SeedSpot {
   address: string;
   latitude: number | null;
   longitude: number | null;
+  locationAccuracy: "approximate" | "verified" | null;
+  locationAnchor: string | null;
   website: string | null;
   instagram: string | null;
   googleMapsUrl: string | null;
@@ -60,6 +62,8 @@ async function main() {
     address: s.address,
     latitude: s.latitude,
     longitude: s.longitude,
+    location_accuracy: s.locationAccuracy,
+    location_anchor: s.locationAnchor,
     website: s.website,
     instagram: s.instagram,
     google_maps_url: s.googleMapsUrl,
@@ -102,10 +106,11 @@ async function main() {
   }
 
   const mapped = rows.filter((r) => r.latitude != null).length;
+  const approx = rows.filter((r) => r.location_accuracy === "approximate").length;
   console.log(`Seeded ${rows.length} spots (${rows.filter((r) => r.is_active).length} active).`);
-  console.log(`  ${mapped} have coordinates, ${rows.length - mapped} awaiting geocoding.`);
-  if (mapped < rows.length) {
-    console.log("  Run `npm run geocode` once a provider key is set. The app works without it.");
+  console.log(`  ${mapped} have coordinates — ${approx} approximate, ${mapped - approx} verified.`);
+  if (approx > 0) {
+    console.log("  Run `npm run geocode` with a provider key to upgrade approximate to verified.");
   }
 }
 

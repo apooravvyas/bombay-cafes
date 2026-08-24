@@ -68,6 +68,10 @@ export function MapScreen({
   const filtered = useMemo(() => rankSpots(filterSpots(spots, filters)), [spots, filters]);
   const mapped = useMemo(() => filtered.filter(isMapped), [filtered]);
   const awaiting = filtered.length - mapped.length;
+  const approximate = useMemo(
+    () => mapped.filter((s) => s.locationAccuracy === "approximate").length,
+    [mapped],
+  );
   const areas = useMemo(() => groupAreas(spots), [spots]);
   const spot = useMemo(() => spots.find((s) => s.slug === selected) ?? null, [spots, selected]);
 
@@ -128,10 +132,24 @@ export function MapScreen({
     setHovered(null);
   }, []);
 
+  /**
+   * Where the camera starts.
+   *
+   * Derived from the spots themselves, not a hardcoded city centre: the mean of
+   * every mapped position, which for this dataset lands between Bandra and the
+   * island city rather than on some notional middle of Mumbai. wa-map then
+   * fitBounds() over the same set, so the hardcoded city figures in
+   * lib/cities.ts are only ever a fallback for a city with nothing positioned.
+   */
   const view = useMemo(() => {
     if (filters.area) {
       const first = mapped.find((s) => s.neighborhood === filters.area);
       if (first) return { lat: first.latitude, lng: first.longitude, zoom: 15 };
+    }
+    if (mapped.length > 0) {
+      const lat = mapped.reduce((a, s) => a + s.latitude, 0) / mapped.length;
+      const lng = mapped.reduce((a, s) => a + s.longitude, 0) / mapped.length;
+      return { lat, lng, zoom: city.zoom };
     }
     return { lat: city.center.lat, lng: city.center.lng, zoom: city.zoom };
   }, [filters.area, mapped, city]);
@@ -166,17 +184,22 @@ export function MapScreen({
         />
       )}
 
-      {/* Pre-geocoding / dead-map ground. The rest of the product still works. */}
+      {/*
+        Fallback ground, deliberately NOT the default experience.
+        Only two things reach it: a basemap that failed to load, or a city with
+        nothing positioned yet. With the current dataset every live spot has a
+        street-level position, so what a visitor sees is the map.
+      */}
       {(mapDead || mapped.length === 0) && (
         <div className="absolute inset-0 grid place-items-center bg-[#EDEAE2] px-8 text-center">
           <div className="max-w-sm">
             <p className="font-display text-[22px] text-ink">
-              {mapDead ? "Map unavailable" : "Map locations are being verified"}
+              {mapDead ? "Map unavailable" : `${filtered.length} spots, no map yet`}
             </p>
             <p className="mt-2 text-[14.5px] leading-relaxed text-stone-dark">
               {mapDead
                 ? "The basemap did not load. Browse the spots — every listing still works."
-                : `We have ${filtered.length} ${filtered.length === 1 ? "spot" : "spots"} with confirmed addresses, but their exact map positions are still being checked. Browse the curated list meanwhile.`}
+                : "This city has listings but no positions yet. Every listing still works."}
             </p>
             <button
               type="button"
@@ -329,6 +352,9 @@ export function MapScreen({
           <span className="flex items-center gap-1.5">
             <span className="h-2 w-2 rounded-full border border-ink2/60 bg-chalk" /> Community
           </span>
+          {/* One quiet line, not a full-page banner. The reader can see the map
+              and still knows what the pins are worth. */}
+          {approximate > 0 && <span className="text-ink2/45">Approximate locations</span>}
         </span>
         {legendOpen && (
           <div className="wa-card absolute bottom-10 left-0 w-[min(88vw,320px)] p-4">
@@ -339,6 +365,13 @@ export function MapScreen({
               the wifi. Unrated signals lower our confidence, not the score — a spot is never
               punished for something nobody has published.
             </p>
+            {approximate > 0 && (
+              <p className="mt-3 border-t border-black/10 pt-3 text-[13px] leading-relaxed text-ink2/70">
+                Pins are placed from each cafe&rsquo;s own address at street level — the right
+                road, within a couple of hundred metres. Close enough to plan around, not to
+                navigate by. Each listing says which street it was read from.
+              </p>
+            )}
             <Link href="/about" className="wa-mono mt-3 inline-block text-accent">
               More on the method →
             </Link>
@@ -479,7 +512,7 @@ export function MapScreen({
 
         {filtersOpen && awaiting > 0 && (
           <p className="mt-2 text-center font-mono text-[10.5px] text-ink2/55">
-            {awaiting} of {filtered.length} not on the map yet — positions being verified
+            {awaiting} of {filtered.length} not on the map yet
           </p>
         )}
       </div>

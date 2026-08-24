@@ -276,8 +276,13 @@ function SpotDetail({ spot }: { spot: Spot }) {
             Names, addresses and hours come from what the cafe or a credible source publishes.
             WiFi, charging, noise and seating are only rated where a source or a visit supports it
             — {rated} of 5 here. Work friendliness is our own read.
-            {!isMapped(spot) &&
-              " The map position has not been verified yet, so this spot has no pin."}
+            {!isMapped(spot)
+              ? " The map position has not been verified yet, so this spot has no pin."
+              : spot.locationAccuracy === "approximate"
+                ? ` The pin is placed at street level from the address${
+                    spot.locationAnchor ? ` (${spot.locationAnchor})` : ""
+                  }, not surveyed — expect it within a couple of hundred metres.`
+                : ""}
           </p>
           {spot.sources.length > 0 && (
             <p className="mt-2.5 font-mono text-[11px] leading-relaxed text-paper/30">

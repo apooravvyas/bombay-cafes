@@ -61,7 +61,16 @@ export async function POST(req: NextRequest) {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
-  if (url && serviceKey) {
+  // Same rule as feedback: never tell someone their submission is queued when
+  // there is nowhere to queue it.
+  if (!url || !serviceKey) {
+    return NextResponse.json(
+      { error: "Submissions are not open yet — nothing was saved." },
+      { status: 503 },
+    );
+  }
+
+  {
     const supabase = createClient(url, serviceKey);
     const { error } = await supabase.from("spot_submissions").insert({
       name,
@@ -79,8 +88,6 @@ export async function POST(req: NextRequest) {
         { status: 500 },
       );
     }
-  } else {
-    console.info("[submissions] no database configured; accepted in demo mode:", name);
   }
 
   return NextResponse.json({ ok: true }, { status: 201 });

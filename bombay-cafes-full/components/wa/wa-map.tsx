@@ -305,7 +305,15 @@ export function WaMapImpl({
   /* ── selection: toggle the class, fly in close ─────────────────────────── */
   useEffect(() => {
     for (const [slug, marker] of markersRef.current) {
-      marker.getElement().querySelector(".wa-pin")?.classList.toggle("is-selected", slug === selectedSlug);
+      const el = marker.getElement();
+      const on = slug === selectedSlug;
+      el.querySelector(".wa-pin")?.classList.toggle("is-selected", on);
+      // The library gives every marker its own stacking context, so a z-index
+      // on the inner pin cannot lift it above a neighbouring marker. At city
+      // zoom the Bandra cluster overlaps heavily, and a selected pin buried
+      // under three others is indistinguishable from nothing happening — so
+      // raise the wrapper the library actually positions.
+      el.style.zIndex = on ? "4" : "";
     }
     const map = mapRef.current;
     if (!map || !selectedSlug) return;

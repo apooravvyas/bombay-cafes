@@ -151,6 +151,9 @@ interface Row {
   lng: number | null;
   latitude?: number | null;
   longitude?: number | null;
+  /** null = no position, "approximate" = street level, "verified" = surveyed. */
+  locationAccuracy?: "approximate" | "verified" | null;
+  locationAnchor?: string | null;
 }
 
 async function geocodeOnce(query: string): Promise<Coords | null> {
@@ -217,12 +220,13 @@ async function run() {
       process.env.SUPABASE_SERVICE_ROLE_KEY!,
     );
 
-    // Only rows missing BOTH coordinates. An existing pin is never touched.
+    // Everything not yet surveyed: rows with no position at all, and rows
+    // holding a street-level approximation waiting to be upgraded. A row
+    // already marked 'verified' is never touched.
     const { data, error } = await db
       .from("spots")
-      .select("slug, name, address, neighborhood, latitude, longitude")
-      .is("latitude", null)
-      .is("longitude", null);
+      .select("slug, name, address, neighborhood, latitude, longitude, location_accuracy")
+      .or("location_accuracy.is.null,location_accuracy.eq.approximate");
     if (error) {
       console.error("Could not read spots:", error.message);
       process.exit(1);
@@ -240,11 +244,16 @@ async function run() {
       for (const u of updates) {
         const { error: e } = await db
           .from("spots")
-          .update({ latitude: u.lat, longitude: u.lng })
+          .update({
+            latitude: u.lat,
+            longitude: u.lng,
+            location_accuracy: "verified",
+            location_anchor: null,
+          })
           .eq("slug", u.slug)
-          // Belt and braces: even here, refuse to clobber a coordinate that
-          // appeared while this script was running.
-          .is("latitude", null);
+          // Belt and braces: even here, refuse to clobber a position that was
+          // verified while this script was running.
+          .not("location_accuracy", "eq", "verified");
         if (e) console.error(`  ! ${u.slug}: ${e.message}`);
       }
     };
@@ -253,15 +262,17 @@ async function run() {
     const file = JSON.parse(readFileSync(path, "utf8")) as { spots: Row[] };
     pending = file.spots
       .map((c) => ({ ...c, lat: c.latitude ?? null, lng: c.longitude ?? null }))
-      .filter((c) => c.lat == null && c.lng == null);
+      .filter((c) => c.locationAccuracy !== "verified");
 
     commit = async (updates) => {
       const bySlug = new Map(updates.map((u) => [u.slug, u]));
       for (const cafe of file.spots) {
         const u = bySlug.get(cafe.slug);
-        if (u && cafe.latitude == null && cafe.longitude == null) {
+        if (u && cafe.locationAccuracy !== "verified") {
           cafe.latitude = u.lat;
           cafe.longitude = u.lng;
+          cafe.locationAccuracy = "verified";
+          cafe.locationAnchor = null;
         }
       }
       writeFileSync(path, `${JSON.stringify(file, null, 2)}\n`);
@@ -269,12 +280,12 @@ async function run() {
   }
 
   if (pending.length === 0) {
-    console.log("Every cafe already has coordinates. Nothing to do.");
+    console.log("Every cafe already has a verified position. Nothing to do.");
     return;
   }
 
   const work = pending.slice(0, LIMIT);
-  console.log(`${pending.length} cafe(s) without coordinates; attempting ${work.length}.\n`);
+  console.log(`${pending.length} cafe(s) not yet verified; attempting ${work.length}.\n`);
 
   const resolved: { slug: string; lat: number; lng: number }[] = [];
   const failed: string[] = [];

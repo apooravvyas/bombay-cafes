@@ -48,6 +48,8 @@ export interface SpotAttrs {
   avgFoodCost: string | null;
 }
 
+export type LocationAccuracy = "approximate" | "verified" | null;
+
 export interface Spot {
   slug: string;
   name: string;
@@ -56,6 +58,20 @@ export interface Spot {
   address: string;
   latitude: number | null;
   longitude: number | null;
+  /**
+   * How much to trust the pair above.
+   *
+   * "approximate" means street/block level — read off the cafe's own verified
+   * address, right road and right stretch of it, within a couple of hundred
+   * metres of the door. Good enough to answer "what is near me"; not good
+   * enough to walk to, and the detail panel says so.
+   *
+   * "verified" means a geocoder resolved the full address.
+   * null means no position at all.
+   */
+  locationAccuracy: LocationAccuracy;
+  /** The street the approximate pin was read from, so the work is checkable. */
+  locationAnchor: string | null;
   website: string | null;
   instagram: string | null;
   googleMapsUrl: string | null;
