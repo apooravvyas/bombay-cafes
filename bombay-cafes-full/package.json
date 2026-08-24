@@ -1,0 +1,41 @@
+{
+  "name": "bombay-cafe-map",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The cafes worth leaving your house for. Bandra and South Bombay, on one map.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "seed": "tsx scripts/seed.ts",
+    "geocode": "tsx scripts/geocode-cafes.ts",
+    "seed:build": "python3 scripts/build-seed.py",
+    "spots": "python3 scripts/to-spots.py"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.47.10",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.469.0",
+    "mapbox-gl": "^3.26.0",
+    "maplibre-gl": "^4.7.1",
+    "next": "^15.1.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^2.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.17.0",
+    "eslint-config-next": "^15.1.3",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
