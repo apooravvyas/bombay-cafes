@@ -27,7 +27,7 @@ function BandraArt() {
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(180deg,#3d2f2a 0%,#5a3f30 26%,#7a5137 48%,#3a3230 74%,#16130f 100%)",
+            "linear-gradient(180deg,#4a3830 0%,#6d4c39 24%,#9a6642 46%,#4a3f39 72%,#181512 100%)",
         }}
       />
       <svg
@@ -50,7 +50,7 @@ function BandraArt() {
           d="M0 420V330l64-40 64 40v-22l72-42 72 42v-16l68-40 68 40v-30l70-42 70 42v26l66-38 66 38v-20l74-42 74 42v22l70-40 70 40v90z"
         />
         {[80, 268, 452, 700, 892, 1080].map((x) => (
-          <g key={x} fill="rgba(255,236,206,0.16)">
+          <g key={x} fill="rgba(255,236,206,0.30)">
             <rect x={x} y={352} width={16} height={22} rx={2} />
             <rect x={x + 30} y={352} width={16} height={22} rx={2} />
           </g>
@@ -80,7 +80,7 @@ function SouthBombayArt() {
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(180deg,#1b2733 0%,#25384a 30%,#33485c 52%,#1d242b 78%,#0f1114 100%)",
+            "linear-gradient(180deg,#22303e 0%,#2e455b 28%,#425f78 50%,#242c35 76%,#101215 100%)",
         }}
       />
       <svg

@@ -49,7 +49,7 @@ export function SpotPanel({
 }) {
   return (
     <aside
-      className="wa-panel wa-panel-enter pointer-events-auto absolute inset-x-0 bottom-0 z-30 flex max-h-[78dvh] flex-col overflow-hidden rounded-t-2xl md:inset-y-3 md:left-auto md:right-3 md:max-h-none md:w-[min(460px,42vw)] md:rounded-2xl"
+      className="wa-panel wa-panel-grid wa-panel-enter pointer-events-auto absolute inset-x-0 bottom-0 z-30 flex max-h-[78dvh] flex-col overflow-hidden rounded-t-2xl md:inset-y-3 md:left-auto md:right-3 md:max-h-none md:w-[min(460px,42vw)] md:rounded-2xl"
       aria-label={mode === "detail" ? spot?.name : "Cafe list"}
     >
       {/* Header bar — sticky so the close control never scrolls away. */}
@@ -160,10 +160,10 @@ function SpotDetail({ spot }: { spot: Spot }) {
 
       <div className="px-6 pt-5">
         <p className="wa-mono text-paper/45">{spot.neighborhood}</p>
-        <h2 className="mt-1.5 font-display text-[34px] font-normal leading-[1.06] tracking-tight text-paper text-balance">
+        <h2 className="mt-2 font-sans text-[34px] font-medium leading-[1.04] tracking-[-0.015em] text-white text-balance">
           {spot.name}
         </h2>
-        <p className="mt-2 font-mono text-[12px] leading-relaxed text-paper/50">
+        <p className="mt-2.5 font-mono text-[12.5px] leading-relaxed tracking-[0.03em] text-paper-dim">
           {spot.address || `${spot.neighborhood}, Mumbai`}
         </p>
 
@@ -191,10 +191,10 @@ function SpotDetail({ spot }: { spot: Spot }) {
         ) : (
           <>
             <div className="mt-6 flex items-end gap-3">
-              <span className="font-sans text-[54px] font-semibold leading-none tabular-nums text-paper">
+              <span className="font-mono text-[40px] font-bold leading-none tracking-[0.01em] tabular-nums text-white">
                 {spot.workability != null ? spot.workability.toFixed(1) : "—"}
               </span>
-              <span className="pb-2 text-[15px] text-paper/55">/ 5 for working</span>
+              <span className="pb-1.5 text-[12px] text-paper-dim">/ 5 for working</span>
             </div>
             <div className="mt-3 h-[3px] w-full overflow-hidden rounded-full bg-white/12">
               <div
@@ -211,8 +211,8 @@ function SpotDetail({ spot }: { spot: Spot }) {
 
         {/* Work score logic — the three chips the reference leads with. */}
         {logic.length > 0 && (
-          <div className="mt-6 rounded-xl border border-white/12 p-4">
-            <p className="wa-mono text-paper/45">Work score logic</p>
+          <div className="mt-6 rounded-[10px] border border-hairline bg-surface/70 p-4">
+            <p className="wa-mono text-label/60">Work score logic</p>
             <div className="mt-3 flex flex-wrap gap-2">
               {logic.map((l) => (
                 <span
@@ -262,6 +262,44 @@ function SpotDetail({ spot }: { spot: Spot }) {
             ))}
           </div>
         )}
+
+        {/* Feedback — the mechanism that lets the scores improve. */}
+        <div className="mt-8">
+          <SpotFeedback slug={spot.slug} name={spot.name} />
+        </div>
+
+        {/* Source transparency, for researched spots: how many sources, how
+            many findings, and every URL on request. */}
+        {researched && <SourceTransparency spot={spot} />}
+
+        {/* Provenance. The reference footnotes which layer is which; ours says
+            what is sourced and what is an editorial read. */}
+        <div className="mt-8 border-t border-white/10 pt-5">
+          {spot.dataNote && (
+            <p className="mb-3 font-mono text-[11.5px] leading-relaxed text-paper/60">
+              Heads up — {spot.dataNote}
+            </p>
+          )}
+          <p className="font-mono text-[11.5px] leading-relaxed text-paper/40">
+            Names, addresses and hours come from what the cafe or a credible source publishes.
+            {researched
+              ? " Every factor above is scored only where a fetched source supports it."
+              : ` WiFi, charging, noise and seating are only rated where a source or a visit supports it — ${rated} of 5 here. Work friendliness is our own read.`}
+            {!isMapped(spot)
+              ? " The map position has not been verified yet, so this spot has no pin."
+              : spot.locationAccuracy === "approximate"
+                ? ` The pin is placed at street level from the address${
+                    spot.locationAnchor ? ` (${spot.locationAnchor})` : ""
+                  }, not surveyed — expect it within a couple of hundred metres.`
+                : ""}
+          </p>
+          {spot.sources.length > 0 && (
+            <p className="mt-2.5 font-mono text-[11px] leading-relaxed text-paper/30">
+              {spot.sources.join(" · ")}
+              {spot.lastVerifiedAt ? ` · checked ${spot.lastVerifiedAt}` : ""}
+            </p>
+          )}
+        </div>
 
         {/* Actions. Open in Maps is the primary — discovery is our job, not
             navigation. */}
@@ -319,43 +357,6 @@ function SpotDetail({ spot }: { spot: Spot }) {
           )}
         </div>
 
-        {/* Feedback — the mechanism that lets the scores improve. */}
-        <div className="mt-8">
-          <SpotFeedback slug={spot.slug} name={spot.name} />
-        </div>
-
-        {/* Source transparency, for researched spots: how many sources, how
-            many findings, and every URL on request. */}
-        {researched && <SourceTransparency spot={spot} />}
-
-        {/* Provenance. The reference footnotes which layer is which; ours says
-            what is sourced and what is an editorial read. */}
-        <div className="mt-8 border-t border-white/10 pt-5">
-          {spot.dataNote && (
-            <p className="mb-3 font-mono text-[11.5px] leading-relaxed text-paper/60">
-              Heads up — {spot.dataNote}
-            </p>
-          )}
-          <p className="font-mono text-[11.5px] leading-relaxed text-paper/40">
-            Names, addresses and hours come from what the cafe or a credible source publishes.
-            {researched
-              ? " Every factor above is scored only where a fetched source supports it."
-              : ` WiFi, charging, noise and seating are only rated where a source or a visit supports it — ${rated} of 5 here. Work friendliness is our own read.`}
-            {!isMapped(spot)
-              ? " The map position has not been verified yet, so this spot has no pin."
-              : spot.locationAccuracy === "approximate"
-                ? ` The pin is placed at street level from the address${
-                    spot.locationAnchor ? ` (${spot.locationAnchor})` : ""
-                  }, not surveyed — expect it within a couple of hundred metres.`
-                : ""}
-          </p>
-          {spot.sources.length > 0 && (
-            <p className="mt-2.5 font-mono text-[11px] leading-relaxed text-paper/30">
-              {spot.sources.join(" · ")}
-              {spot.lastVerifiedAt ? ` · checked ${spot.lastVerifiedAt}` : ""}
-            </p>
-          )}
-        </div>
       </div>
     </div>
   );
@@ -364,7 +365,7 @@ function SpotDetail({ spot }: { spot: Spot }) {
 function Attr({ label, value }: { label: string; value: string | null }) {
   return (
     <div className="min-w-0">
-      <dt className="wa-mono text-paper/40">{label}</dt>
+      <dt className="wa-mono text-label/55">{label}</dt>
       <dd className={`mt-1 text-[15px] leading-snug ${value ? "text-paper" : "text-paper/30"}`}>
         {value ?? "—"}
       </dd>

@@ -1,6 +1,6 @@
 {
   "_note": "Photography and menu links, keyed by slug. An entry exists ONLY when the pairing between the image and this exact outlet was established from a source that names the outlet — an operator locations page whose card carries both the address and the photo, or a Places record matched on name and address. An empty images array is the normal, honest state: it renders a drawn plate, never a stock photo standing in for a cafe nobody has photographed.",
-  "_imageFields": "images[] = {url | photoName, alt, caption?, credit?, creditUrl?, source, sourceUrl, verified}. source is one of official-website | official-instagram | google-places | other-verified. sourceUrl is the page on which the image was found paired with this outlet. verified is one sentence saying how the outlet identity was established. Google Places photos are stored as photoName and served through /api/place-photo — Places media URLs are short-lived redirects and must never be persisted as if they were assets.",
+  "_imageFields": "images[] = {url | photoName, alt, caption?, credit?, creditUrl?, source, sourceUrl, verified, license?, dateChecked, confidence, width?, height?}. source is one of official-website | official-instagram | wikimedia-commons | google-places | other-verified. verified is one sentence saying how the outlet identity was established. width lets srcset stop short of an upscale. Google Places photos are stored as photoName and served through /api/place-photo — Places media URLs are short-lived redirects and must never be persisted as if they were assets.",
   "spots": {
     "subko-coffee-mary-lodge-chapel-road": {
       "images": [
@@ -11,7 +11,11 @@
           "sourceUrl": "https://www.subko.coffee/pages/locations",
           "verified": "Subko's locations page pairs this photograph with the card headed “Mary Lodge, Bandra (W)” at 21A Chapel Road — the address of this listing — and carries “Mary Lodge, Bandra (W)” as the image's own alt text. Subko's other Mumbai outlets each carry a different photograph on the same page. Opened directly at 1200px: 1200×799, a real interior photograph of a bungalow room, not a render and not a product shot.",
           "credit": "subko.coffee",
-          "creditUrl": "https://www.subko.coffee/pages/locations"
+          "creditUrl": "https://www.subko.coffee/pages/locations",
+          "dateChecked": "2026-08-25",
+          "confidence": "high",
+          "width": 1600,
+          "height": 1064
         }
       ],
       "menuUrl": null
@@ -93,7 +97,11 @@
           "sourceUrl": "https://www.subko.coffee/pages/locations",
           "verified": "Subko's locations page pairs this photograph with the card headed “The Cacao Mill, Colaba” at 2nd Pasta Lane — the address of this listing — and carries the same string as the image's alt text. Opened directly at 1200px: 1200×798, a real interior photograph.",
           "credit": "subko.coffee",
-          "creditUrl": "https://www.subko.coffee/pages/locations"
+          "creditUrl": "https://www.subko.coffee/pages/locations",
+          "dateChecked": "2026-08-25",
+          "confidence": "high",
+          "width": 1600,
+          "height": 1063
         }
       ],
       "menuUrl": null
@@ -115,11 +123,113 @@
       "menuUrl": null
     },
     "cafe-mondegar-colaba": {
-      "images": [],
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cafe_Mondegar%2C_Colaba_Causeway%2C_interior_wall_murals.jpg",
+          "alt": "Cafe Mondegar's dining room, its walls covered end to end in Mario Miranda's murals",
+          "credit": "Flickr user zadeus · CC BY-SA 2.0",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Cafe_Mondegar%2C_Colaba_Causeway%2C_interior_wall_murals.jpg",
+          "source": "wikimedia-commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cafe_Mondegar%2C_Colaba_Causeway%2C_interior_wall_murals.jpg",
+          "verified": "Filed in Category:Cafe Mondegar on Wikimedia Commons. Mondegar is a single premises in Metro House on Colaba Causeway — no branches — and the Mario Miranda murals in these frames are specific to it. Each image opened and checked by eye.",
+          "license": "CC BY-SA 2.0",
+          "dateChecked": "2026-08-25",
+          "confidence": "high",
+          "width": 1024,
+          "height": 768
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Cafe_Mondegar_bar_with_mural.JPG/1280px-Cafe_Mondegar_bar_with_mural.JPG",
+          "alt": "The bar at Cafe Mondegar, mural-painted walls and ceiling fans above the counter",
+          "credit": "AKS.9955 · CC BY-SA 4.0",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Cafe_Mondegar_bar_with_mural.JPG",
+          "source": "wikimedia-commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cafe_Mondegar_bar_with_mural.JPG",
+          "verified": "Filed in Category:Cafe Mondegar on Wikimedia Commons. Mondegar is a single premises in Metro House on Colaba Causeway — no branches — and the Mario Miranda murals in these frames are specific to it. Each image opened and checked by eye.",
+          "license": "CC BY-SA 4.0",
+          "dateChecked": "2026-08-25",
+          "confidence": "high",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Cafe_Mondegar_jukebox.JPG/1280px-Cafe_Mondegar_jukebox.JPG",
+          "alt": "The jukebox at Cafe Mondegar — the cafe is one of the last in Mumbai to keep one running",
+          "credit": "AKS.9955 · CC BY-SA 4.0",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Cafe_Mondegar_jukebox.JPG",
+          "source": "wikimedia-commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cafe_Mondegar_jukebox.JPG",
+          "verified": "Filed in Category:Cafe Mondegar on Wikimedia Commons. Mondegar is a single premises in Metro House on Colaba Causeway — no branches — and the Mario Miranda murals in these frames are specific to it. Each image opened and checked by eye.",
+          "license": "CC BY-SA 4.0",
+          "dateChecked": "2026-08-25",
+          "confidence": "high",
+          "width": 1280,
+          "height": 2034
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Cafe_Mondegar.JPG/1280px-Cafe_Mondegar.JPG",
+          "alt": "Metro House on Colaba Causeway, the building Cafe Mondegar occupies at street level",
+          "caption": "The building, not the room.",
+          "credit": "AKS.9955 · CC BY-SA 4.0",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Cafe_Mondegar.JPG",
+          "source": "wikimedia-commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cafe_Mondegar.JPG",
+          "verified": "Filed in Category:Cafe Mondegar on Wikimedia Commons. Mondegar is a single premises in Metro House on Colaba Causeway — no branches — and the Mario Miranda murals in these frames are specific to it. Each image opened and checked by eye.",
+          "license": "CC BY-SA 4.0",
+          "dateChecked": "2026-08-25",
+          "confidence": "high",
+          "width": 1280,
+          "height": 1632
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Cafe_Mondegar%2C_on_Colaba_Causeway.jpg",
+          "alt": "Colaba Causeway outside Cafe Mondegar, looking along the arcade",
+          "caption": "The street outside.",
+          "credit": "Flickr user ghoseb · CC BY-SA 2.0",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Cafe_Mondegar%2C_on_Colaba_Causeway.jpg",
+          "source": "wikimedia-commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cafe_Mondegar%2C_on_Colaba_Causeway.jpg",
+          "verified": "Filed in Category:Cafe Mondegar on Wikimedia Commons. Mondegar is a single premises in Metro House on Colaba Causeway — no branches — and the Mario Miranda murals in these frames are specific to it. Each image opened and checked by eye.",
+          "license": "CC BY-SA 2.0",
+          "dateChecked": "2026-08-25",
+          "confidence": "high",
+          "width": 1024,
+          "height": 581
+        }
+      ],
       "menuUrl": null
     },
     "leopold-cafe-bar-colaba": {
-      "images": [],
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/LeopoldCafe_gobeirne.jpg/1280px-LeopoldCafe_gobeirne.jpg",
+          "alt": "The Leopold Cafe & Bar shopfront on Colaba Causeway, under its red “Since 1871” sign",
+          "credit": "Greg O'Beirne · CC BY-SA 3.0",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:LeopoldCafe_gobeirne.jpg",
+          "source": "wikimedia-commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:LeopoldCafe_gobeirne.jpg",
+          "verified": "Category:Leopold Cafe on Wikimedia Commons holds this file, and its own description reads “Leopold Cafe, Mumbai, India”. Leopold is a single premises on Colaba Causeway with no other branch, so there is no sister outlet this could be confused with. Opened at full size and checked: the 1871 shopfront sign is legible.",
+          "license": "CC BY-SA 3.0",
+          "dateChecked": "2026-08-25",
+          "confidence": "high",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/LeopoldCafe2_gobeirne.jpg/1280px-LeopoldCafe2_gobeirne.jpg",
+          "alt": "Inside Leopold: red chairs at close-set tables under the tall street windows",
+          "credit": "Greg O'Beirne · CC BY-SA 3.0",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:LeopoldCafe2_gobeirne.jpg",
+          "source": "wikimedia-commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:LeopoldCafe2_gobeirne.jpg",
+          "verified": "Category:Leopold Cafe on Wikimedia Commons holds this file, and its own description reads “Leopold Cafe, Mumbai, India”. Leopold is a single premises on Colaba Causeway with no other branch, so there is no sister outlet this could be confused with. Opened at full size and checked: the 1871 shopfront sign is legible.",
+          "license": "CC BY-SA 3.0",
+          "dateChecked": "2026-08-25",
+          "confidence": "high",
+          "width": 1280,
+          "height": 960
+        }
+      ],
       "menuUrl": null
     },
     "cafe-military-fort": {
@@ -131,7 +241,78 @@
       "menuUrl": null
     },
     "yazdani-bakery-fort": {
-      "images": [],
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Yazdani_Bakery.JPG/1280px-Yazdani_Bakery.JPG",
+          "alt": "Yazdani Bakery's shopfront in Fort, its red boards and arched window over the open doors",
+          "credit": "AnshumanF · CC BY-SA 3.0",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Yazdani_Bakery.JPG",
+          "source": "wikimedia-commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yazdani_Bakery.JPG",
+          "verified": "Filed in Category:Yazdani Bakery on Wikimedia Commons. Yazdani is a single Irani bakery on Cawasji Patel Street, Fort, with no branches; the red “YAZDANI RESTAURANT & BAKERY” boards in these frames are its own. Each image opened and checked by eye.",
+          "license": "CC BY-SA 3.0",
+          "dateChecked": "2026-08-25",
+          "confidence": "high",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Yazdani_Bakery_Wall.JPG/1280px-Yazdani_Bakery_Wall.JPG",
+          "alt": "Inside Yazdani: framed photographs, notices and price lists filling the wall above the tables",
+          "credit": "AnshumanF · CC BY-SA 3.0",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Yazdani_Bakery_Wall.JPG",
+          "source": "wikimedia-commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yazdani_Bakery_Wall.JPG",
+          "verified": "Filed in Category:Yazdani Bakery on Wikimedia Commons. Yazdani is a single Irani bakery on Cawasji Patel Street, Fort, with no branches; the red “YAZDANI RESTAURANT & BAKERY” boards in these frames are its own. Each image opened and checked by eye.",
+          "license": "CC BY-SA 3.0",
+          "dateChecked": "2026-08-25",
+          "confidence": "high",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Yazdani_Bakery_in_Fort.jpg/1280px-Yazdani_Bakery_in_Fort.jpg",
+          "alt": "The Yazdani Restaurant & Bakery frontage on Cawasji Patel Street, staff in whites at the counter",
+          "credit": "Nick Gray · CC BY-SA 2.0",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Yazdani_Bakery_in_Fort.jpg",
+          "source": "wikimedia-commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yazdani_Bakery_in_Fort.jpg",
+          "verified": "Filed in Category:Yazdani Bakery on Wikimedia Commons. Yazdani is a single Irani bakery on Cawasji Patel Street, Fort, with no branches; the red “YAZDANI RESTAURANT & BAKERY” boards in these frames are its own. Each image opened and checked by eye.",
+          "license": "CC BY-SA 2.0",
+          "dateChecked": "2026-08-25",
+          "confidence": "high",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Yazdani_bakery_sign.jpg/1280px-Yazdani_bakery_sign.jpg",
+          "alt": "A hand-chalked board at Yazdani advertising fresh ginger biscuits and apple pie",
+          "credit": "Nick Gray · CC BY-SA 2.0",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Yazdani_bakery_sign.jpg",
+          "source": "wikimedia-commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yazdani_bakery_sign.jpg",
+          "verified": "Filed in Category:Yazdani Bakery on Wikimedia Commons. Yazdani is a single Irani bakery on Cawasji Patel Street, Fort, with no branches; the red “YAZDANI RESTAURANT & BAKERY” boards in these frames are its own. Each image opened and checked by eye.",
+          "license": "CC BY-SA 2.0",
+          "dateChecked": "2026-08-25",
+          "confidence": "high",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Breadcutter_Yazdani_Bakery_1.JPG/1280px-Breadcutter_Yazdani_Bakery_1.JPG",
+          "alt": "A baker at Yazdani's wood-fired oven, cutting bread at the mouth of the arch",
+          "credit": "AroundTheGlobe · CC BY-SA 3.0",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Breadcutter_Yazdani_Bakery_1.JPG",
+          "source": "wikimedia-commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Breadcutter_Yazdani_Bakery_1.JPG",
+          "verified": "Filed in Category:Yazdani Bakery on Wikimedia Commons. Yazdani is a single Irani bakery on Cawasji Patel Street, Fort, with no branches; the red “YAZDANI RESTAURANT & BAKERY” boards in these frames are its own. Each image opened and checked by eye.",
+          "license": "CC BY-SA 3.0",
+          "dateChecked": "2026-08-25",
+          "confidence": "high",
+          "width": 1280,
+          "height": 960
+        }
+      ],
       "menuUrl": null
     },
     "third-wave-coffee-churchgate-churchgate": {

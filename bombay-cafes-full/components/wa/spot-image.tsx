@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import type { AreaGroup } from "@/lib/spots";
 import {
   imageCredit,
@@ -141,7 +142,7 @@ export function SpotHero({
 
   return (
     <div
-      className="relative aspect-[16/10] w-full shrink-0 overflow-hidden bg-ink2"
+      className="group relative aspect-[408/210] w-full shrink-0 overflow-hidden bg-surface"
       role={usable.length > 1 ? "group" : undefined}
       aria-roledescription={usable.length > 1 ? "carousel" : undefined}
       aria-label={usable.length > 1 ? `Photographs of ${name}` : undefined}
@@ -181,7 +182,12 @@ export function SpotHero({
               ref={(el) => settle(el, n)}
               onLoad={(e) => settle(e.currentTarget, n)}
               onError={() => setRejected((r) => (r[n] ? r : { ...r, [n]: true }))}
-              className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-[600ms] ease-out ${
+              /* The reference's own treatment, measured off it: a tenth of a
+                 stop of grey and a hair of contrast, which settles a set of
+                 photographs shot by different people on different cameras
+                 into one surface. The hover scale is 1.03 over 900ms — enough
+                 to feel alive, not enough to read as an animation. */
+              className={`wa-hero-img absolute inset-0 h-full w-full object-cover ${
                 displayed === n ? "opacity-100" : "opacity-0"
               }`}
             />
@@ -209,6 +215,27 @@ export function SpotHero({
       {has && current && <Credit img={current.img} />}
 
       {has && usable.length > 1 && (
+        <>
+          <button
+            type="button"
+            aria-label="Previous photograph"
+            onClick={() => go(pos - 1)}
+            className="wa-hero-arrow left-2"
+          >
+            <ChevronLeft className="h-4 w-4" strokeWidth={2.25} />
+          </button>
+          <button
+            type="button"
+            aria-label="Next photograph"
+            onClick={() => go(pos + 1)}
+            className="wa-hero-arrow right-2"
+          >
+            <ChevronRight className="h-4 w-4" strokeWidth={2.25} />
+          </button>
+        </>
+      )}
+
+      {has && usable.length > 1 && (
         <div className="absolute bottom-3 left-3 z-10 flex gap-1.5">
           {usable.map(({ n }, k) => (
             <button
@@ -225,8 +252,10 @@ export function SpotHero({
         </div>
       )}
 
-      {/* Bottom fade, so the name below always sits on a dark ground. */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ink via-ink/55 to-transparent" />
+      {/* No gradient scrim and no text over the photograph: the reference
+          keeps the image a clean rectangle and starts the copy below it. A
+          hairline is all that separates the two. */}
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-hairline" />
     </div>
   );
 }
@@ -235,7 +264,11 @@ function Credit({ img }: { img: SpotImage }) {
   const credit = imageCredit(img);
   if (!credit) return null;
   if (!credit.href) {
-    return <span className="wa-mono absolute bottom-2 right-3 z-10 text-paper/40">{credit.label}</span>;
+    return (
+      <span className="wa-mono absolute bottom-2.5 right-3 z-10 rounded-full border border-white/10 bg-ink/45 px-2 py-0.5 text-paper/55 backdrop-blur-sm">
+        {credit.label}
+      </span>
+    );
   }
   return (
     <a
@@ -243,7 +276,7 @@ function Credit({ img }: { img: SpotImage }) {
       target="_blank"
       rel="noopener noreferrer nofollow"
       title={img.verified}
-      className="wa-mono absolute bottom-2 right-3 z-10 text-paper/45 transition-colors hover:text-paper"
+      className="wa-mono absolute bottom-2.5 right-3 z-10 rounded-full border border-white/10 bg-ink/45 px-2 py-0.5 text-paper/60 backdrop-blur-sm transition-colors hover:text-paper"
     >
       {credit.label}
     </a>

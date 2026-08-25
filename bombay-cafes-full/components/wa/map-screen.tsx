@@ -362,7 +362,7 @@ export function MapScreen({
                   setFilters((f) => ({ ...f, area: null }));
                   setAreasOpen(false);
                 }}
-                className="wa-mono mt-3 border-t border-black/10 pt-3 text-accent"
+                className="wa-mono mt-3 border-t border-black/10 pt-3 text-ink2/75 underline decoration-black/20 underline-offset-2"
               >
                 Show all of {city.name}
               </button>
@@ -423,7 +423,7 @@ export function MapScreen({
                 navigate by. Each listing says which street it was read from.
               </p>
             )}
-            <Link href="/about" className="wa-mono mt-3 inline-block text-accent">
+            <Link href="/about" className="wa-mono mt-3 inline-block text-ink2/75 underline decoration-black/20 underline-offset-2">
               More on the method →
             </Link>
           </div>

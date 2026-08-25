@@ -78,12 +78,12 @@ export function WorkabilityAnalysis({ spot }: { spot: Spot }) {
       <div className="flex items-start justify-between gap-4">
         <p className="pt-1 text-[15px] text-paper/70">Workability analysis</p>
         {w.score != null ? (
-          <p className="shrink-0 font-sans text-[clamp(34px,8vw,46px)] font-semibold leading-none tabular-nums text-paper">
+          <p className="shrink-0 font-mono text-[clamp(32px,7.5vw,42px)] font-bold leading-none tracking-[0.01em] tabular-nums text-white">
             {shown.toFixed(1)}
             <span className="ml-1 font-sans text-[17px] font-normal text-paper/45">/ 5</span>
           </p>
         ) : (
-          <p className="shrink-0 pt-0.5 font-display text-[22px] leading-none text-paper/60">
+          <p className="shrink-0 pt-1.5 font-sans text-[13px] leading-none text-paper/70">
             Limited evidence
           </p>
         )}
@@ -304,14 +304,14 @@ export function PublicRating({ spot }: { spot: Spot }) {
       <div className="grid grid-cols-2 gap-x-5 gap-y-4 sm:grid-cols-3">
         <div>
           <p className="wa-mono text-paper/40">Workability</p>
-          <p className="mt-1.5 font-sans text-[21px] font-semibold leading-none tabular-nums text-paper">
+          <p className="mt-1.5 font-mono text-[19px] font-bold leading-none tabular-nums text-paper">
             {w?.score != null ? w.score.toFixed(1) : "—"}
             <span className="ml-1 text-[12px] font-normal text-paper/35">/ 5</span>
           </p>
         </div>
         <div>
           <p className="wa-mono text-paper/40">Public rating</p>
-          <p className="mt-1.5 font-sans text-[21px] font-semibold leading-none tabular-nums text-paper/70">
+          <p className="mt-1.5 font-mono text-[19px] font-bold leading-none tabular-nums text-paper/70">
             {pr ? pr.value.toFixed(1) : "—"}
             {pr?.count ? (
               <span className="ml-1.5 text-[12px] font-normal text-paper/35">

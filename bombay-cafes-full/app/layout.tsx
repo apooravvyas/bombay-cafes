@@ -3,7 +3,7 @@ import "./globals.css";
 
 /**
  * Typography
- *   Newsreader     — the display serif the brand mark and cafe names use.
+ *   Fraunces     — the display serif the brand mark and cafe names use.
  *   Inter          — UI, list rows, the big score numerals.
  *   IBM Plex Mono  — micro-labels, addresses, provenance.
  *
@@ -14,9 +14,9 @@ import "./globals.css";
  */
 const FONT_CSS =
   "https://fonts.googleapis.com/css2" +
-  "?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..600" +
+  "?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600" +
   "&family=Inter:wght@400;500;600;700" +
-  "&family=IBM+Plex+Mono:wght@400;500;600" +
+  "&family=IBM+Plex+Mono:wght@400;500;600;700" +
   "&display=swap";
 
 const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://bombay-cafes.vercel.app";

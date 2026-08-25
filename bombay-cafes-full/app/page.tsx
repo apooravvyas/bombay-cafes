@@ -50,7 +50,6 @@ export default async function LandingPage() {
   const counts = groupCounts(spots);
   const streets = groupAreas(spots);
   const city = CITIES.find((c) => c.live) ?? CITIES[0];
-  const areas = new Set(spots.map((s) => s.neighborhood)).size;
   const researched = spots.filter((s) => s.research).length;
 
   return (
@@ -107,7 +106,7 @@ export default async function LandingPage() {
                   <AreaArt group={group} />
                 </span>
 
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/22 to-transparent" />
 
                 <div className="relative flex items-end justify-between gap-4 p-5 sm:p-7">
                   <div className="min-w-0">
@@ -115,7 +114,7 @@ export default async function LandingPage() {
                         interesting thing about a neighbourhood, and it is the
                         first thing a reader would have read. */}
                     <p className="wa-mono text-white/45">Mumbai</p>
-                    <h2 className="mt-2 font-display text-[clamp(2.1rem,5.4vw,3.6rem)] font-light leading-[0.95] tracking-[-0.015em] text-white">
+                    <h2 className="mt-2 font-sans text-[clamp(2.1rem,5.4vw,3.5rem)] font-normal leading-[0.96] tracking-[-0.02em] text-white">
                       {AREA_GROUP_LABEL[group]}
                     </h2>
                     <p className="mt-3 max-w-[38ch] text-[14.5px] leading-relaxed text-white/70">
@@ -132,17 +131,14 @@ export default async function LandingPage() {
           })}
         </div>
 
-        <p className="wa-rise mt-8 max-w-lg text-[15px] leading-relaxed text-paper/55" style={{ animationDelay: "260ms" }}>
+        <p className="wa-rise mt-8 max-w-lg text-[15px] leading-relaxed text-paper/70" style={{ animationDelay: "260ms" }}>
           Cafes you can actually work from, scored on what decides whether you last three hours:
           somewhere to plug in, somewhere to sit, a connection that holds, and whether anyone
           minds you staying.{" "}
-          <span className="text-paper/40">
-            {spots.length} across {areas} neighbourhoods.
-          </span>{" "}
           {researched > 0 && (
-            <span className="text-paper/40">
-              {researched} are graded from published evidence across nine factors, with every
-              finding cited; the rest carry our own read until the research reaches them.
+            <span className="text-paper/50">
+              Most are graded from published evidence across nine factors, with every finding
+              cited; the rest carry our own read until the research reaches them.
             </span>
           )}
         </p>

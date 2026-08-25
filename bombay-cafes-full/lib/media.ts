@@ -23,8 +23,12 @@ import mediaFile from "@/data/media.json";
 export type ImageSource =
   | "official-website"
   | "official-instagram"
+  | "wikimedia-commons"
   | "google-places"
   | "other-verified";
+
+/** How sure we are that this image shows THIS outlet. */
+export type ImageConfidence = "high" | "medium";
 
 export interface SpotImage {
   /**
@@ -46,6 +50,14 @@ export interface SpotImage {
   sourceUrl?: string;
   /** One sentence: how we know this is the right outlet. */
   verified?: string;
+  /** Licence, where the source carries one (Commons files always do). */
+  license?: string;
+  /** ISO date the URL and the pairing were last confirmed by hand. */
+  dateChecked?: string;
+  confidence?: ImageConfidence;
+  /** Intrinsic width of the stored asset, so srcset never asks for an upscale. */
+  width?: number;
+  height?: number;
 }
 
 export interface SpotMedia {
@@ -62,11 +74,24 @@ export function mediaFor(slug: string): SpotMedia {
   return { ...m, images: (m.images ?? []).filter((i) => i.url || i.photoName) };
 }
 
-const WIDTHS = [480, 720, 960, 1280] as const;
+/**
+ * Candidate widths, per origin.
+ *
+ * Wikimedia is the fussy one: upload.wikimedia.org only serves thumbnails at
+ * its own standard buckets and answers 400 to anything else, so asking for
+ * 960px — a perfectly reasonable width — yields nothing at all. These are the
+ * buckets the Commons API itself hands back.
+ */
+const COMMONS_WIDTHS = [320, 640, 800, 1024, 1280, 1920] as const;
+const CDN_WIDTHS = [480, 720, 960, 1280] as const;
+
+/** Wikimedia thumbnails carry their width in the path: `.../960px-Name.jpg`. */
+const COMMONS_THUMB = /\/(\d+)px-/;
 
 /** Does this URL let us ask the origin for a specific width? */
 function isResizable(img: SpotImage): boolean {
-  return Boolean(img.photoName) || /[?&]width=\d+/.test(img.url ?? "");
+  const url = img.url ?? "";
+  return Boolean(img.photoName) || /[?&]width=\d+/.test(url) || COMMONS_THUMB.test(url);
 }
 
 /**
@@ -79,17 +104,24 @@ function isResizable(img: SpotImage): boolean {
  * SpotHero reject it if it turns out to be too small to show.
  */
 export function imageSrc(img: SpotImage, width: number): string {
+  // Never ask an origin to upscale: it either wastes bytes or 404s.
+  const w = img.width ? Math.min(width, img.width) : width;
   if (img.photoName) {
-    return `/api/place-photo?name=${encodeURIComponent(img.photoName)}&w=${width}`;
+    return `/api/place-photo?name=${encodeURIComponent(img.photoName)}&w=${w}`;
   }
   const url = img.url ?? "";
-  if (/[?&]width=\d+/.test(url)) return url.replace(/([?&]width=)\d+/, `$1${width}`);
+  if (/[?&]width=\d+/.test(url)) return url.replace(/([?&]width=)\d+/, `$1${w}`);
+  if (COMMONS_THUMB.test(url)) return url.replace(COMMONS_THUMB, `/${w}px-`);
   return url;
 }
 
 export function imageSrcSet(img: SpotImage): string | undefined {
   if (!isResizable(img)) return undefined;
-  return WIDTHS.map((w) => `${imageSrc(img, w)} ${w}w`).join(", ");
+  const max = img.width ?? Infinity;
+  const pool = COMMONS_THUMB.test(img.url ?? "") ? COMMONS_WIDTHS : CDN_WIDTHS;
+  const widths = pool.filter((w) => w <= max);
+  if (widths.length < 2) return undefined;
+  return widths.map((w) => `${imageSrc(img, w)} ${w}w`).join(", ");
 }
 
 /** Attribution line, when the source asks for one. */
@@ -97,6 +129,9 @@ export function imageCredit(img: SpotImage): { label: string; href?: string } | 
   if (img.credit) return { label: img.credit, href: img.creditUrl ?? img.sourceUrl };
   if (img.source === "official-website") return { label: "Operator's site", href: img.sourceUrl };
   if (img.source === "official-instagram") return { label: "Operator's Instagram", href: img.sourceUrl };
+  if (img.source === "wikimedia-commons") {
+    return { label: img.license ?? "Wikimedia Commons", href: img.sourceUrl };
+  }
   if (img.source === "google-places") return { label: "Google", href: img.sourceUrl };
   return null;
 }

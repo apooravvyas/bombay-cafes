@@ -5,14 +5,17 @@
 /* Font families as tokens, with real fallback stacks so a blocked or slow
    Google Fonts request degrades to something readable rather than to Times. */
 :root {
-  --font-display: "Newsreader", ui-serif, Georgia, "Times New Roman", serif;
+  --font-display: "Fraunces", "Newsreader", ui-serif, Georgia, "Times New Roman", serif;
   --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
     monospace;
 
-  /* Accent. One colour, used for the selected pin ring and little else. */
-  --accent: #c8412f;
+  /* Accent. One colour, used for the selected pin and little else. */
+  --accent: #f1d879;
+  /* Secondary text on dark. The reference's exact value. */
+  --paper-dim: rgba(231, 225, 214, 0.72);
+  --hairline: rgba(255, 255, 255, 0.16);
 }
 
 @layer base {
@@ -20,10 +23,10 @@
     @apply bg-ink text-paper antialiased;
   }
   ::selection {
-    background: rgba(200, 65, 47, 0.28);
+    background: rgba(241, 216, 121, 0.26);
   }
   :focus-visible {
-    outline: 2px solid rgba(200, 65, 47, 0.8);
+    outline: 2px solid rgba(241, 216, 121, 0.85);
     outline-offset: 2px;
     border-radius: 4px;
   }
@@ -92,7 +95,61 @@
   font-family: var(--font-mono), ui-monospace, monospace;
   text-transform: uppercase;
   font-size: 10.5px;
+  font-weight: 700;
   letter-spacing: 0.16em;
+}
+
+/* Hero photography. The grey/contrast pair and the 900ms hover scale were
+   both measured off the reference; the crossfade holds the outgoing frame
+   until the incoming one has decoded, so moving through a carousel never
+   flashes the plate underneath. */
+.wa-hero-img {
+  filter: grayscale(0.1) contrast(1.02);
+  transition:
+    opacity 600ms ease-out,
+    transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.group:hover .wa-hero-img {
+  transform: scale(1.03);
+}
+
+/* Carousel arrows: invisible until the pointer is over the image. */
+.wa-hero-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  display: inline-flex;
+  height: 30px;
+  width: 30px;
+  transform: translateY(-50%);
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(8, 8, 8, 0.42);
+  color: rgba(247, 244, 238, 0.85);
+  backdrop-filter: blur(8px);
+  opacity: 0;
+  transition: opacity 0.2s ease, background-color 0.2s ease;
+}
+.group:hover .wa-hero-arrow,
+.wa-hero-arrow:focus-visible {
+  opacity: 1;
+}
+.wa-hero-arrow:hover {
+  background: rgba(8, 8, 8, 0.68);
+  color: #f7f4ee;
+}
+
+/* The panel's own ground: near-black with the reference's faint technical
+   grid drawn over it, so the dark side of the product reads as ruled paper
+   rather than as an empty box. */
+.wa-panel-grid {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.028) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.028) 1px, transparent 1px);
+  background-size: 56px 56px;
 }
 
 /* Round controls: zoom, close. */
@@ -201,7 +258,10 @@
   background: #111;
   transform: rotate(-45deg) scale(1.24);
   z-index: 3;
-  box-shadow: 0 0 0 3px var(--accent), 0 14px 26px rgba(0, 0, 0, 0.5);
+  box-shadow:
+    0 0 0 2px #080808,
+    0 0 0 4px var(--accent),
+    0 14px 26px rgba(0, 0, 0, 0.5);
 }
 .wa-pin.is-selected .wa-pin__v {
   color: #fff;
@@ -547,4 +607,17 @@
 
 @media (prefers-reduced-motion: reduce) {
   .wa-rise { animation: none !important; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wa-hero-img {
+    transition: opacity 1ms linear;
+  }
+  .group:hover .wa-hero-img {
+    transform: none;
+  }
+  .wa-hero-arrow {
+    opacity: 1;
+    transition: none;
+  }
 }
