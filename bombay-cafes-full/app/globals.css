@@ -271,17 +271,14 @@
 /* ── Panel-aware chrome ──────────────────────────────────────────────────────
    The spot panel is an overlay pinned to the right on desktop. Anything it
    would sit on top of has to step aside, not hide underneath: a control you
-   can see but cannot click is worse than one that moved. The offsets use the
-   same min(460px, 42vw) the panel width does, so they stay in step.
+   can see but cannot click is worse than one that moved.
+
+   These offsets used to live here as .wa-offset-r / .wa-offset-x. They now sit
+   inline on the controls as md: utilities, because a bare class in this file
+   loses to a Tailwind `sm:` utility on source order alone — which is exactly
+   what happened: the zoom stack kept `right: 20px` and spent the whole life of
+   the detail panel sitting underneath it, visible and unclickable.
    ------------------------------------------------------------------------- */
-@media (min-width: 768px) {
-  .wa-offset-x {
-    left: calc(50% - min(460px, 42vw) / 2);
-  }
-  .wa-offset-r {
-    right: calc(min(460px, 42vw) + 1.5rem);
-  }
-}
 
 /* Bottom-centre control pill: count / All / Filters, expanding into the bar. */
 .wa-pill {

@@ -434,7 +434,7 @@ export function MapScreen({
       {ready && (
         <div
           className={`absolute bottom-16 right-3 z-20 flex flex-col items-center gap-1.5 transition-[right] duration-300 sm:bottom-5 sm:right-5 ${
-            panel !== "none" ? "wa-offset-r" : ""
+            panel !== "none" ? "md:right-[calc(min(460px,42vw)+1.5rem)]" : ""
           }`}
         >
           <button type="button" onClick={() => ctl.zoomBy(1)} className="wa-ctrl" aria-label="Zoom in">
@@ -452,7 +452,9 @@ export function MapScreen({
       {/* ── Count / filter pill, bottom-centre ────────────────────────────── */}
       <div
         className={`absolute bottom-3 left-1/2 z-20 w-[calc(100vw-1.5rem)] -translate-x-1/2 transition-[left] duration-300 sm:bottom-5 sm:w-auto sm:max-w-[calc(100vw-3rem)] ${
-          panel !== "none" ? "wa-offset-x md:max-w-[calc(100vw-min(460px,42vw)-4rem)]" : ""
+          panel !== "none"
+            ? "md:left-[calc(50%-min(460px,42vw)/2)] md:max-w-[calc(100vw-min(460px,42vw)-4rem)]"
+            : ""
         }`}
       >
         <div className="wa-pill flex items-center gap-1 overflow-hidden px-2 py-1.5">

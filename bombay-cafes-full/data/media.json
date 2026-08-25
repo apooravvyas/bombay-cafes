@@ -1,9 +1,19 @@
 {
-  "_note": "Photography and menu links, keyed by slug. Populated ONLY from URLs a human or a researcher has verified points at this exact outlet. An empty images array is the normal state and renders a deliberate graphic fallback — never a stock photo standing in for a cafe we have not photographed.",
-  "_imageFields": "images[] = {url, alt, credit, creditUrl, source}. url must be absolute and permitted for display; credit is required whenever the licence asks for attribution.",
+  "_note": "Photography and menu links, keyed by slug. An entry exists ONLY when the pairing between the image and this exact outlet was established from a source that names the outlet — an operator locations page whose card carries both the address and the photo, or a Places record matched on name and address. An empty images array is the normal, honest state: it renders a drawn plate, never a stock photo standing in for a cafe nobody has photographed.",
+  "_imageFields": "images[] = {url | photoName, alt, caption?, credit?, creditUrl?, source, sourceUrl, verified}. source is one of official-website | official-instagram | google-places | other-verified. sourceUrl is the page on which the image was found paired with this outlet. verified is one sentence saying how the outlet identity was established. Google Places photos are stored as photoName and served through /api/place-photo — Places media URLs are short-lived redirects and must never be persisted as if they were assets.",
   "spots": {
     "subko-coffee-mary-lodge-chapel-road": {
-      "images": [],
+      "images": [
+        {
+          "url": "https://www.subko.coffee/cdn/shop/files/mlb-1-min.png?v=1706613182&width=480",
+          "alt": "The counter at Subko's Mary Lodge outlet on Chapel Road, Bandra: a narrow bungalow room with a green pitched ceiling, a concrete bar and the espresso machine facing the door",
+          "source": "official-website",
+          "sourceUrl": "https://www.subko.coffee/pages/locations",
+          "verified": "Subko's locations page pairs this photograph with the card headed “Mary Lodge, Bandra (W)” at 21A Chapel Road — the address of this listing — and carries “Mary Lodge, Bandra (W)” as the image's own alt text. Subko's other Mumbai outlets each carry a different photograph on the same page. Opened directly at 1200px: 1200×799, a real interior photograph of a bungalow room, not a render and not a product shot.",
+          "credit": "subko.coffee",
+          "creditUrl": "https://www.subko.coffee/pages/locations"
+        }
+      ],
       "menuUrl": null
     },
     "bombay-coffee-house-waterfield-road": {
@@ -75,7 +85,17 @@
       "menuUrl": null
     },
     "subko-the-cacao-mill-colaba": {
-      "images": [],
+      "images": [
+        {
+          "url": "https://www.subko.coffee/cdn/shop/files/Subko_Cacao_wides-0423_1_bac2fca4-ade8-4a8b-98fd-de8b20f8c80c.png?v=1704982609&width=480",
+          "alt": "Inside Subko's The Cacao Mill on 2nd Pasta Lane, Colaba: a double-height stone-walled room with counter seating on a mezzanine above the glazed chocolate-making floor",
+          "source": "official-website",
+          "sourceUrl": "https://www.subko.coffee/pages/locations",
+          "verified": "Subko's locations page pairs this photograph with the card headed “The Cacao Mill, Colaba” at 2nd Pasta Lane — the address of this listing — and carries the same string as the image's alt text. Opened directly at 1200px: 1200×798, a real interior photograph.",
+          "credit": "subko.coffee",
+          "creditUrl": "https://www.subko.coffee/pages/locations"
+        }
+      ],
       "menuUrl": null
     },
     "nandan-coffee-kala-ghoda": {
