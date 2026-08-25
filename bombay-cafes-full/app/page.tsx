@@ -2,7 +2,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { ArrowUpRight } from "lucide-react";
 import { CITIES } from "@/lib/cities";
-import { getCityStats } from "@/lib/spot-data";
+import { getSpots } from "@/lib/spot-data";
+import { AREA_GROUP_LABEL, groupAreas, groupCounts, type AreaGroup } from "@/lib/spots";
+import { AreaArt } from "@/components/wa/area-art";
 
 export const metadata: Metadata = {
   title: "Bombay Cafes — find a cafe you can actually work from",
@@ -10,18 +12,39 @@ export const metadata: Metadata = {
 };
 
 /**
- * The city chooser.
+ * The entry screen.
  *
- * Mirrors the reference's entry screen: near-black ground, the wordmark
- * top-left, a mono instruction centred, and one large photographic-weight card
- * per city. With a single city live this is a one-card rail — but it is the
- * screen that makes the product feel like a series rather than a one-off, and
- * adding a city stays a data change.
+ * It asks "where in Mumbai", not "which city". One city is live, and a chooser
+ * offering Delhi and Bengaluru as dashed "not yet" cards advertises a roadmap
+ * instead of a product — so the first decision a reader makes is now the one
+ * that actually narrows their search: Bandra, or South Bombay.
+ *
+ * lib/cities.ts still holds a registry and the map still takes a city, so a
+ * second city remains a data change. It is simply not advertised.
+ *
+ * Coverage is read from the dataset. If a seed lands with twenty more Fort
+ * cafes the counts and the street lists move on their own — nothing here is
+ * typed by hand.
  */
+
+/**
+ * The one editorial line per area. Everything else on the card — the count and
+ * the streets — comes from the dataset, so coverage cannot drift out of sync
+ * with what the map actually holds.
+ */
+const BLURB: Record<AreaGroup, string> = {
+  bandra: "Village lanes, bakeries, and the best odds of a table at 3pm.",
+  "south-bombay": "Stone arcades, Irani cafes, and rooms open for a century.",
+};
+
+const ORDER: AreaGroup[] = ["bandra", "south-bombay"];
+
 export default async function LandingPage() {
-  const stats = await getCityStats();
-  const live = CITIES.filter((c) => c.live);
-  const soon = ["Delhi", "Bengaluru"];
+  const spots = await getSpots();
+  const counts = groupCounts(spots);
+  const streets = groupAreas(spots);
+  const city = CITIES.find((c) => c.live) ?? CITIES[0];
+  const areas = new Set(spots.map((s) => s.neighborhood)).size;
 
   return (
     <main className="flex min-h-dvh flex-col bg-ink text-paper">
@@ -29,82 +52,90 @@ export default async function LandingPage() {
         <h1 className="font-display text-[clamp(1.5rem,3.4vw,2rem)] leading-none tracking-tight">
           bombay <em className="font-semibold not-italic italic">cafes</em>
         </h1>
-        <p className="wa-mono hidden text-paper/45 sm:block">Select your city</p>
+        <Link
+          href={`/${city.slug}`}
+          className="wa-mono hidden items-center gap-1.5 text-paper/45 transition-colors hover:text-paper sm:flex"
+        >
+          Areas <span className="text-[13px] leading-none">+</span>
+        </Link>
       </header>
 
       <div className="flex flex-1 flex-col justify-center px-6 py-10 sm:px-10">
-        <p className="wa-mono mb-4 text-paper/45 sm:hidden">Select your city</p>
+        <p className="wa-mono mb-4 text-paper/45 sm:hidden">Explore Mumbai</p>
 
-        <div className="wa-rail -mx-6 flex gap-4 px-6 sm:-mx-10 sm:px-10">
-          {live.map((city, i) => (
-            <Link
-              key={city.slug}
-              href={`/${city.slug}`}
-              className="wa-fade group relative flex aspect-[4/3] w-[min(84vw,760px)] shrink-0 flex-col justify-end overflow-hidden rounded-2xl border border-white/12 sm:aspect-[16/9]"
-              style={{ animationDelay: `${i * 90}ms` }}
-            >
-              {/* A drawn ground rather than a stock photo: the reference leans
-                  on city photography we do not own, so this is our own mark —
-                  a night-sky wash over a skyline silhouette. */}
-              <div
-                aria-hidden
-                className="absolute inset-0"
-                style={{
-                  background:
-                    "linear-gradient(180deg,#1c2a3a 0%,#243447 38%,#2f3b46 62%,#141414 100%)",
-                }}
-              />
-              <svg
-                aria-hidden
-                viewBox="0 0 1200 300"
-                preserveAspectRatio="none"
-                className="absolute bottom-0 left-0 h-[46%] w-full"
+        {/* Two cards, side by side on desktop, stacked on a phone. The
+            reference uses a horizontal rail because it has more cities than
+            fit; with two areas a rail would just hide half the product. */}
+        <div className="grid gap-4 md:grid-cols-2">
+          {ORDER.map((group, i) => {
+            const count = counts[group];
+            if (count === 0) return null;
+            // Four streets, chosen by coverage and broken by the best cafe on
+            // them. Coverage alone ties at one cafe each and then falls back to
+            // alphabetical, which puts "24th Road" on the card ahead of Pali
+            // Hill — true, and useless to a reader deciding where to go.
+            const best = new Map<string, number>();
+            for (const s of spots) {
+              if (s.area !== group) continue;
+              const w = s.workability ?? 0;
+              best.set(s.neighborhood, Math.max(best.get(s.neighborhood) ?? 0, w));
+            }
+            const named = [...streets[group]]
+              .sort(
+                (a, b) =>
+                  b.count - a.count ||
+                  (best.get(b.name) ?? 0) - (best.get(a.name) ?? 0) ||
+                  a.name.localeCompare(b.name),
+              )
+              .slice(0, 4)
+              .map((a) => a.name);
+            return (
+              <Link
+                key={group}
+                href={`/${city.slug}?area=${group}`}
+                className="wa-fade group relative flex aspect-[4/3] flex-col justify-end overflow-hidden rounded-2xl border border-white/12 sm:aspect-[16/10]"
+                style={{ animationDelay: `${i * 90}ms` }}
               >
-                <path
-                  fill="rgba(8,10,12,0.88)"
-                  d="M0 300V196h44v-38h30v38h34v-62h40v62h28v-24h46v24h30v-88h38v88h26v-46h44v46h34v-70h42v70h30v-30h40v30h32v-104h40v104h28v-52h44v52h32v-34h42v34h30v-76h38v76h28v-40h46v40h30v-22h40v22h34v-58h40v58h30v-30h44v30h32v-46h40v46h30v-24h42v24h32V300z"
-                />
-              </svg>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+                <AreaArt group={group} />
 
-              <div className="relative flex items-end justify-between gap-6 p-6 sm:p-8">
-                <div>
-                  <h2 className="font-display text-[clamp(2.4rem,7vw,4.5rem)] font-light leading-none tracking-tight text-white">
-                    {city.name}
-                  </h2>
-                  <p className="wa-mono mt-2.5 text-white/65">{city.tagline}</p>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent" />
+
+                <div className="relative flex items-end justify-between gap-4 p-5 sm:p-7">
+                  <div className="min-w-0">
+                    <p className="wa-mono text-white/55">
+                      {count} {count === 1 ? "cafe" : "cafes"}
+                    </p>
+                    <h2 className="mt-1.5 font-display text-[clamp(2rem,5.2vw,3.4rem)] font-light leading-none tracking-tight text-white">
+                      {AREA_GROUP_LABEL[group]}
+                    </h2>
+                    <p className="mt-2.5 max-w-[34ch] text-[14px] leading-snug text-white/70">
+                      {BLURB[group]}
+                    </p>
+                    {/* Two lines at most: on a phone four street names wrap to
+                        three and start crowding the arrow. */}
+                    <p className="wa-mono mt-3 line-clamp-2 text-white/40">{named.join(" · ")}</p>
+                  </div>
+                  <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-white/40 text-white transition-all duration-300 group-hover:bg-white group-hover:text-ink sm:h-14 sm:w-14">
+                    <ArrowUpRight className="h-5 w-5" strokeWidth={1.75} />
+                  </span>
                 </div>
-                <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full border border-white/40 text-white transition-all duration-300 group-hover:bg-white group-hover:text-ink sm:h-14 sm:w-14">
-                  <ArrowUpRight className="h-5 w-5" strokeWidth={1.75} />
-                </span>
-              </div>
-            </Link>
-          ))}
-
-          {soon.map((name) => (
-            <div
-              key={name}
-              className="flex aspect-[4/3] w-[min(60vw,420px)] shrink-0 flex-col justify-end overflow-hidden rounded-2xl border border-dashed border-white/12 bg-white/[0.02] sm:aspect-[16/9]"
-            >
-              <div className="p-6 sm:p-8">
-                <h2 className="font-display text-[clamp(1.8rem,4vw,2.6rem)] font-light leading-none text-white/25">
-                  {name}
-                </h2>
-                <p className="wa-mono mt-2 text-white/25">Not yet</p>
-              </div>
-            </div>
-          ))}
+              </Link>
+            );
+          })}
         </div>
 
         <p className="mt-8 max-w-md text-[15px] leading-relaxed text-paper/55">
-          {stats.spots} cafes across {stats.areas} areas, each rated on the five things that decide
-          whether you can actually get three hours of work done.
+          {spots.length} cafes across {areas} Mumbai neighbourhoods, rated on the five things that
+          decide whether you can actually get three hours of work done.
         </p>
       </div>
 
       <footer className="flex flex-wrap items-center justify-between gap-3 px-6 pb-7 sm:px-10">
         <span className="wa-mono text-paper/30">© {new Date().getFullYear()} Bombay Cafes</span>
         <nav className="flex gap-5">
+          <Link href={`/${city.slug}`} className="wa-mono text-paper/45 transition-colors hover:text-paper">
+            The map
+          </Link>
           <Link href="/about" className="wa-mono text-paper/45 transition-colors hover:text-paper">
             About
           </Link>

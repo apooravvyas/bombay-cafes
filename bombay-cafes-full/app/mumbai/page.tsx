@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getCity } from "@/lib/cities";
 import { getSpots } from "@/lib/spot-data";
+import { isAreaGroup } from "@/lib/spots";
 import { MapScreen } from "@/components/wa/map-screen";
 
 /**
@@ -33,8 +34,13 @@ export default async function MumbaiPage({ searchParams }: { searchParams: SP })
 
   const [spots, sp] = await Promise.all([getSpots(), searchParams]);
 
+  // ?area= carries either an area-group slug from the landing page
+  // ("bandra") or a single neighbourhood from the AREAS menu ("Waroda Road").
+  // Validate against both, and drop anything else rather than rendering a
+  // filter that silently matches nothing.
   const areaNames = new Set(spots.map((s) => s.neighborhood));
-  const initialArea = sp.area && areaNames.has(sp.area) ? sp.area : null;
+  const initialArea =
+    sp.area && (isAreaGroup(sp.area) || areaNames.has(sp.area)) ? sp.area : null;
   const initialSpot = sp.spot && spots.some((s) => s.slug === sp.spot) ? sp.spot : null;
 
   const jsonLd = {

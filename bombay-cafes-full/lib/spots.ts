@@ -166,9 +166,34 @@ export interface SpotFilters {
   /** Minimum workability, 0 = "Any score". */
   minScore: number;
   toggles: string[];
-  /** Neighbourhood name, or null for the whole city. */
+  /**
+   * Either an area-group slug ("bandra", "south-bombay") or a single
+   * neighbourhood name ("Waroda Road"). One field carries both because the URL
+   * has one `?area=` parameter and a reader should be able to type either:
+   * the landing page links to the group, the AREAS menu drills into a street.
+   */
   area: string | null;
   query: string;
+}
+
+const AREA_GROUPS = Object.keys(AREA_GROUP_LABEL) as AreaGroup[];
+
+/** True when `area` names a whole group rather than one neighbourhood. */
+export function isAreaGroup(area: string | null): area is AreaGroup {
+  return area != null && (AREA_GROUPS as string[]).includes(area);
+}
+
+/** What to print for whatever `?area=` holds. Falls back to the city name. */
+export function areaLabel(area: string | null, cityName: string): string {
+  if (!area) return cityName;
+  return isAreaGroup(area) ? AREA_GROUP_LABEL[area] : area;
+}
+
+/** Live counts per group, so nothing about coverage is hardcoded. */
+export function groupCounts(spots: Spot[]): Record<AreaGroup, number> {
+  const out = { bandra: 0, "south-bombay": 0 } as Record<AreaGroup, number>;
+  for (const s of spots) out[s.area] += 1;
+  return out;
 }
 
 export const EMPTY_FILTERS: SpotFilters = { minScore: 0, toggles: [], area: null, query: "" };
@@ -177,7 +202,10 @@ export function filterSpots(spots: Spot[], f: SpotFilters): Spot[] {
   const terms = f.query.trim().toLowerCase().split(/\s+/).filter(Boolean);
 
   return spots.filter((s) => {
-    if (f.area && s.neighborhood !== f.area) return false;
+    if (f.area) {
+      const hit = isAreaGroup(f.area) ? s.area === f.area : s.neighborhood === f.area;
+      if (!hit) return false;
+    }
     // A spot with no score is not excluded by "Any score", but any real
     // threshold is a claim we cannot make about an unrated spot.
     if (f.minScore > 0 && (s.workability ?? 0) < f.minScore) return false;

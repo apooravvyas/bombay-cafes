@@ -8,9 +8,11 @@ import type { AreaGroup, Spot } from "@/lib/spots";
 import {
   AREA_GROUP_LABEL,
   EMPTY_FILTERS,
+  areaLabel,
   TOGGLES,
   filterSpots,
   groupAreas,
+  isAreaGroup,
   isMapped,
   pad,
   rankSpots,
@@ -142,7 +144,10 @@ export function MapScreen({
    * lib/cities.ts are only ever a fallback for a city with nothing positioned.
    */
   const view = useMemo(() => {
-    if (filters.area) {
+    // A single street gets a close camera; a whole group is left to
+    // fitBounds, which frames Bandra or South Bombay properly rather than
+    // slamming to zoom 15 on whichever cafe happened to sort first.
+    if (filters.area && !isAreaGroup(filters.area)) {
       const first = mapped.find((s) => s.neighborhood === filters.area);
       if (first) return { lat: first.latitude, lng: first.longitude, zoom: 15 };
     }
@@ -157,7 +162,7 @@ export function MapScreen({
   const fitKey = `${filters.area ?? "all"}|${filters.minScore}|${filters.toggles.join(",")}|${mapped.length}`;
   const ctl = mapControls(mapRef.current);
   const Basemap = provider === "mapbox" ? MapboxBasemap : MapLibreBasemap;
-  const areaLabel = filters.area ?? city.name;
+  const label = areaLabel(filters.area, city.name);
 
   const locate = () => {
     if (!navigator.geolocation) return;
@@ -287,7 +292,7 @@ export function MapScreen({
           aria-expanded={areasOpen}
           className="wa-mono flex items-center gap-1.5 text-ink2 transition-opacity hover:opacity-70"
         >
-          {filters.area ?? "Areas"}
+          {areaLabel(filters.area, "Areas")}
           <span className="text-[13px] leading-none">{areasOpen ? "−" : "+"}</span>
         </button>
 
@@ -296,7 +301,23 @@ export function MapScreen({
             <div className="grid grid-cols-2 gap-x-5 gap-y-1">
               {(Object.keys(areas) as AreaGroup[]).map((group) => (
                 <div key={group}>
-                  <p className="wa-mono pb-1.5 text-stone">{AREA_GROUP_LABEL[group]}</p>
+                  {/* The heading is the group filter itself — the landing page
+                      links straight to ?area=bandra, and the menu should offer
+                      the same jump rather than only its streets. */}
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setFilters((f) => ({ ...f, area: group }));
+                      setAreasOpen(false);
+                      setSelected(null);
+                      setPanel("list");
+                    }}
+                    className={`wa-mono -mx-1.5 block w-full rounded px-1.5 pb-1.5 pt-0.5 text-left transition-colors hover:bg-black/[0.06] ${
+                      filters.area === group ? "text-ink2" : "text-stone"
+                    }`}
+                  >
+                    {AREA_GROUP_LABEL[group]}
+                  </button>
                   <ul>
                     {areas[group].map((a) => (
                       <li key={a.name}>
@@ -542,7 +563,7 @@ export function MapScreen({
           mode={panel === "detail" && spot ? "detail" : "list"}
           spots={filtered}
           spot={spot}
-          areaLabel={areaLabel}
+          areaLabel={label}
           onClose={() => {
             setPanel("none");
             setSelected(null);
