@@ -411,10 +411,11 @@ export function MapScreen({
           <div className="wa-card absolute bottom-10 left-0 w-[min(88vw,320px)] p-4">
             <p className="wa-mono text-stone">How the score works</p>
             <p className="mt-2 text-[13px] leading-relaxed text-ink2/80">
-              Each spot gets a workability score out of 5, weighted toward the things that end a
-              work session early: whether you can plug in, whether there is somewhere to sit, and
-              the wifi. Unrated signals lower our confidence, not the score — a spot is never
-              punished for something nobody has published.
+              Each spot gets a workability score out of 5, from nine weighted factors led by the
+              things that end a work session early: whether you can plug in, whether the
+              connection holds, whether there is somewhere to sit. A factor nobody has documented
+              is left out of the average rather than scored zero — it lowers our confidence, not
+              the score — and where too little is documented to average, we print no number.
             </p>
             {approximate > 0 && (
               <p className="mt-3 border-t border-black/10 pt-3 text-[13px] leading-relaxed text-ink2/70">

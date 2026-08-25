@@ -122,6 +122,16 @@ export function isMapped(s: Spot): s is MappedSpot {
    plug in, and nowhere to sit — with wifi close behind. Weights are
    renormalised over whichever dimensions are actually rated, so an unrated
    dimension lowers CONFIDENCE, not the score. Unknown is never zero. */
+/**
+ * NOT the published model.
+ *
+ * The score every live cafe carries comes from the nine evidence-weighted
+ * factors in `lib/evidence.ts`, and `/about` documents those weights by
+ * reading that table directly. These five are an older curated mean, kept only
+ * as a fallback for a spot seeded ahead of its evidence — all 30 live cafes are
+ * researched, so nothing in production reaches it. If you are looking for the
+ * weights the product explains to readers, they are in evidence.ts.
+ */
 export const WORK_WEIGHTS: Record<ScoreKey, number> = {
   work: 0.3,
   wifi: 0.22,

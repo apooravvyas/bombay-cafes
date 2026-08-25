@@ -4,10 +4,8 @@ import { ArrowRight, ArrowUpRight, X } from "lucide-react";
 import type { Spot } from "@/lib/spots";
 import {
   AREA_GROUP_LABEL,
-  SCORE_LABEL,
   isMapped,
   pad,
-  ratedCount,
   scoreLogic,
 } from "@/lib/spots";
 import { SpotFeedback } from "@/components/wa/feedback";
@@ -143,7 +141,6 @@ function SpotDetail({ spot }: { spot: Spot }) {
   const media = mediaFor(spot.slug);
   const logic = scoreLogic(spot);
   const researched = Boolean(spot.research && spot.work);
-  const rated = ratedCount(spot.scores);
   const pct = spot.workability != null ? (spot.workability / 5) * 100 : 0;
 
   return (
@@ -182,8 +179,10 @@ function SpotDetail({ spot }: { spot: Spot }) {
 
             A researched spot gets the evidence model — score, confidence,
             coverage and a synthesis sentence written against the sources. A
-            spot still awaiting research keeps the curated five-signal read,
-            clearly labelled as such, rather than showing an empty analysis. */}
+            spot still awaiting research shows a provisional editorial read,
+            labelled as one, rather than an empty analysis. Every live cafe is
+            researched, so this branch is a safety net for a spot seeded ahead
+            of its evidence — it is not a second published model. */}
         {researched && <PublicRating spot={spot} />}
 
         {researched ? (
@@ -203,8 +202,7 @@ function SpotDetail({ spot }: { spot: Spot }) {
               />
             </div>
             <p className="wa-mono mt-2 text-paper/35">
-              Curated read · {rated === 5 ? "all five signals" : `${rated} of 5 signals`} · sources
-              not yet reviewed
+              Provisional editorial read · not scored on the nine factors yet
             </p>
           </>
         )}
@@ -238,8 +236,17 @@ function SpotDetail({ spot }: { spot: Spot }) {
         )}
 
         {/* Attribute grid: mono label, plain-language value. An em dash where
-            nothing is known — never a guessed middle value. */}
-        <dl className="mt-7 grid grid-cols-2 gap-x-6 gap-y-5">
+            nothing is known — never a guessed middle value.
+
+            These are the older curated room notes, and they are labelled as
+            such because they are NOT what the score is computed from. The two
+            can legitimately disagree about what is known — a note can say
+            "Charging Good" where the nine-factor evidence has nothing citable
+            on power, and the score then leaves power out entirely. Printing
+            them under a heading that says so is the honest fix; silently
+            mixing them would let a reader take one for the other. */}
+        <p className="wa-mono mt-8 text-label/55">Room notes · not part of the score</p>
+        <dl className="mt-3.5 grid grid-cols-2 gap-x-6 gap-y-5">
           <Attr label="Noise" value={spot.attrs.noise} />
           <Attr label="Peak crowd" value={spot.attrs.peakCrowd} />
           <Attr label="Seating" value={spot.attrs.seating} />
@@ -284,7 +291,7 @@ function SpotDetail({ spot }: { spot: Spot }) {
             Names, addresses and hours come from what the cafe or a credible source publishes.
             {researched
               ? " Every factor above is scored only where a fetched source supports it."
-              : ` WiFi, charging, noise and seating are only rated where a source or a visit supports it — ${rated} of 5 here. Work friendliness is our own read.`}
+              : " This cafe has not been through the evidence research yet, so the number above is a provisional editorial read rather than a score on the nine factors."}
             {!isMapped(spot)
               ? " The map position has not been verified yet, so this spot has no pin."
               : spot.locationAccuracy === "approximate"
@@ -373,6 +380,4 @@ function Attr({ label, value }: { label: string; value: string | null }) {
   );
 }
 
-/** Exported for the score-legend tooltip in the shell. */
-export const SIGNAL_LABELS = SCORE_LABEL;
 export { AREA_GROUP_LABEL };

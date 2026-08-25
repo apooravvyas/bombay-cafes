@@ -137,8 +137,9 @@ export default async function LandingPage() {
           minds you staying.{" "}
           {researched > 0 && (
             <span className="text-paper/50">
-              Most are graded from published evidence across nine factors, with every finding
-              cited; the rest carry our own read until the research reaches them.
+              All {researched} are graded on the same nine weighted factors, from published
+              evidence, with every finding cited — and where the sources are too thin to average,
+              the panel says so instead of printing a number.
             </span>
           )}
         </p>

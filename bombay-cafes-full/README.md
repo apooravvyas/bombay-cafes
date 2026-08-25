@@ -1,9 +1,9 @@
 # Bombay Cafes
 
 **Find a cafe you can actually work from.** A map-first guide to cafes in Bandra
-and South Bombay, scored on the five things that decide whether a work session
-lasts twenty minutes or four hours: wifi, power, noise, seating, and whether the
-place tolerates a laptop at all.
+and South Bombay, scored on nine evidence-weighted factors — led by power,
+wi-fi, seating and whether the place lets you stay — from what published
+sources actually say, with every finding cited.
 
 The experience is modelled on [Workabout NYC](https://workaboutnyc.vercel.app/) —
 one full-screen tilted map, floating chrome, a dark detail panel, and community
@@ -171,7 +171,8 @@ sitemap and OpenGraph tags are right.
 app/
   page.tsx              City chooser. Dark, one card per live city.
   mumbai/page.tsx       The city route. One static file per city — see below.
-  about/page.tsx        The method, the weights, and what we will not fake.
+  about/page.tsx        The method — nine factors and their weights, read
+                        straight out of lib/evidence.ts so it cannot drift.
   submit/page.tsx       Suggest a cafe. Queued, never auto-published.
   api/feedback/         Anonymous work-quality reports → spot_feedback
   api/submissions/      New-cafe suggestions → spot_submissions
@@ -216,39 +217,60 @@ research notes → data/cafes.json → data/spots.json → Supabase
                  (build-seed.py)   (to-spots.py)     (seed.ts)
 ```
 
-`cafes.json` holds the 1–5 signals and the sourced evidence sentence behind each
-one. `to-spots.py` maps those numbers onto the qualitative vocabulary the panel
+`cafes.json` holds the older 1–5 curated signals and the sourced evidence
+sentence behind each one; the published nine-factor evidence lives in
+`data/evidence.json`. `to-spots.py` maps those numbers onto the qualitative vocabulary the panel
 actually prints — `4 → "Fast"`, `2 → "Scarce"` — because *"Scarce, bring a
 charged laptop"* tells you what to do and *"2/5"* does not. **Null in, null out**
 at every stage.
 
-Current seed: 49 rows, 30 active. Signals known: stay 30/30, seating 17/30,
-noise 15/30, wifi 14/30, charging 4/30. Positions: 30/30 approximate, 0 verified.
+Current seed: 49 rows, 30 active, all 30 researched — 525 cited findings across
+61 sources. Factor coverage: seating 29/30, focus 29/30, food 29/30, long stay
+27/30, wi-fi 21/30, outdoor 18/30, bathroom 12/30, power 9/30, calls 8/30.
+Positions: 30/30 approximate, 0 verified.
 
 ---
 
 ## How the score works
 
-A weighted mean over five signals, each stored 1–5, all pointing the same
-direction (noise is stored as *quietness*, so 5 is calmest and no inversion is
-needed):
+A weighted mean over **nine factors**, each scored 1–5 from cited evidence and
+all pointing the same direction (a high number is always good, so nothing needs
+inverting). The weights live in `lib/evidence.ts`:
 
-| Signal | Weight |
-| --- | --- |
-| Work friendliness | 0.30 |
-| Wifi | 0.22 |
-| Power | 0.20 |
-| Seating | 0.18 |
-| Quiet | 0.10 |
+| Factor | Weight | Filter that tests it |
+| --- | --- | --- |
+| Power | 0.22 | Outlets · Outlet heavy |
+| Wi-Fi | 0.20 | Fast Wi-Fi |
+| Seating | 0.16 | Roomy |
+| Long stay | 0.16 | Long session |
+| Focus | 0.14 | Quiet |
+| Calls | 0.05 | Calls ok |
+| Food | 0.04 | Food meal |
+| Outdoor | 0.02 | Outdoor |
+| Bathroom | 0.01 | Bathroom |
 
-**Unknown is not zero.** The mean is renormalised over the signals that are
-actually rated, so a cafe with three known signals is scored on those three. A
-missing signal lowers our *confidence*, which the panel prints as "Based on 3 of
-5 signals" — it never lowers the score. Nothing is punished for something nobody
-has published.
+**Unknown is not zero.** The mean is renormalised over the factors a source
+actually supports, so a cafe documented on four factors is scored on those four.
+Power is the heaviest factor and the least documented — 9 of 30 live cafes —
+which is exactly why it must not be scored zero by default.
 
-The score is computed in `lib/spots.ts`, not stored, so the weighting can be
-retuned without a migration or a backfill.
+What the gaps move is **confidence**, derived from coverage (share of the model's
+weight that is scored) and source depth. The panel prints both, as
+`7/9 factors · 77% of the model` beside a High/Medium/Low chip.
+
+**Below ~0.34 coverage we publish no number at all.** Two live cafes are in that
+state — Poetry by Love and Cheesecake, and Third Wave Coffee Churchgate — and
+their panels say so rather than printing a thin score.
+
+`scoreFromEvidence()` in `lib/evidence.ts` computes all of this, and
+`app/about/page.tsx` renders the weights and counts by reading the same module,
+so the public methodology page cannot drift away from the code.
+
+> `WORK_WEIGHTS` in `lib/spots.ts` is an older five-signal curated mean. It is
+> **not** the published model and nothing in production reaches it — all 30 live
+> cafes are researched. It survives only as a fallback for a spot seeded ahead
+> of its evidence, and the panel labels that state a "provisional editorial
+> read".
 
 `rankSpots()` sorts unrated spots last rather than treating them as 0.0, which
 would put them below genuinely bad cafes.
