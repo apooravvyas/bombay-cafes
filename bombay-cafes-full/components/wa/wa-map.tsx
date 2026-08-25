@@ -182,6 +182,37 @@ export function WaMapImpl({
     const ro = new ResizeObserver(() => map.resize());
     ro.observe(box);
 
+    /**
+     * Deferred resizes, and they are not belt-and-braces — without them the
+     * basemap ships blank.
+     *
+     * maplibre-gl.css arrives as a bundler-injected stylesheet, and on a cold
+     * load it can land *after* this constructor runs. The map then measures a
+     * container that is not laid out yet, caches that viewport, and computes
+     * the set of covering tiles from it — a set that can be empty. Nothing
+     * re-measures afterwards: the ResizeObserver only fires when the box's own
+     * size changes, and the box is h-full from the first paint, so it never
+     * does. The result is a map that has loaded its style, painted its
+     * background layer and placed every marker correctly, while never
+     * requesting a single tile. It looks exactly like a tile server outage.
+     *
+     * Observed in production on /mumbai: forcing one resize() with no camera
+     * change made the entire basemap appear at once.
+     *
+     * A resize() on a correctly-sized map is a no-op, so this costs nothing on
+     * the loads that were already fine.
+     */
+    const remeasure = () => {
+      try {
+        map.resize();
+      } catch {
+        /* map torn down mid-frame */
+      }
+    };
+    const raf = requestAnimationFrame(remeasure);
+    const settle = setTimeout(remeasure, 400);
+    map.once("load", remeasure);
+
     let styleUp = false;
     let readyFired = false;
     const fireReady = () => {
@@ -284,6 +315,8 @@ export function WaMapImpl({
     const markers = markersRef.current;
     return () => {
       clearTimeout(timer);
+      clearTimeout(settle);
+      cancelAnimationFrame(raf);
       ro.disconnect();
       markers.forEach((m) => m.remove());
       markers.clear();
