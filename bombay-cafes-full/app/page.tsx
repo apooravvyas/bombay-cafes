@@ -45,6 +45,7 @@ export default async function LandingPage() {
   const streets = groupAreas(spots);
   const city = CITIES.find((c) => c.live) ?? CITIES[0];
   const areas = new Set(spots.map((s) => s.neighborhood)).size;
+  const researched = spots.filter((s) => s.research).length;
 
   return (
     <main className="flex min-h-dvh flex-col bg-ink text-paper">
@@ -124,9 +125,15 @@ export default async function LandingPage() {
           })}
         </div>
 
-        <p className="mt-8 max-w-md text-[15px] leading-relaxed text-paper/55">
-          {spots.length} cafes across {areas} Mumbai neighbourhoods, rated on the five things that
-          decide whether you can actually get three hours of work done.
+        <p className="mt-8 max-w-lg text-[15px] leading-relaxed text-paper/55">
+          {spots.length} cafes across {areas} Mumbai neighbourhoods, scored on what decides whether
+          you can actually get three hours of work done.{" "}
+          {researched > 0 && (
+            <span className="text-paper/40">
+              {researched} are graded from published evidence across nine factors, with every
+              finding cited; the rest carry our own read until the research reaches them.
+            </span>
+          )}
         </p>
       </div>
 

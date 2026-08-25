@@ -17,9 +17,11 @@ import {
   pad,
   rankSpots,
 } from "@/lib/spots";
+import { FILTERS } from "@/lib/evidence";
 import type { City } from "@/lib/cities";
 import { type GlMapLike, mapControls } from "@/components/wa/wa-map";
 import { SpotPanel } from "@/components/wa/spot-panel";
+import { Boot } from "@/components/wa/boot";
 
 const MapboxBasemap = dynamic(
   () => import("@/components/wa/mapbox").then((m) => m.MapboxBasemap),
@@ -70,6 +72,22 @@ export function MapScreen({
   const filtered = useMemo(() => rankSpots(filterSpots(spots, filters)), [spots, filters]);
   const mapped = useMemo(() => filtered.filter(isMapped), [filtered]);
   const awaiting = filtered.length - mapped.length;
+  /* Boot inputs, taken from the data rather than hardcoded: the scores the
+     bars draw, and the centroid the coordinate label prints. */
+  const bootScores = useMemo(
+    () => spots.map((s) => s.workability).filter((v): v is number => v != null),
+    [spots],
+  );
+  const bootCentroid = useMemo(() => {
+    const m = spots.filter(isMapped);
+    if (m.length === 0) return null;
+    return {
+      lat: m.reduce((a, s) => a + s.latitude, 0) / m.length,
+      lng: m.reduce((a, s) => a + s.longitude, 0) / m.length,
+    };
+  }, [spots]);
+
+  const unresearched = useMemo(() => filtered.filter((s) => !s.research).length, [filtered]);
   const approximate = useMemo(
     () => mapped.filter((s) => s.locationAccuracy === "approximate").length,
     [mapped],
@@ -236,16 +254,9 @@ export function MapScreen({
         </div>
       )}
 
-      {/* ── Loading gate ──────────────────────────────────────────────────── */}
-      {!ready && !mapDead && mapped.length > 0 && (
-        <div className="pointer-events-none absolute inset-0 z-40 grid place-items-center bg-ink">
-          <div className="flex flex-col items-center gap-4">
-            <p className="font-display text-[clamp(28px,4vw,42px)] text-paper">
-              bombay <em className="font-semibold not-italic">cafes</em>
-            </p>
-            <p className="wa-mono text-paper/45">Loading {city.name}…</p>
-          </div>
-        </div>
+      {/* ── Boot sequence ─────────────────────────────────────────────────── */}
+      {mapped.length > 0 && (
+        <Boot ready={ready || mapDead} scores={bootScores} centroid={bootCentroid} />
       )}
 
       {/* ── Brand card, top-left ──────────────────────────────────────────── */}
@@ -514,6 +525,7 @@ export function MapScreen({
                         }))
                       }
                       className="wa-tog"
+                      title={FILTERS.find((f) => f.label === t)?.definition}
                     >
                       {t}
                     </button>
@@ -550,6 +562,12 @@ export function MapScreen({
           )}
         </div>
 
+        {filtersOpen && filters.toggles.length > 0 && unresearched > 0 && (
+          <p className="mt-2 text-center font-mono text-[10.5px] text-ink2/55">
+            {unresearched} of {filtered.length} matched on the older curated tags — sources not
+            reviewed yet
+          </p>
+        )}
         {filtersOpen && awaiting > 0 && (
           <p className="mt-2 text-center font-mono text-[10.5px] text-ink2/55">
             {awaiting} of {filtered.length} not on the map yet

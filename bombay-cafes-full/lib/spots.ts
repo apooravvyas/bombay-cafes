@@ -1,3 +1,6 @@
+import type { SpotEvidence, Workability } from "@/lib/evidence";
+import { FILTER_LABELS, matchesFilter } from "@/lib/evidence";
+
 /**
  * The Workabout-shaped domain model: types, the workability score, and the
  * filter/search logic. Pure — safe to import from client components.
@@ -89,8 +92,20 @@ export interface Spot {
   sources: string[];
   lastVerifiedAt: string | null;
   isActive: boolean;
-  /** Derived at read time — see `workability()`. */
+  /**
+   * The headline number, derived at read time. Prefers the evidence model
+   * when a spot has been researched; falls back to the curated dimensions
+   * otherwise. See lib/spot-data.ts.
+   */
   workability: number | null;
+  /**
+   * Published sources and per-factor findings. Absent until researched.
+   * Named `research` rather than `evidence` because `evidence` above is the
+   * older per-dimension sentence map and the two are different things.
+   */
+  research?: SpotEvidence;
+  /** Score, confidence and coverage derived from `research`. */
+  work?: Workability;
 }
 
 /** A spot with a real position. The map only ever receives these. */
@@ -159,8 +174,13 @@ export function scoreLogic(spot: Spot): { label: string; value: string }[] {
 }
 
 /* ── Filters ──────────────────────────────────────────────────────────────── */
-export const TOGGLES = ["Outlets", "Fast WiFi", "Roomy", "No time limit"] as const;
-export type Toggle = (typeof TOGGLES)[number];
+/**
+ * The filter rail. Sourced from lib/evidence.ts so a label cannot drift from
+ * the threshold behind it. The old four-tag array is gone; those tags survive
+ * inside FILTERS as the `legacy` fallback for spots awaiting research.
+ */
+export const TOGGLES = FILTER_LABELS;
+export type Toggle = string;
 
 export interface SpotFilters {
   /** Minimum workability, 0 = "Any score". */
@@ -209,7 +229,9 @@ export function filterSpots(spots: Spot[], f: SpotFilters): Spot[] {
     // A spot with no score is not excluded by "Any score", but any real
     // threshold is a claim we cannot make about an unrated spot.
     if (f.minScore > 0 && (s.workability ?? 0) < f.minScore) return false;
-    if (f.toggles.length > 0 && !f.toggles.every((t) => s.toggles.includes(t))) return false;
+    // Every active filter must hold, evaluated against the evidence model.
+    if (f.toggles.length > 0 && !f.toggles.every((t) => matchesFilter(t, s.research, s.toggles)))
+      return false;
 
     if (terms.length === 0) return true;
     const hay = [

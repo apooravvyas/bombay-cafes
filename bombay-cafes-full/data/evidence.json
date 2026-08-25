@@ -1,0 +1,2139 @@
+{
+  "researched": 10,
+  "liveSpots": 30,
+  "spots": {
+    "subko-coffee-mary-lodge-chapel-road": {
+      "trading": "confirmed",
+      "hours": "Mon–Thu 7:30am–10pm; Fri–Sun 7:30am–9:30pm (official site)",
+      "publicRating": {
+        "value": 4.4,
+        "count": 3364,
+        "source": "wanderlog.com (citing Google)",
+        "url": "https://wanderlog.com/place/details/1506638/mary-lodge-bandra-by-subko"
+      },
+      "factors": {
+        "wifi": {
+          "score": 4,
+          "confidence": "medium",
+          "evidence": [
+            {
+              "claim": "A Mumbai work-cafe guide rates the wifi at the Chapel Road Subko as good",
+              "quote": "good",
+              "source": "travell.cc (best cafes in Mumbai for working)",
+              "url": "https://travell.cc/mumbai/best-cafes-mumbai-for-working/",
+              "kind": "fact"
+            },
+            {
+              "claim": "A first-hand blog account of working from the Bandra Subko lists wifi alongside the work setup",
+              "quote": "plug points, desks, chairs along with Wifi",
+              "source": "socialmaharaj.com",
+              "url": "https://socialmaharaj.com/2022/06/16/cafes-in-bandra-where-you-can-work/",
+              "kind": "fact"
+            }
+          ]
+        },
+        "power": {
+          "score": 4,
+          "confidence": "medium",
+          "evidence": [
+            {
+              "claim": "The work-cafe guide records power sockets as present and describes a deliberate work setup",
+              "quote": "proper plug points, desks, chairs set up for working",
+              "source": "travell.cc",
+              "url": "https://travell.cc/mumbai/best-cafes-mumbai-for-working/",
+              "kind": "fact"
+            },
+            {
+              "claim": "A blogger who worked there reports plug points at the desks",
+              "quote": "plug points, desks, chairs along with Wifi",
+              "source": "socialmaharaj.com",
+              "url": "https://socialmaharaj.com/2022/06/16/cafes-in-bandra-where-you-can-work/",
+              "kind": "fact"
+            }
+          ]
+        },
+        "seating": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": [
+            {
+              "claim": "Seating is spread across three floors with varied arrangements including a reading nook",
+              "quote": "Multiple seating arrangements across three floors",
+              "source": "laptopfriendlycafe.com",
+              "url": "https://laptopfriendlycafe.com/cafes/mumbai/mary-lodge-by-subko",
+              "kind": "fact"
+            },
+            {
+              "claim": "A first-hand account describes multiple rooms and a spacious layout",
+              "source": "socialmaharaj.com",
+              "url": "https://socialmaharaj.com/2022/06/16/cafes-in-bandra-where-you-can-work/",
+              "kind": "fact"
+            },
+            {
+              "claim": "Reviewers aggregated on Wanderlog praise the interiors and a calm, welcoming feel",
+              "quote": "calm and welcoming",
+              "source": "wanderlog.com",
+              "url": "https://wanderlog.com/place/details/1506638/mary-lodge-bandra-by-subko",
+              "kind": "fact"
+            }
+          ]
+        },
+        "longStay": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": [
+            {
+              "claim": "Wanderlog's review digest reports it functions informally as a workspace and that typical visits run one to four hours",
+              "quote": "quite the unofficial office space",
+              "source": "wanderlog.com",
+              "url": "https://wanderlog.com/place/details/1506638/mary-lodge-bandra-by-subko",
+              "kind": "fact"
+            },
+            {
+              "claim": "Listed as good for laptop work, with regulars lingering without being rushed",
+              "quote": "linger over a cup of coffee without feeling rushed",
+              "source": "laptopfriendlycafe.com",
+              "url": "https://laptopfriendlycafe.com/cafes/mumbai/mary-lodge-by-subko",
+              "kind": "fact"
+            },
+            {
+              "claim": "Subko's own relaunch post frames the larger space as fixing the earlier inability to work from the cafe",
+              "quote": "have a quality catch up meeting or work from a café",
+              "source": "subko.coffee (official)",
+              "url": "https://www.subko.coffee/blogs/locations-2/mary-lodge-bandra-w",
+              "kind": "fact"
+            }
+          ]
+        },
+        "focus": {
+          "score": 3,
+          "confidence": "medium",
+          "evidence": [
+            {
+              "claim": "A first-hand account warns the space gets noisy and crowded, and recommends weekday afternoons",
+              "quote": "can get quite noisy and crowded",
+              "source": "socialmaharaj.com",
+              "url": "https://socialmaharaj.com/2022/06/16/cafes-in-bandra-where-you-can-work/",
+              "kind": "fact"
+            },
+            {
+              "claim": "Review digest advises weekday visits because weekends get busy",
+              "quote": "during weekdays to avoid crowds as it can get busy on weekends",
+              "source": "wanderlog.com",
+              "url": "https://wanderlog.com/place/details/1506638/mary-lodge-bandra-by-subko",
+              "kind": "fact"
+            },
+            {
+              "claim": "A directory lists 'Cozy' and 'Quiet' among its features while noting peak-hour crowds",
+              "source": "laptopfriendlycafe.com",
+              "url": "https://laptopfriendlycafe.com/cafes/mumbai/mary-lodge-by-subko",
+              "kind": "fact"
+            }
+          ]
+        },
+        "calls": {
+          "score": 2,
+          "confidence": "low",
+          "evidence": [
+            {
+              "claim": "The one first-hand account that addresses it says the space suits laptop work but not calls",
+              "source": "socialmaharaj.com",
+              "url": "https://socialmaharaj.com/2022/06/16/cafes-in-bandra-where-you-can-work/",
+              "kind": "fact"
+            }
+          ]
+        },
+        "food": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": [
+            {
+              "claim": "A full bakehouse and savoury menu is served, including sandwiches such as pulled beef and harissa grilled chicken",
+              "quote": "pulled beef sandwiches",
+              "source": "laptopfriendlycafe.com",
+              "url": "https://laptopfriendlycafe.com/cafes/mumbai/mary-lodge-by-subko",
+              "kind": "fact"
+            },
+            {
+              "claim": "Reviewers recommend savoury plates such as podi toast and smoothie bowls alongside the coffee",
+              "source": "wanderlog.com",
+              "url": "https://wanderlog.com/place/details/1506638/mary-lodge-bandra-by-subko",
+              "kind": "fact"
+            },
+            {
+              "claim": "Subko describes itself officially as a specialty coffee roaster and craft bakehouse",
+              "source": "subko.coffee (official)",
+              "url": "https://www.subko.coffee/blogs/locations-2/mary-lodge-bandra-w",
+              "kind": "fact"
+            }
+          ]
+        },
+        "outdoor": {
+          "score": 3,
+          "confidence": "low",
+          "evidence": [
+            {
+              "claim": "Outdoor seating is listed as a feature, described as varied sit-out arrangements",
+              "quote": "varied sit-out arrangements",
+              "source": "laptopfriendlycafe.com",
+              "url": "https://laptopfriendlycafe.com/cafes/mumbai/mary-lodge-by-subko",
+              "kind": "fact"
+            }
+          ]
+        },
+        "bathroom": {
+          "score": 4,
+          "confidence": "low",
+          "evidence": [
+            {
+              "claim": "Wheelchair-accessible and gender-neutral restrooms are listed",
+              "quote": "Wheelchair accessible restroom",
+              "source": "laptopfriendlycafe.com",
+              "url": "https://laptopfriendlycafe.com/cafes/mumbai/mary-lodge-by-subko",
+              "kind": "fact"
+            }
+          ]
+        }
+      },
+      "synthesis": "Three floors with plug points, desks and wifi make three hours plausible, and reviewers call it an unofficial office — but weekends get noisy and calls are discouraged.",
+      "sourcesFetched": [
+        "https://laptopfriendlycafe.com/cafes/mumbai/mary-lodge-by-subko",
+        "https://www.subko.coffee/pages/locations",
+        "https://www.subko.coffee/blogs/locations-2/mary-lodge-bandra-w",
+        "https://travell.cc/mumbai/best-cafes-mumbai-for-working/",
+        "https://wanderlog.com/place/details/1506638/mary-lodge-bandra-by-subko",
+        "https://socialmaharaj.com/2022/06/16/cafes-in-bandra-where-you-can-work/"
+      ],
+      "notes": "Hours conflict across sources: official site says Mon–Thu 7:30am–10pm and Fri–Sun 7:30am–9:30pm; Wanderlog says daily 7:30am–10pm; laptopfriendlycafe says 8am–9pm; travell.cc says 8am–11pm. Official figures used. The socialmaharaj post (2022) predates the 'Mary Lodge by Subko' rebrand and refers to the same Chapel Road, Bandra West outlet under its earlier name; treat its detail as still-plausible but dated. The travell.cc entry was reached via a 302 redirect from rahul.biz. corner.inc and zomato.com fetches were blocked by robots.txt."
+    },
+    "bombay-coffee-house-waterfield-road": {
+      "trading": "confirmed",
+      "hours": "Daily 9am–12am",
+      "publicRating": {
+        "value": 4.2,
+        "count": 3189,
+        "source": "wanderlog.com (citing Google)",
+        "url": "https://wanderlog.com/place/details/423265/bombay-coffee-house"
+      },
+      "factors": {
+        "wifi": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": [
+            {
+              "claim": "Free wifi is listed as an amenity of this outlet",
+              "quote": "Free Wi-Fi",
+              "source": "laptopfriendlycafe.com",
+              "url": "https://laptopfriendlycafe.com/cafes/maharashtra/bombay-coffee-house",
+              "kind": "fact"
+            },
+            {
+              "claim": "Wanderlog's digest of reviews for the Waterfield Road branch calls the wifi fast",
+              "quote": "fast Wi-Fi and delicious food, it's an ideal spot to work",
+              "source": "wanderlog.com",
+              "url": "https://wanderlog.com/place/details/423265/bombay-coffee-house",
+              "kind": "fact"
+            },
+            {
+              "claim": "A Tripadvisor reviewer who worked there described the wifi as good",
+              "source": "tripadvisor.com",
+              "url": "https://www.tripadvisor.com/Restaurant_Review-g304554-d13563573-Reviews-or45-Bombay_Coffee_House-Mumbai_Maharashtra.html",
+              "kind": "fact"
+            },
+            {
+              "claim": "A work-cafe roundup lists the Waterfield Road address with 'Wifi Available' and 'Free Wifi' among amenities",
+              "source": "coworkingers.com",
+              "url": "https://coworkingers.com/best-work-cafe-in-mumbai/",
+              "kind": "fact"
+            }
+          ]
+        },
+        "power": {
+          "score": null,
+          "confidence": "none",
+          "evidence": []
+        },
+        "seating": {
+          "score": 3,
+          "confidence": "medium",
+          "evidence": [
+            {
+              "claim": "Tripadvisor reviewers describe a comparatively large space with varied tables, but usually crowded at peak times",
+              "quote": "spread in a comparatively huge space",
+              "source": "tripadvisor.com",
+              "url": "https://www.tripadvisor.com/Restaurant_Review-g304554-d13563573-Reviews-or45-Bombay_Coffee_House-Mumbai_Maharashtra.html",
+              "kind": "fact"
+            },
+            {
+              "claim": "A reviewer asked for more comfortable chairs at larger tables",
+              "quote": "owners need to arrange more cozy chairs for table of 6",
+              "source": "wanderlog.com",
+              "url": "https://wanderlog.com/place/details/423265/bombay-coffee-house",
+              "kind": "fact"
+            },
+            {
+              "claim": "A directory lists ample and spacious seating suitable for work sessions",
+              "quote": "Ample seating and comfort",
+              "source": "laptopfriendlycafe.com",
+              "url": "https://laptopfriendlycafe.com/cafes/maharashtra/bombay-coffee-house",
+              "kind": "fact"
+            }
+          ]
+        },
+        "longStay": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": [
+            {
+              "claim": "Wanderlog reports a typical visit of one to four hours and describes the cafe as laptop-friendly",
+              "quote": "cozy and laptop-friendly cafe",
+              "source": "wanderlog.com",
+              "url": "https://wanderlog.com/place/details/423265/bombay-coffee-house",
+              "kind": "fact"
+            },
+            {
+              "claim": "A Tripadvisor reviewer says they sat and worked there successfully",
+              "quote": "we could sit and work. This place was perfect",
+              "source": "tripadvisor.com",
+              "url": "https://www.tripadvisor.com/Restaurant_Review-g304554-d13563573-Reviews-or45-Bombay_Coffee_House-Mumbai_Maharashtra.html",
+              "kind": "fact"
+            },
+            {
+              "claim": "LBB's work-friendly cafe guide lists it as suited to work meetings and interviews",
+              "quote": "work meetings and interviews",
+              "source": "lbb.in",
+              "url": "https://lbb.in/mumbai/best-work-friendly-cafes-mumbai/",
+              "kind": "fact"
+            },
+            {
+              "claim": "A work-cafe roundup lists 'Friendly workspace' among the outlet's amenities",
+              "source": "coworkingers.com",
+              "url": "https://coworkingers.com/best-work-cafe-in-mumbai/",
+              "kind": "fact"
+            }
+          ]
+        },
+        "focus": {
+          "score": 3,
+          "confidence": "medium",
+          "evidence": [
+            {
+              "claim": "Tripadvisor feedback is split: one reviewer liked the buzzy atmosphere for work, another found tables near the kitchen and AC noisy",
+              "quote": "overwhelmed initially by all the noise",
+              "source": "tripadvisor.com",
+              "url": "https://www.tripadvisor.com/Restaurant_Review-g304554-d13563573-Reviews-or45-Bombay_Coffee_House-Mumbai_Maharashtra.html",
+              "kind": "fact"
+            },
+            {
+              "claim": "Reviewers describe an old-Bombay atmosphere with jazz playing",
+              "quote": "cool jazz music",
+              "source": "wanderlog.com",
+              "url": "https://wanderlog.com/place/details/423265/bombay-coffee-house",
+              "kind": "fact"
+            },
+            {
+              "claim": "A directory characterises it as a peaceful escape from the city, which conflicts with the Tripadvisor noise reports",
+              "quote": "quiet escape from the city's hustle and bustle",
+              "source": "laptopfriendlycafe.com",
+              "url": "https://laptopfriendlycafe.com/cafes/maharashtra/bombay-coffee-house",
+              "kind": "fact"
+            }
+          ]
+        },
+        "calls": {
+          "score": null,
+          "confidence": "none",
+          "evidence": []
+        },
+        "food": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": [
+            {
+              "claim": "A full all-day menu is served, from breakfast platters to wraps, kheema pao and eggs Benedict",
+              "source": "wanderlog.com",
+              "url": "https://wanderlog.com/place/details/423265/bombay-coffee-house",
+              "kind": "fact"
+            },
+            {
+              "claim": "The official site describes it as an elegant coffee shop serving food and drink through the day",
+              "quote": "an elegant coffee shop",
+              "source": "bombaycoffeehouse.com (official)",
+              "url": "https://bombaycoffeehouse.com",
+              "kind": "fact"
+            },
+            {
+              "claim": "Tripadvisor reviewers praise dishes including risotto, waffles and pesto plates, with some complaints about portion size",
+              "source": "tripadvisor.com",
+              "url": "https://www.tripadvisor.com/Restaurant_Review-g304554-d13563573-Reviews-or45-Bombay_Coffee_House-Mumbai_Maharashtra.html",
+              "kind": "fact"
+            }
+          ]
+        },
+        "outdoor": {
+          "score": null,
+          "confidence": "none",
+          "evidence": []
+        },
+        "bathroom": {
+          "score": 3,
+          "confidence": "low",
+          "evidence": [
+            {
+              "claim": "Toilets are listed in the venue's features",
+              "quote": "Toilets",
+              "source": "laptopfriendlycafe.com",
+              "url": "https://laptopfriendlycafe.com/cafes/maharashtra/bombay-coffee-house",
+              "kind": "fact"
+            }
+          ]
+        }
+      },
+      "synthesis": "Open 9am to midnight with well-corroborated fast wifi and reviewers reporting one-to-four-hour laptop sessions; no source mentions outlets, and noise reports are mixed.",
+      "sourcesFetched": [
+        "https://laptopfriendlycafe.com/cafes/maharashtra/bombay-coffee-house",
+        "https://wanderlog.com/place/details/423265/bombay-coffee-house",
+        "https://bombaycoffeehouse.com",
+        "https://coworkingers.com/best-work-cafe-in-mumbai/",
+        "https://lbb.in/mumbai/best-work-friendly-cafes-mumbai/",
+        "https://www.tripadvisor.com/Restaurant_Review-g304554-d13563573-Reviews-or45-Bombay_Coffee_House-Mumbai_Maharashtra.html"
+      ],
+      "notes": "Bombay Coffee House has more than one outlet. The travell.cc work-cafe guide rates a Bombay Coffee House in Ballard Estate, Fort (wifi good, sockets yes, 8:30am–11pm) — that is a different branch, so it was deliberately excluded from the evidence above. All evidence cited here is tied to the 248 Waterfield Road / Neelkamal Building address. Tripadvisor rates this branch 4.0 from 76 reviews; the higher-volume Google figure was used for publicRating. Reviewers note a 10% service charge, water served only on request, and difficult parking. Zomato fetch blocked by robots.txt."
+    },
+    "shelter-cafe-x-coffee-by-javaphile-sherly-rajan-road": {
+      "trading": "confirmed",
+      "hours": "Daily 8am–11pm",
+      "publicRating": {
+        "value": 4.3,
+        "count": 260,
+        "source": "wanderlog.com (citing Google)",
+        "url": "https://wanderlog.com/place/details/12772766/shelter-cafe-x-coffee-by-javaphile-bandra"
+      },
+      "factors": {
+        "wifi": {
+          "score": 3,
+          "confidence": "low",
+          "evidence": [
+            {
+              "claim": "WiFi is listed among the venue's amenities on its booking listing",
+              "quote": "WiFi",
+              "source": "district.in",
+              "url": "https://www.district.in/dining/mumbai/shelter-cafe-x-coffee-by-javaphile-carter-road-bandra-west",
+              "kind": "fact"
+            }
+          ]
+        },
+        "power": {
+          "score": 5,
+          "confidence": "medium",
+          "evidence": [
+            {
+              "claim": "Wanderlog's review digest reports outlets at almost every table",
+              "quote": "Ample power outlets at nearly every table",
+              "source": "wanderlog.com",
+              "url": "https://wanderlog.com/place/details/12772766/shelter-cafe-x-coffee-by-javaphile-bandra",
+              "kind": "fact"
+            },
+            {
+              "claim": "A blogger who works from here independently confirms an outlet near almost every table",
+              "quote": "almost every table has an outlet near it!",
+              "source": "withloveashni.com",
+              "url": "https://www.withloveashni.com/ashni-eats-world/best-cafes-in-bandra-mumbai",
+              "kind": "fact"
+            }
+          ]
+        },
+        "seating": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": [
+            {
+              "claim": "Reviewers describe the room as very spacious and calming, built around a large tree",
+              "quote": "beautiful, calming and super spacious",
+              "source": "wanderlog.com",
+              "url": "https://wanderlog.com/place/details/12772766/shelter-cafe-x-coffee-by-javaphile-bandra",
+              "kind": "fact"
+            },
+            {
+              "claim": "Both indoor and outdoor seating are listed, with ambience scored 4.6 by reviewers",
+              "source": "district.in",
+              "url": "https://www.district.in/dining/mumbai/shelter-cafe-x-coffee-by-javaphile-carter-road-bandra-west",
+              "kind": "fact"
+            },
+            {
+              "claim": "A first-hand account calls the space spacious for working",
+              "quote": "aesthetic, spacious, not too loud",
+              "source": "withloveashni.com",
+              "url": "https://www.withloveashni.com/ashni-eats-world/best-cafes-in-bandra-mumbai",
+              "kind": "fact"
+            },
+            {
+              "claim": "A write-up describes rustic wooden furniture, plants and soft lighting",
+              "quote": "Rustic wooden furniture, potted plants, and soft lighting",
+              "source": "delhiroyale.in",
+              "url": "https://www.delhiroyale.in/post/shelter-cafe-in-mumbai",
+              "kind": "fact"
+            }
+          ]
+        },
+        "longStay": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": [
+            {
+              "claim": "The venue is listed as work-friendly and its listing notes aesthetics designed for lingering rather than quick visits",
+              "quote": "Work-friendly",
+              "source": "district.in",
+              "url": "https://www.district.in/dining/mumbai/shelter-cafe-x-coffee-by-javaphile-carter-road-bandra-west",
+              "kind": "fact"
+            },
+            {
+              "claim": "A blogger says she regularly works from here",
+              "quote": "I also love working from here",
+              "source": "withloveashni.com",
+              "url": "https://www.withloveashni.com/ashni-eats-world/best-cafes-in-bandra-mumbai",
+              "kind": "fact"
+            },
+            {
+              "claim": "A write-up frames it as suited to office-goers and informal gatherings",
+              "quote": "the perfect place for office-goers and informal gatherings",
+              "source": "delhiroyale.in",
+              "url": "https://www.delhiroyale.in/post/shelter-cafe-in-mumbai",
+              "kind": "fact"
+            },
+            {
+              "claim": "Counter-evidence: Wanderlog lists the typical visit duration as only 30 minutes",
+              "source": "wanderlog.com",
+              "url": "https://wanderlog.com/place/details/12772766/shelter-cafe-x-coffee-by-javaphile-bandra",
+              "kind": "fact"
+            }
+          ]
+        },
+        "focus": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": [
+            {
+              "claim": "A first-hand account of working there says it is not too loud",
+              "quote": "not too loud",
+              "source": "withloveashni.com",
+              "url": "https://www.withloveashni.com/ashni-eats-world/best-cafes-in-bandra-mumbai",
+              "kind": "fact"
+            },
+            {
+              "claim": "A write-up describes a calm room with only low conversation",
+              "quote": "a quiet hum of conversations",
+              "source": "delhiroyale.in",
+              "url": "https://www.delhiroyale.in/post/shelter-cafe-in-mumbai",
+              "kind": "fact"
+            },
+            {
+              "claim": "Reviewers repeatedly describe the atmosphere as calming and peaceful",
+              "quote": "a warm and peaceful vibe",
+              "source": "district.in",
+              "url": "https://www.district.in/dining/mumbai/shelter-cafe-x-coffee-by-javaphile-carter-road-bandra-west",
+              "kind": "fact"
+            }
+          ]
+        },
+        "calls": {
+          "score": null,
+          "confidence": "none",
+          "evidence": []
+        },
+        "food": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": [
+            {
+              "claim": "A full all-day menu is served, including brunch plates, burgers and sourdough pizzas",
+              "quote": "bold and flavour-packed",
+              "source": "wanderlog.com",
+              "url": "https://wanderlog.com/place/details/12772766/shelter-cafe-x-coffee-by-javaphile-bandra",
+              "kind": "fact"
+            },
+            {
+              "claim": "Menu spans Turkish eggs, truffle mushroom pizza, burgers, salad bowls and desserts, with coffee by Javaphile",
+              "source": "delhiroyale.in",
+              "url": "https://www.delhiroyale.in/post/shelter-cafe-in-mumbai",
+              "kind": "fact"
+            },
+            {
+              "claim": "Listed cuisines are coffee, continental and desserts, with vegan and gluten-free options",
+              "source": "district.in",
+              "url": "https://www.district.in/dining/mumbai/shelter-cafe-x-coffee-by-javaphile-carter-road-bandra-west",
+              "kind": "fact"
+            },
+            {
+              "claim": "Counter-evidence: one reviewer reported inconsistent food preparation and repeated attempts to get items served warm",
+              "source": "wanderlog.com",
+              "url": "https://wanderlog.com/place/details/12772766/shelter-cafe-x-coffee-by-javaphile-bandra",
+              "kind": "fact"
+            }
+          ]
+        },
+        "outdoor": {
+          "score": 3,
+          "confidence": "low",
+          "evidence": [
+            {
+              "claim": "Outdoor seating is listed among amenities, though one write-up describes only the interior",
+              "quote": "Outdoor seating",
+              "source": "district.in",
+              "url": "https://www.district.in/dining/mumbai/shelter-cafe-x-coffee-by-javaphile-carter-road-bandra-west",
+              "kind": "fact"
+            }
+          ]
+        },
+        "bathroom": {
+          "score": null,
+          "confidence": "none",
+          "evidence": []
+        }
+      },
+      "synthesis": "Two independent sources report an outlet at nearly every table in a spacious, quiet room that is explicitly listed as work-friendly, making a three-hour session well supported.",
+      "sourcesFetched": [
+        "https://wanderlog.com/place/details/12772766/shelter-cafe-x-coffee-by-javaphile-bandra",
+        "https://www.district.in/dining/mumbai/shelter-cafe-x-coffee-by-javaphile-carter-road-bandra-west",
+        "https://www.withloveashni.com/ashni-eats-world/best-cafes-in-bandra-mumbai",
+        "https://www.delhiroyale.in/post/shelter-cafe-in-mumbai",
+        "https://www.tripadvisor.com/Restaurant_Review-g304554-d32823892-Reviews-Shelter_Cafe-Mumbai_Maharashtra.html"
+      ],
+      "notes": "Closing time conflicts: Wanderlog, Tripadvisor and delhiroyale.in all say 11pm; district.in says 10:30pm. Ratings also differ by platform — Google 4.3 from 260 (via Wanderlog), district.in 4.5 from 398 ratings, Tripadvisor 5.0 from a single review. The Tripadvisor listing is filed as 'Shelter Cafe' at the same Sherly Rajan Road address and confirms the address and 8am–11pm hours but carries no workability detail. Pet-friendly per Wanderlog. Zomato and corner.inc fetches blocked by robots.txt."
+    },
+    "kitchen-garden-by-suzette-st-john-street": {
+      "trading": "confirmed",
+      "hours": "Daily 8am–11pm",
+      "publicRating": {
+        "value": 3.7,
+        "count": 711,
+        "source": "district.in",
+        "url": "https://www.district.in/dining/mumbai/kitchen-garden-by-suzette-pali-hill-bandra-west"
+      },
+      "factors": {
+        "wifi": {
+          "score": 3,
+          "confidence": "medium",
+          "evidence": [
+            {
+              "claim": "WiFi is listed among the amenities on the venue's booking listing",
+              "quote": "WiFi",
+              "source": "district.in",
+              "url": "https://www.district.in/dining/mumbai/kitchen-garden-by-suzette-pali-hill-bandra-west",
+              "kind": "fact"
+            },
+            {
+              "claim": "WiFi also appears in the feature list on a second directory for the same Pali Naka address",
+              "quote": "WiFi",
+              "source": "magicpin.in",
+              "url": "https://magicpin.in/Mumbai/Bandra-West/Restaurant/Kitchen-Garden-By-Suzette/store/5b304b",
+              "kind": "fact"
+            }
+          ]
+        },
+        "power": {
+          "score": null,
+          "confidence": "none",
+          "evidence": []
+        },
+        "seating": {
+          "score": 2,
+          "confidence": "medium",
+          "evidence": [
+            {
+              "claim": "Tripadvisor reviewers report very limited seating with tables packed close together",
+              "quote": "Very less seating and tables very close to each other",
+              "source": "tripadvisor.com",
+              "url": "https://www.tripadvisor.com/Restaurant_Review-g304554-d11999088-Reviews-or15-Kitchen_Garden_Mumbai_Maharashtra.html",
+              "kind": "fact"
+            },
+            {
+              "claim": "Reviewers describe the cafe as tiny and often crowded, with a small indoor section and a slightly larger outdoor area",
+              "quote": "always crowded",
+              "source": "tripadvisor.com",
+              "url": "https://www.tripadvisor.com/Restaurant_Review-g304554-d11999088-Reviews-or15-Kitchen_Garden_Mumbai_Maharashtra.html",
+              "kind": "fact"
+            },
+            {
+              "claim": "Indoor seating and large-group seating are listed as amenities",
+              "source": "district.in",
+              "url": "https://www.district.in/dining/mumbai/kitchen-garden-by-suzette-pali-hill-bandra-west",
+              "kind": "fact"
+            }
+          ]
+        },
+        "longStay": {
+          "score": 3,
+          "confidence": "low",
+          "evidence": [
+            {
+              "claim": "The listing tags the venue as work-friendly, but no review describes an actual multi-hour laptop session",
+              "quote": "Work-friendly",
+              "source": "district.in",
+              "url": "https://www.district.in/dining/mumbai/kitchen-garden-by-suzette-pali-hill-bandra-west",
+              "kind": "fact"
+            },
+            {
+              "claim": "The reported table crunch and crowding would work against holding a table for three hours",
+              "source": "tripadvisor.com",
+              "url": "https://www.tripadvisor.com/Restaurant_Review-g304554-d11999088-Reviews-or15-Kitchen_Garden_Mumbai_Maharashtra.html",
+              "kind": "inference"
+            }
+          ]
+        },
+        "focus": {
+          "score": 3,
+          "confidence": "low",
+          "evidence": [
+            {
+              "claim": "'Less noisy environment' is listed as a venue attribute",
+              "quote": "Less noisy environment",
+              "source": "district.in",
+              "url": "https://www.district.in/dining/mumbai/kitchen-garden-by-suzette-pali-hill-bandra-west",
+              "kind": "fact"
+            },
+            {
+              "claim": "Reviewers find it relaxing, but tables set close together in a crowded room cut against sustained focus",
+              "source": "tripadvisor.com",
+              "url": "https://www.tripadvisor.com/Restaurant_Review-g304554-d11999088-Reviews-or15-Kitchen_Garden_Mumbai_Maharashtra.html",
+              "kind": "inference"
+            }
+          ]
+        },
+        "calls": {
+          "score": null,
+          "confidence": "none",
+          "evidence": []
+        },
+        "food": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": [
+            {
+              "claim": "Reviewers praise a wide range of salads and sandwiches and freshly made organic food",
+              "quote": "Delicious salads and sandwiches with huge variety",
+              "source": "tripadvisor.com",
+              "url": "https://www.tripadvisor.com/Restaurant_Review-g304554-d11999088-Reviews-or15-Kitchen_Garden_Mumbai_Maharashtra.html",
+              "kind": "fact"
+            },
+            {
+              "claim": "Breakfast, lunch and dinner are all served, with vegetarian, vegan and gluten-free options and all-day breakfast",
+              "source": "district.in",
+              "url": "https://www.district.in/dining/mumbai/kitchen-garden-by-suzette-pali-hill-bandra-west",
+              "kind": "fact"
+            },
+            {
+              "claim": "Reviewers on a second directory single out the sourdough bread and jam and generous family meal deals",
+              "quote": "The bread was perfectly baked, with a crispy crust",
+              "source": "magicpin.in",
+              "url": "https://magicpin.in/Mumbai/Bandra-West/Restaurant/Kitchen-Garden-By-Suzette/store/5b304b",
+              "kind": "fact"
+            },
+            {
+              "claim": "Suzette's own site describes Kitchen Garden as a farm-to-table salad and sandwich bar",
+              "quote": "farm-to-table salad & sandwich bar",
+              "source": "suzette.in (official)",
+              "url": "https://www.suzette.in",
+              "kind": "fact"
+            }
+          ]
+        },
+        "outdoor": {
+          "score": 4,
+          "confidence": "medium",
+          "evidence": [
+            {
+              "claim": "Outdoor seating is listed as a feature of this outlet",
+              "quote": "Outdoor seating",
+              "source": "magicpin.in",
+              "url": "https://magicpin.in/Mumbai/Bandra-West/Restaurant/Kitchen-Garden-By-Suzette/store/5b304b",
+              "kind": "fact"
+            },
+            {
+              "claim": "Reviewers confirm an outdoor area that is slightly larger than the small indoor section",
+              "source": "tripadvisor.com",
+              "url": "https://www.tripadvisor.com/Restaurant_Review-g304554-d11999088-Reviews-or15-Kitchen_Garden_Mumbai_Maharashtra.html",
+              "kind": "fact"
+            }
+          ]
+        },
+        "bathroom": {
+          "score": null,
+          "confidence": "none",
+          "evidence": []
+        }
+      },
+      "synthesis": "Listed as work-friendly with wifi and a quieter room, but reviewers call it tiny and always crowded with tables packed close, and no source mentions outlets.",
+      "sourcesFetched": [
+        "https://www.district.in/dining/mumbai/kitchen-garden-by-suzette-pali-hill-bandra-west",
+        "https://magicpin.in/Mumbai/Bandra-West/Restaurant/Kitchen-Garden-By-Suzette/store/5b304b",
+        "https://www.tripadvisor.com/Restaurant_Review-g304554-d11999088-Reviews-or15-Kitchen_Garden_Mumbai_Maharashtra.html",
+        "https://lbb.in/mumbai/kitchen-garden-by-suzette-a-cafe-999d6d/",
+        "https://www.suzette.in"
+      ],
+      "notes": "Closing time conflicts: district.in says 11pm, magicpin says 11:30pm. Kitchen Garden by Suzette has several Mumbai outlets (BKC/Bandra East, Juhu, Santacruz, Mulund); only sources tied to the Gasper Enclave, St John Street / Pali Naka address were used. Ratings vary widely by platform: district.in 3.7 from 711 ratings, Tripadvisor 4.0 from 42 reviews, magicpin 4.4 from only 7 ratings — the largest sample was used. The LBB review confirms counter-ordering with table numbers but adds no workability detail; the official suzette.in homepage does not list this outlet's address or hours. Zomato and foursquare fetches blocked by robots.txt. Weakest workability evidence of the five cafes: no first-hand account of anyone working here was found."
+    },
+    "taj-mahal-tea-house-st-john-baptist-road": {
+      "trading": "confirmed",
+      "hours": "Daily 7:30am–11:30pm",
+      "publicRating": {
+        "value": 4.4,
+        "count": 208,
+        "source": "tripadvisor.com",
+        "url": "https://www.tripadvisor.com/Restaurant_Review-g304554-d8613386-Reviews-Taj_Mahal_Tea_House-Mumbai_Maharashtra.html"
+      },
+      "factors": {
+        "wifi": {
+          "score": 3,
+          "confidence": "low",
+          "evidence": [
+            {
+              "claim": "WiFi appears in the feature list for the Sanatan Pereira Bungalow address",
+              "quote": "WiFi",
+              "source": "magicpin.in",
+              "url": "https://magicpin.in/Mumbai/Bandra-West/Restaurant/Taj-Mahal-Tea-House/store/97870/",
+              "kind": "fact"
+            }
+          ]
+        },
+        "power": {
+          "score": null,
+          "confidence": "none",
+          "evidence": []
+        },
+        "seating": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": [
+            {
+              "claim": "Tripadvisor reviewers describe a restored bungalow with numerous quiet nooks",
+              "quote": "many quiet nooks",
+              "source": "tripadvisor.com",
+              "url": "https://www.tripadvisor.com/Restaurant_Review-g304554-d8613386-Reviews-Taj_Mahal_Tea_House-Mumbai_Maharashtra.html",
+              "kind": "fact"
+            },
+            {
+              "claim": "A first-hand account of working in Bandra cafes calls it spacious with outdoor seating",
+              "quote": "quite spacious and provides outdoor seating",
+              "source": "socialmaharaj.com",
+              "url": "https://socialmaharaj.com/2022/06/16/cafes-in-bandra-where-you-can-work/",
+              "kind": "fact"
+            },
+            {
+              "claim": "The venue occupies 3,500 sq ft and seats around 80, so table pressure is structurally lower than in a small cafe",
+              "quote": "3,500 square feet in size and seats around 80 patrons",
+              "source": "en.wikipedia.org",
+              "url": "https://en.wikipedia.org/wiki/Brooke_Bond_Taj_Mahal_Tea_House",
+              "kind": "fact"
+            }
+          ]
+        },
+        "longStay": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": [
+            {
+              "claim": "A Bandra cafe blogger names it as a place to get work done",
+              "quote": "great place for high tea, or to get some work done, or both",
+              "source": "withloveashni.com",
+              "url": "https://www.withloveashni.com/ashni-eats-world/best-cafes-in-bandra-mumbai",
+              "kind": "fact"
+            },
+            {
+              "claim": "A first-hand account rates it good for casual work and meetings, noting it opens at 7:30am",
+              "source": "socialmaharaj.com",
+              "url": "https://socialmaharaj.com/2022/06/16/cafes-in-bandra-where-you-can-work/",
+              "kind": "fact"
+            },
+            {
+              "claim": "EazyDiner's work-from-cafe guide for Bandra lists it as one of five recommended spots",
+              "source": "eazydiner.com",
+              "url": "https://www.eazydiner.com/food-trends/wfh-to-wfc-the-best-cafes-in-bandra-with-high-speed-wi-fi-and-great-coffee",
+              "kind": "fact"
+            }
+          ]
+        },
+        "focus": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": [
+            {
+              "claim": "A work-cafe guide singles out the serene setting as an escape from noise",
+              "quote": "serene environment make it a perfect escape from noisy places",
+              "source": "eazydiner.com",
+              "url": "https://www.eazydiner.com/food-trends/wfh-to-wfc-the-best-cafes-in-bandra-with-high-speed-wi-fi-and-great-coffee",
+              "kind": "fact"
+            },
+            {
+              "claim": "A first-hand account reports light classical music and a quieter feel higher up in the building",
+              "quote": "light classical music",
+              "source": "socialmaharaj.com",
+              "url": "https://socialmaharaj.com/2022/06/16/cafes-in-bandra-where-you-can-work/",
+              "kind": "fact"
+            },
+            {
+              "claim": "Tripadvisor reviewers describe it as a peaceful retreat with quiet corners",
+              "quote": "many quiet nooks",
+              "source": "tripadvisor.com",
+              "url": "https://www.tripadvisor.com/Restaurant_Review-g304554-d8613386-Reviews-Taj_Mahal_Tea_House-Mumbai_Maharashtra.html",
+              "kind": "fact"
+            }
+          ]
+        },
+        "calls": {
+          "score": null,
+          "confidence": "none",
+          "evidence": []
+        },
+        "food": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": [
+            {
+              "claim": "Tripadvisor reviewers praise the tea-paired cooking, including a biryani made with tea leaves",
+              "quote": "phenomenal biryani made with tea leaves",
+              "source": "tripadvisor.com",
+              "url": "https://www.tripadvisor.com/Restaurant_Review-g304554-d8613386-Reviews-Taj_Mahal_Tea_House-Mumbai_Maharashtra.html",
+              "kind": "fact"
+            },
+            {
+              "claim": "Full breakfast, lunch and dinner menus are served alongside more than 40 teas",
+              "source": "en.wikipedia.org",
+              "url": "https://en.wikipedia.org/wiki/Brooke_Bond_Taj_Mahal_Tea_House",
+              "kind": "fact"
+            },
+            {
+              "claim": "Breakfast service and continental dishes such as Eggs Florentine are listed for this outlet",
+              "source": "magicpin.in",
+              "url": "https://magicpin.in/Mumbai/Bandra-West/Restaurant/Taj-Mahal-Tea-House/store/97870/",
+              "kind": "fact"
+            },
+            {
+              "claim": "Counter-evidence: one Tripadvisor reviewer found some vegetarian items poor, and several report slow service",
+              "quote": "inordinately slow",
+              "source": "tripadvisor.com",
+              "url": "https://www.tripadvisor.com/Restaurant_Review-g304554-d8613386-Reviews-Taj_Mahal_Tea_House-Mumbai_Maharashtra.html",
+              "kind": "fact"
+            }
+          ]
+        },
+        "outdoor": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": [
+            {
+              "claim": "Tripadvisor reviewers describe a naturally lit patio",
+              "quote": "Naturally lit patio area",
+              "source": "tripadvisor.com",
+              "url": "https://www.tripadvisor.com/Restaurant_Review-g304554-d8613386-Reviews-Taj_Mahal_Tea_House-Mumbai_Maharashtra.html",
+              "kind": "fact"
+            },
+            {
+              "claim": "A first-hand account confirms outdoor seating",
+              "quote": "provides outdoor seating",
+              "source": "socialmaharaj.com",
+              "url": "https://socialmaharaj.com/2022/06/16/cafes-in-bandra-where-you-can-work/",
+              "kind": "fact"
+            },
+            {
+              "claim": "Outdoor seating is listed among the venue's features",
+              "source": "magicpin.in",
+              "url": "https://magicpin.in/Mumbai/Bandra-West/Restaurant/Taj-Mahal-Tea-House/store/97870/",
+              "kind": "fact"
+            }
+          ]
+        },
+        "bathroom": {
+          "score": null,
+          "confidence": "none",
+          "evidence": []
+        }
+      },
+      "synthesis": "A large restored bungalow, quiet with many nooks and a patio, named in two Bandra work-cafe guides; wifi is listed once and no source mentions power outlets.",
+      "sourcesFetched": [
+        "https://www.tripadvisor.com/Restaurant_Review-g304554-d8613386-Reviews-Taj_Mahal_Tea_House-Mumbai_Maharashtra.html",
+        "https://magicpin.in/Mumbai/Bandra-West/Restaurant/Taj-Mahal-Tea-House/store/97870/",
+        "https://socialmaharaj.com/2022/06/16/cafes-in-bandra-where-you-can-work/",
+        "https://www.withloveashni.com/ashni-eats-world/best-cafes-in-bandra-mumbai",
+        "https://www.eazydiner.com/food-trends/wfh-to-wfc-the-best-cafes-in-bandra-with-high-speed-wi-fi-and-great-coffee",
+        "https://en.wikipedia.org/wiki/Brooke_Bond_Taj_Mahal_Tea_House"
+      ],
+      "notes": "Trading status positively confirmed: Tripadvisor shows no closure flag and magicpin lists the Sanatan Pereira Bungalow, 36/A St John Baptist Road address as currently open; no source found suggesting closure. Address discrepancy: Tripadvisor's listing gives '102 St John Baptist Road' while magicpin gives '36/A' — same street, treated as the same venue. Hours conflict: Tripadvisor 7:30am–11:30pm, magicpin 8am–11pm; socialmaharaj independently corroborates the 7:30am opening. Ratings vary: Tripadvisor 4.4 from 208 reviews (used), magicpin 4.6 from only 32 ratings. Magicpin lists live music as a feature, which could undercut focus at certain times — no source dates or times it. Operated by Hindustan Unilever, opened September 2015. Zomato and foursquare fetches blocked by robots.txt."
+    },
+    "candies-pali-hill": {
+      "trading": "confirmed",
+      "hours": "Tue–Sun 8:30am–10:30pm; closed Mondays",
+      "publicRating": {
+        "value": 4.3,
+        "count": 18055,
+        "source": "wanderlog.com (citing Google)",
+        "url": "https://wanderlog.com/place/details/1323671/candies"
+      },
+      "factors": {
+        "wifi": {
+          "score": null,
+          "confidence": "none",
+          "evidence": []
+        },
+        "power": {
+          "score": null,
+          "confidence": "none",
+          "evidence": []
+        },
+        "seating": {
+          "score": 3,
+          "confidence": "high",
+          "evidence": [
+            {
+              "claim": "Seating is plentiful and spread over several levels with both indoor air-conditioned areas and outdoor terraces",
+              "quote": "cozy indoor area with air conditioning and a beautiful outdoor space",
+              "source": "laptopfriendlycafe.com",
+              "url": "https://laptopfriendlycafe.com/cafes/mumbai/candies",
+              "kind": "fact"
+            },
+            {
+              "claim": "A Tripadvisor reviewer emphasises the sheer amount of seating and the choice of where to sit",
+              "quote": "Loads and loads of space too and so much choice of where to sit",
+              "source": "tripadvisor.com",
+              "url": "https://www.tripadvisor.com/Restaurant_Review-g304554-d2416424-Reviews-Candies-Mumbai_Maharashtra.html",
+              "kind": "fact"
+            },
+            {
+              "claim": "Against that, reviewers aggregated on Wanderlog call the chairs uncomfortable and dated",
+              "quote": "chairs are very uncomfortable and feel quite old-style",
+              "source": "wanderlog.com",
+              "url": "https://wanderlog.com/place/details/1323671/candies",
+              "kind": "fact"
+            },
+            {
+              "claim": "Tables are often unavailable because the cafe is so busy",
+              "quote": "It was difficult to find a table as it is always brimming with people",
+              "source": "tripadvisor.com",
+              "url": "https://www.tripadvisor.com/Restaurant_Review-g304554-d2416424-Reviews-Candies-Mumbai_Maharashtra.html",
+              "kind": "fact"
+            },
+            {
+              "claim": "A 2026 Bandra cafe guide describes the tables as basic",
+              "quote": "Tables are simple. Service can be slow when crowded.",
+              "source": "mumbaipune.co.in",
+              "url": "https://mumbaipune.co.in/cafes-in-bandra-25-best-coffee-spots-brunch-places-and-hidden/",
+              "kind": "fact"
+            }
+          ]
+        },
+        "longStay": {
+          "score": 3,
+          "confidence": "medium",
+          "evidence": [
+            {
+              "claim": "A laptop-cafe directory lists Candies as suitable for working on a laptop and for unhurried sessions",
+              "quote": "Good for working on laptop",
+              "source": "laptopfriendlycafe.com",
+              "url": "https://laptopfriendlycafe.com/cafes/mumbai/candies",
+              "kind": "fact"
+            },
+            {
+              "claim": "The same directory's Mumbai work-cafe roundup includes Candies and frames it as an office alternative",
+              "quote": "the perfect spot to escape the ordinary office setup",
+              "source": "laptopfriendlycafe.com",
+              "url": "https://laptopfriendlycafe.com/best-cafes-to-work-from-in-mumbai",
+              "kind": "fact"
+            },
+            {
+              "claim": "Sitting for hours is likely to be harder at peak times given the queues and table pressure reported by reviewers",
+              "quote": "Be prepared for a long wait if you order anything from the live counter",
+              "source": "tripadvisor.com",
+              "url": "https://www.tripadvisor.com/Restaurant_Review-g304554-d2416424-Reviews-Candies-Mumbai_Maharashtra.html",
+              "kind": "inference"
+            }
+          ]
+        },
+        "focus": {
+          "score": 2,
+          "confidence": "medium",
+          "evidence": [
+            {
+              "claim": "Reviewers describe a constantly busy, lively room with long ordering queues",
+              "quote": "insanely long and crazy line for ordering food",
+              "source": "wanderlog.com",
+              "url": "https://wanderlog.com/place/details/1323671/candies",
+              "kind": "fact"
+            },
+            {
+              "claim": "A Bandra guide advises weekday mornings because weekends are heavily crowded",
+              "quote": "Weekday morning. Weekends are very crowded.",
+              "source": "mumbaipune.co.in",
+              "url": "https://mumbaipune.co.in/cafes-in-bandra-25-best-coffee-spots-brunch-places-and-hidden/",
+              "kind": "fact"
+            },
+            {
+              "claim": "An LBB roundup notes the crowd skews to students, consistent with a noisy social room",
+              "quote": "extremely popular with college kids",
+              "source": "lbb.in",
+              "url": "https://lbb.in/mumbai/cafes-in-bandra/",
+              "kind": "fact"
+            }
+          ]
+        },
+        "calls": {
+          "score": null,
+          "confidence": "none",
+          "evidence": []
+        },
+        "food": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": [
+            {
+              "claim": "A full savoury menu plus a salad bar and bakery counter means a real meal is available, not just snacks",
+              "quote": "chicken lasagna, croissants, and an assortment of desserts",
+              "source": "laptopfriendlycafe.com",
+              "url": "https://laptopfriendlycafe.com/cafes/mumbai/candies",
+              "kind": "fact"
+            },
+            {
+              "claim": "Reviewers rate the cooking well",
+              "quote": "food tastes homemade, balanced, and full of flavour",
+              "source": "wanderlog.com",
+              "url": "https://wanderlog.com/place/details/1323671/candies",
+              "kind": "fact"
+            },
+            {
+              "claim": "A Bandra guide lists substantial dishes including quiche and rolls",
+              "source": "mumbaipune.co.in",
+              "url": "https://mumbaipune.co.in/cafes-in-bandra-25-best-coffee-spots-brunch-places-and-hidden/",
+              "kind": "fact"
+            }
+          ]
+        },
+        "outdoor": {
+          "score": 5,
+          "confidence": "high",
+          "evidence": [
+            {
+              "claim": "The cafe has a large planted outdoor area as well as rooftop seating",
+              "quote": "picturesque outdoor area adorned with greenery",
+              "source": "laptopfriendlycafe.com",
+              "url": "https://laptopfriendlycafe.com/cafes/mumbai/candies",
+              "kind": "fact"
+            },
+            {
+              "claim": "Reviewers aggregated on Wanderlog mention airy outdoor seating across several terraces",
+              "quote": "airy outdoor seating",
+              "source": "wanderlog.com",
+              "url": "https://wanderlog.com/place/details/1323671/candies",
+              "kind": "fact"
+            },
+            {
+              "claim": "A local listing records outdoor seating as an amenity",
+              "quote": "Outdoor seating",
+              "source": "magicpin.in",
+              "url": "https://magicpin.in/Mumbai/Pali-Hill/Restaurant/Candies/store/5b5c19/",
+              "kind": "fact"
+            },
+            {
+              "claim": "A Bandra guide records open terraces",
+              "quote": "Open terraces",
+              "source": "mumbaipune.co.in",
+              "url": "https://mumbaipune.co.in/cafes-in-bandra-25-best-coffee-spots-brunch-places-and-hidden/",
+              "kind": "fact"
+            },
+            {
+              "claim": "One reviewer complained the outdoor tables were not being cleaned often enough",
+              "quote": "outdoor tables were very very dirty",
+              "source": "tripadvisor.com",
+              "url": "https://www.tripadvisor.com/Restaurant_Review-g304554-d2416424-Reviews-Candies-Mumbai_Maharashtra.html",
+              "kind": "fact"
+            }
+          ]
+        },
+        "bathroom": {
+          "score": null,
+          "confidence": "none",
+          "evidence": []
+        }
+      },
+      "synthesis": "Plentiful multi-level indoor and outdoor seating and real food, but a loud, crowded, queue-heavy room with basic chairs and no evidence of wifi or power.",
+      "sourcesFetched": [
+        "https://laptopfriendlycafe.com/cafes/mumbai/candies",
+        "https://laptopfriendlycafe.com/best-cafes-to-work-from-in-mumbai",
+        "https://wanderlog.com/place/details/1323671/candies",
+        "https://www.tripadvisor.com/Restaurant_Review-g304554-d2416424-Reviews-Candies-Mumbai_Maharashtra.html",
+        "https://magicpin.in/Mumbai/Pali-Hill/Restaurant/Candies/store/5b5c19/",
+        "https://lbb.in/mumbai/cafes-in-bandra/",
+        "https://mumbaipune.co.in/cafes-in-bandra-25-best-coffee-spots-brunch-places-and-hidden/",
+        "https://www.holidify.com/pages/cafes-in-bandra-858.html"
+      ],
+      "notes": "Address confirmed as 5AA Pali Hill next to Learners Academy by laptopfriendlycafe, Wanderlog, Tripadvisor (d2416424) and magicpin. Candies has multiple outlets; I deliberately EXCLUDED the separate Tripadvisor listings for Candies Union Park / Petit High School (d8604086), Candies Bandra Reclamation (d5522629) and Candies near Lilavati Hospital (d8593013). No source I fetched mentions wifi or power outlets at this outlet at all, so both are null rather than low — this is absence of evidence, not evidence of absence. Hours: four sources agree Monday is closed. Zomato pages are disallowed by robots.txt and were not fetched."
+    },
+    "the-bagel-shop-carter-road": {
+      "trading": "confirmed",
+      "hours": "Daily 9:00am–10:30pm",
+      "publicRating": {
+        "value": 4.3,
+        "count": 75,
+        "source": "magicpin.in",
+        "url": "https://magicpin.in/Mumbai/Pali-Hill/Restaurant/The-Bagel-Shop/store/23323"
+      },
+      "factors": {
+        "wifi": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": [
+            {
+              "claim": "The venue listing records wifi and a work-friendly environment as amenities",
+              "quote": "Work Friendly Environment",
+              "source": "magicpin.in",
+              "url": "https://magicpin.in/Mumbai/Pali-Hill/Restaurant/The-Bagel-Shop/store/23323",
+              "kind": "fact"
+            },
+            {
+              "claim": "LBB's Mumbai work-cafe guide singles out the connection speed",
+              "quote": "fast wifi",
+              "source": "lbb.in",
+              "url": "https://lbb.in/mumbai/best-work-friendly-cafes-mumbai/",
+              "kind": "fact"
+            },
+            {
+              "claim": "LBB's Bandra cafe guide names it a favourite place to work because of the wifi",
+              "quote": "favorite place to get some work done (they have WiFi here)",
+              "source": "lbb.in",
+              "url": "https://lbb.in/mumbai/cafes-in-bandra/",
+              "kind": "fact"
+            },
+            {
+              "claim": "A Bandra work-cafe roundup records wifi as available",
+              "quote": "Yes",
+              "source": "sid-thewanderer.com",
+              "url": "https://www.sid-thewanderer.com/2018/03/best-cafes-bandra-khar-mumbai.html",
+              "kind": "fact"
+            },
+            {
+              "claim": "A work-cafe directory lists free wifi among the amenities",
+              "quote": "Free Wifi",
+              "source": "coworkingers.com",
+              "url": "https://coworkingers.com/best-work-cafe-in-mumbai/",
+              "kind": "fact"
+            }
+          ]
+        },
+        "power": {
+          "score": 4,
+          "confidence": "medium",
+          "evidence": [
+            {
+              "claim": "A Tripadvisor reviewer reports power outlets at many of the outdoor tables",
+              "quote": "Many tables outside have power outlets so you can work away",
+              "source": "tripadvisor.in",
+              "url": "https://www.tripadvisor.in/Restaurant_Review-g304554-d5997402-Reviews-The_Bagel_Shop-Mumbai_Maharashtra.html",
+              "kind": "fact"
+            },
+            {
+              "claim": "A first-hand account of a morning there lists power outlets alongside wifi",
+              "quote": "WiFi, power outlets, and a relaxed atmosphere that encourages long stays",
+              "source": "vocal.media",
+              "url": "https://vocal.media/humans/a-morning-at-the-bagel-shop-bandra-s-ten-year-old-love-letter-to-bagels-and-community",
+              "kind": "fact"
+            }
+          ]
+        },
+        "seating": {
+          "score": 4,
+          "confidence": "medium",
+          "evidence": [
+            {
+              "claim": "Seating is soft and living-room-like rather than canteen-style",
+              "quote": "Sofa‑styled seating, wall hangings, low lighting",
+              "source": "vocal.media",
+              "url": "https://vocal.media/humans/a-morning-at-the-bagel-shop-bandra-s-ten-year-old-love-letter-to-bagels-and-community",
+              "kind": "fact"
+            },
+            {
+              "claim": "The layout splits into an outdoor area and two indoor sections",
+              "quote": "outside area and two inside sections",
+              "source": "lbb.in",
+              "url": "https://lbb.in/mumbai/cafes-in-bandra/",
+              "kind": "fact"
+            },
+            {
+              "claim": "A work-cafe directory describes the seating as comfortable and suited to meetings",
+              "quote": "quiet atmosphere and comfortable seating",
+              "source": "coworkingers.com",
+              "url": "https://coworkingers.com/best-work-cafe-in-mumbai/",
+              "kind": "fact"
+            },
+            {
+              "claim": "A Bandra work-cafe roundup notes a community table",
+              "quote": "community table",
+              "source": "sid-thewanderer.com",
+              "url": "https://www.sid-thewanderer.com/2018/03/best-cafes-bandra-khar-mumbai.html",
+              "kind": "fact"
+            },
+            {
+              "claim": "The main limitation is size — guides call it a small outlet",
+              "quote": "relatively small place",
+              "source": "holidify.com",
+              "url": "https://www.holidify.com/pages/cafes-in-bandra-858.html",
+              "kind": "fact"
+            }
+          ]
+        },
+        "longStay": {
+          "score": 5,
+          "confidence": "high",
+          "evidence": [
+            {
+              "claim": "A first-hand account says the atmosphere invites long stays and that staff expect laptop regulars",
+              "quote": "used to regulars settling in with laptops",
+              "source": "vocal.media",
+              "url": "https://vocal.media/humans/a-morning-at-the-bagel-shop-bandra-s-ten-year-old-love-letter-to-bagels-and-community",
+              "kind": "fact"
+            },
+            {
+              "claim": "The same account describes lingering as part of the culture of the place",
+              "quote": "unspoken understanding that lingering is part of the culture",
+              "source": "vocal.media",
+              "url": "https://vocal.media/humans/a-morning-at-the-bagel-shop-bandra-s-ten-year-old-love-letter-to-bagels-and-community",
+              "kind": "fact"
+            },
+            {
+              "claim": "The venue listing itself advertises a work-friendly environment",
+              "quote": "Work Friendly Environment",
+              "source": "magicpin.in",
+              "url": "https://magicpin.in/Mumbai/Pali-Hill/Restaurant/The-Bagel-Shop/store/23323",
+              "kind": "fact"
+            },
+            {
+              "claim": "LBB includes it in a list of Mumbai cafes to work from",
+              "source": "lbb.in",
+              "url": "https://lbb.in/mumbai/best-work-friendly-cafes-mumbai/",
+              "kind": "fact"
+            },
+            {
+              "claim": "A work-cafe directory lists it as suited to extended sessions and brainstorming",
+              "quote": "meetings and brainstorming sessions",
+              "source": "coworkingers.com",
+              "url": "https://coworkingers.com/best-work-cafe-in-mumbai/",
+              "kind": "fact"
+            },
+            {
+              "claim": "A Bandra guide notes youngsters working on laptops there",
+              "source": "holidify.com",
+              "url": "https://www.holidify.com/pages/cafes-in-bandra-858.html",
+              "kind": "fact"
+            }
+          ]
+        },
+        "focus": {
+          "score": 3,
+          "confidence": "medium",
+          "evidence": [
+            {
+              "claim": "LBB emphasises a calm room in a quiet lane",
+              "quote": "peaceful ambience",
+              "source": "lbb.in",
+              "url": "https://lbb.in/mumbai/best-work-friendly-cafes-mumbai/",
+              "kind": "fact"
+            },
+            {
+              "claim": "LBB's Bandra guide notes the location itself is off the main road",
+              "quote": "hidden and in a really peaceful by-lane of Pali Hill",
+              "source": "lbb.in",
+              "url": "https://lbb.in/mumbai/cafes-in-bandra/",
+              "kind": "fact"
+            },
+            {
+              "claim": "Tripadvisor reviewers report the outdoor section suffers from street noise",
+              "quote": "really noisy if there is a little traffic jam",
+              "source": "tripadvisor.in",
+              "url": "https://www.tripadvisor.in/Restaurant_Review-g304554-d5997402-Reviews-The_Bagel_Shop-Mumbai_Maharashtra.html",
+              "kind": "fact"
+            },
+            {
+              "claim": "Indoors, other guests taking calls on speakerphone is reported as a distraction",
+              "quote": "irritating, because they allow mobile phones on speaker",
+              "source": "tripadvisor.in",
+              "url": "https://www.tripadvisor.in/Restaurant_Review-g304554-d5997402-Reviews-The_Bagel_Shop-Mumbai_Maharashtra.html",
+              "kind": "fact"
+            }
+          ]
+        },
+        "calls": {
+          "score": 3,
+          "confidence": "low",
+          "evidence": [
+            {
+              "claim": "Calls are evidently tolerated — a reviewer complains that guests are allowed to use speakerphone indoors, which implies phone use is permitted but disturbs others",
+              "quote": "they allow mobile phones on speaker",
+              "source": "tripadvisor.in",
+              "url": "https://www.tripadvisor.in/Restaurant_Review-g304554-d5997402-Reviews-The_Bagel_Shop-Mumbai_Maharashtra.html",
+              "kind": "fact"
+            }
+          ]
+        },
+        "food": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": [
+            {
+              "claim": "A full breakfast, brunch and lunch menu of bagels, salads and eggs, so a proper meal is possible",
+              "quote": "Breakfast, lunch, brunch",
+              "source": "vocal.media",
+              "url": "https://vocal.media/humans/a-morning-at-the-bagel-shop-bandra-s-ten-year-old-love-letter-to-bagels-and-community",
+              "kind": "fact"
+            },
+            {
+              "claim": "LBB highlights in-house bagels and salads plus regional specials",
+              "quote": "in-house bagels and salads",
+              "source": "lbb.in",
+              "url": "https://lbb.in/mumbai/best-work-friendly-cafes-mumbai/",
+              "kind": "fact"
+            },
+            {
+              "claim": "Tripadvisor reviewers praise the cooked dishes, not just the baking",
+              "quote": "exceptional",
+              "source": "tripadvisor.in",
+              "url": "https://www.tripadvisor.in/Restaurant_Review-g304554-d5997402-Reviews-The_Bagel_Shop-Mumbai_Maharashtra.html",
+              "kind": "fact"
+            }
+          ]
+        },
+        "outdoor": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": [
+            {
+              "claim": "The listing records both indoor and outdoor seating",
+              "source": "magicpin.in",
+              "url": "https://magicpin.in/Mumbai/Pali-Hill/Restaurant/The-Bagel-Shop/store/23323",
+              "kind": "fact"
+            },
+            {
+              "claim": "A first-hand visit found the outdoor tables already half full mid-morning",
+              "quote": "already half full",
+              "source": "vocal.media",
+              "url": "https://vocal.media/humans/a-morning-at-the-bagel-shop-bandra-s-ten-year-old-love-letter-to-bagels-and-community",
+              "kind": "fact"
+            },
+            {
+              "claim": "LBB describes choosing between outside and inside",
+              "quote": "sit outside or park yourself inside",
+              "source": "lbb.in",
+              "url": "https://lbb.in/mumbai/best-work-friendly-cafes-mumbai/",
+              "kind": "fact"
+            },
+            {
+              "claim": "A Bandra work-cafe roundup records outdoor seating as available",
+              "quote": "Yes",
+              "source": "sid-thewanderer.com",
+              "url": "https://www.sid-thewanderer.com/2018/03/best-cafes-bandra-khar-mumbai.html",
+              "kind": "fact"
+            },
+            {
+              "claim": "Outdoor tables are the ones with power outlets, but also the noisiest",
+              "quote": "Many tables outside have power outlets",
+              "source": "tripadvisor.in",
+              "url": "https://www.tripadvisor.in/Restaurant_Review-g304554-d5997402-Reviews-The_Bagel_Shop-Mumbai_Maharashtra.html",
+              "kind": "fact"
+            }
+          ]
+        },
+        "bathroom": {
+          "score": null,
+          "confidence": "none",
+          "evidence": []
+        }
+      },
+      "synthesis": "Multiple sources describe it as an explicitly work-friendly cafe with fast wifi, outlets at outdoor tables, sofa seating and tolerance of long laptop stays; it is small and can get noisy.",
+      "sourcesFetched": [
+        "https://magicpin.in/Mumbai/Pali-Hill/Restaurant/The-Bagel-Shop/store/23323",
+        "https://vocal.media/humans/a-morning-at-the-bagel-shop-bandra-s-ten-year-old-love-letter-to-bagels-and-community",
+        "https://lbb.in/mumbai/best-work-friendly-cafes-mumbai/",
+        "https://lbb.in/mumbai/cafes-in-bandra/",
+        "https://www.sid-thewanderer.com/2018/03/best-cafes-bandra-khar-mumbai.html",
+        "https://www.tripadvisor.in/Restaurant_Review-g304554-d5997402-Reviews-The_Bagel_Shop-Mumbai_Maharashtra.html",
+        "https://coworkingers.com/best-work-cafe-in-mumbai/",
+        "https://www.holidify.com/pages/cafes-in-bandra-858.html"
+      ],
+      "notes": "Address 30 Pali Mala Road / near Carter Road confirmed by magicpin and vocal.media; Tripadvisor (d5997402) lists the same outlet as '30 Carter Road Opposite Rizvi College'. Only one Bagel Shop outlet was found, so no branch exclusion was needed. vocal.media is a user-publishing platform — treated as a detailed first-hand account rather than an editorial source, and its power/wifi claim is corroborated independently by Tripadvisor. Ratings differ by platform (magicpin 4.3/75; Tripadvisor 4.0/86; coworkingers cites 4.1); magicpin used. Zomato is disallowed by robots.txt. Bathroom: no mention found."
+    },
+    "blue-tokai-coffee-roasters-perry-road-perry-road": {
+      "trading": "confirmed",
+      "hours": "Mon–Sun 7:00am–11:30pm (official store page); third-party listings say 7am–11pm or 8am–11pm",
+      "publicRating": {
+        "value": 4.4,
+        "count": 31,
+        "source": "tripadvisor.in",
+        "url": "https://www.tripadvisor.in/Restaurant_Review-g304554-d13985958-Reviews-Blue_Tokai_Coffee_Roasters_Bandra-Mumbai_Maharashtra.html"
+      },
+      "factors": {
+        "wifi": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": [
+            {
+              "claim": "Blue Tokai's own store page for this outlet lists wifi among its amenities",
+              "quote": "WiFi available",
+              "source": "stores.bluetokaicoffee.com (official)",
+              "url": "https://stores.bluetokaicoffee.com/blue-tokai-coffee-roasters-bandra-cafe-bandra-west-mumbai-436738/Home",
+              "kind": "fact"
+            },
+            {
+              "claim": "A local venue listing for the New Kantwadi / Mayflower address records wifi as a service option",
+              "quote": "WiFi",
+              "source": "magicpin.in",
+              "url": "https://magicpin.in/Mumbai/Bandra-West/Restaurant/Blue-Tokai-Coffee-Roasters/store/24a95a/",
+              "kind": "fact"
+            },
+            {
+              "claim": "A blogger who worked from this outlet confirms wifi is available, though he preferred his own hotspot",
+              "source": "socialmaharaj.com",
+              "url": "https://socialmaharaj.com/2022/06/16/cafes-in-bandra-where-you-can-work/",
+              "kind": "fact"
+            },
+            {
+              "claim": "A Bandra work-cafe roundup records wifi as available",
+              "quote": "Yes",
+              "source": "sid-thewanderer.com",
+              "url": "https://www.sid-thewanderer.com/2018/03/best-cafes-bandra-khar-mumbai.html",
+              "kind": "fact"
+            }
+          ]
+        },
+        "power": {
+          "score": 4,
+          "confidence": "low",
+          "evidence": [
+            {
+              "claim": "A Tripadvisor reviewer of this outlet reports a good number of sockets for working",
+              "quote": "Lots of power outlets to work",
+              "source": "tripadvisor.in",
+              "url": "https://www.tripadvisor.in/Restaurant_Review-g304554-d13985958-Reviews-Blue_Tokai_Coffee_Roasters_Bandra-Mumbai_Maharashtra.html",
+              "kind": "fact"
+            }
+          ]
+        },
+        "seating": {
+          "score": 2,
+          "confidence": "high",
+          "evidence": [
+            {
+              "claim": "A blogger who worked there found the room very small with almost no tables and advises arriving early",
+              "quote": "extremely small, with barely 5 tables",
+              "source": "socialmaharaj.com",
+              "url": "https://socialmaharaj.com/2022/06/16/cafes-in-bandra-where-you-can-work/",
+              "kind": "fact"
+            },
+            {
+              "claim": "Tripadvisor reviewers repeatedly describe the space as tiny and tight",
+              "quote": "small cramped tucked away shop",
+              "source": "tripadvisor.in",
+              "url": "https://www.tripadvisor.in/Restaurant_Review-g304554-d13985958-Reviews-Blue_Tokai_Coffee_Roasters_Bandra-Mumbai_Maharashtra.html",
+              "kind": "fact"
+            },
+            {
+              "claim": "A 2026 Bandra guide calls the space small though well kept",
+              "quote": "The space is small but clean and functional.",
+              "source": "mumbaipune.co.in",
+              "url": "https://mumbaipune.co.in/cafes-in-bandra-25-best-coffee-spots-brunch-places-and-hidden/",
+              "kind": "fact"
+            },
+            {
+              "claim": "A Bandra work-cafe roundup also describes it as small",
+              "quote": "small and a modern looking space",
+              "source": "sid-thewanderer.com",
+              "url": "https://www.sid-thewanderer.com/2018/03/best-cafes-bandra-khar-mumbai.html",
+              "kind": "fact"
+            }
+          ]
+        },
+        "longStay": {
+          "score": 3,
+          "confidence": "medium",
+          "evidence": [
+            {
+              "claim": "A Bandra guide observes people using it for short work stints rather than full days",
+              "quote": "Many people use it for short work sessions",
+              "source": "mumbaipune.co.in",
+              "url": "https://mumbaipune.co.in/cafes-in-bandra-25-best-coffee-spots-brunch-places-and-hidden/",
+              "kind": "fact"
+            },
+            {
+              "claim": "With roughly five tables and a rush-hour scramble for seats, holding a table for three hours is likely to be difficult",
+              "quote": "extremely small, with barely 5 tables",
+              "source": "socialmaharaj.com",
+              "url": "https://socialmaharaj.com/2022/06/16/cafes-in-bandra-where-you-can-work/",
+              "kind": "inference"
+            },
+            {
+              "claim": "LBB's Mumbai work-cafe guide credits Blue Tokai as a chain with sitting-for-hours tolerance, but lists it as 'Multiple Outlets' rather than naming this branch",
+              "quote": "you can sit in one place for hours on end",
+              "source": "lbb.in",
+              "url": "https://lbb.in/mumbai/best-work-friendly-cafes-mumbai/",
+              "kind": "inference"
+            }
+          ]
+        },
+        "focus": {
+          "score": 2,
+          "confidence": "medium",
+          "evidence": [
+            {
+              "claim": "A blogger who worked there found the room too small for privacy — neighbouring conversations carry",
+              "quote": "you can easily listen to what others are talking",
+              "source": "socialmaharaj.com",
+              "url": "https://socialmaharaj.com/2022/06/16/cafes-in-bandra-where-you-can-work/",
+              "kind": "fact"
+            }
+          ]
+        },
+        "calls": {
+          "score": 2,
+          "confidence": "low",
+          "evidence": [
+            {
+              "claim": "In a room where neighbouring tables can hear each other, taking a call would be intrusive in both directions",
+              "quote": "you can easily listen to what others are talking",
+              "source": "socialmaharaj.com",
+              "url": "https://socialmaharaj.com/2022/06/16/cafes-in-bandra-where-you-can-work/",
+              "kind": "inference"
+            }
+          ]
+        },
+        "food": {
+          "score": 3,
+          "confidence": "medium",
+          "evidence": [
+            {
+              "claim": "A Bandra guide describes the food menu as limited",
+              "quote": "Limited menu",
+              "source": "holidify.com",
+              "url": "https://www.holidify.com/pages/cafes-in-bandra-858.html",
+              "kind": "fact"
+            },
+            {
+              "claim": "Beyond coffee there are bakery items and some cooked plates, so a light meal is possible",
+              "source": "mumbaipune.co.in",
+              "url": "https://mumbaipune.co.in/cafes-in-bandra-25-best-coffee-spots-brunch-places-and-hidden/",
+              "kind": "fact"
+            },
+            {
+              "claim": "A blogger rated the pasta he ate there positively",
+              "quote": "Pasta in Pesto sauce",
+              "source": "socialmaharaj.com",
+              "url": "https://socialmaharaj.com/2022/06/16/cafes-in-bandra-where-you-can-work/",
+              "kind": "fact"
+            },
+            {
+              "claim": "A restaurant aggregator notes the outlet's emphasis on grab-and-go rather than sit-down meals",
+              "quote": "good for those clients who like to have a snack on the go",
+              "source": "restaurant-guru.in",
+              "url": "https://restaurant-guru.in/Blue-Tokai-Coffee-Roasters-Mumbai-3",
+              "kind": "fact"
+            }
+          ]
+        },
+        "outdoor": {
+          "score": 3,
+          "confidence": "low",
+          "evidence": [
+            {
+              "claim": "A Bandra work-cafe roundup records outdoor seating as available",
+              "quote": "Yes",
+              "source": "sid-thewanderer.com",
+              "url": "https://www.sid-thewanderer.com/2018/03/best-cafes-bandra-khar-mumbai.html",
+              "kind": "fact"
+            }
+          ]
+        },
+        "bathroom": {
+          "score": null,
+          "confidence": "none",
+          "evidence": []
+        }
+      },
+      "synthesis": "Good coffee with wifi and, per one reviewer, plenty of outlets, but every source calls the room very small with about five tables and little acoustic privacy.",
+      "sourcesFetched": [
+        "https://stores.bluetokaicoffee.com/blue-tokai-coffee-roasters-bandra-cafe-bandra-west-mumbai-436738/Home",
+        "https://socialmaharaj.com/2022/06/16/cafes-in-bandra-where-you-can-work/",
+        "https://www.sid-thewanderer.com/2018/03/best-cafes-bandra-khar-mumbai.html",
+        "https://www.tripadvisor.in/Restaurant_Review-g304554-d13985958-Reviews-Blue_Tokai_Coffee_Roasters_Bandra-Mumbai_Maharashtra.html",
+        "https://restaurant-guru.in/Blue-Tokai-Coffee-Roasters-Mumbai-3",
+        "https://magicpin.in/Mumbai/Bandra-West/Restaurant/Blue-Tokai-Coffee-Roasters/store/24a95a/",
+        "https://mumbaipune.co.in/cafes-in-bandra-25-best-coffee-spots-brunch-places-and-hidden/",
+        "https://www.holidify.com/pages/cafes-in-bandra-858.html",
+        "https://lbb.in/mumbai/best-work-friendly-cafes-mumbai/"
+      ],
+      "notes": "All outlet-specific evidence is tied to this address: Blue Tokai's official store page gives 'Shop No 1, No 33, Mayflower Building, Perry Road, New Kantwadi Lane'; Tripadvisor d13985958 gives '1 New Kantwadi Road Shop 1, Perry Road, May Flower Apartment'; magicpin store 24a95a gives 'Ground May Flower Apartment 1, New Kant Wadi Lane'; socialmaharaj places it 'off New Kantwadi Road, opposite Peace Heaven'. I EXCLUDED Blue Tokai's other Mumbai outlets — notably the BKC store (magicpin 79ba04) and the Linking Road listing — and did not use Blue Tokai pages for Pune, Bengaluru or Saket. The one LBB claim used for longStay is brand-level ('Multiple Outlets'), so it is labelled an inference and did not raise the score above 3. Ratings vary widely by platform (official page 4.7, Tripadvisor 4.4/31, restaurant-guru 4.4 Google, magicpin 3.6/26); Tripadvisor used because it is the one with both a value and a count for this address. Zomato disallowed by robots.txt; postcard.inc returned 403."
+    },
+    "the-yoga-house-sherly-rajan-road": {
+      "trading": "confirmed",
+      "hours": "Daily 8:00am–10:00pm",
+      "publicRating": {
+        "value": 4.8,
+        "count": 2925,
+        "source": "wanderlog.com (citing Google)",
+        "url": "https://wanderlog.com/place/details/1407990/the-yoga-house-studio--cafe"
+      },
+      "factors": {
+        "wifi": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": [
+            {
+              "claim": "A Bandra work-cafe roundup records wifi as available",
+              "quote": "Yes",
+              "source": "sid-thewanderer.com",
+              "url": "https://www.sid-thewanderer.com/2018/03/best-cafes-bandra-khar-mumbai.html",
+              "kind": "fact"
+            },
+            {
+              "claim": "LBB's Mumbai work-cafe guide lists it as offering wifi",
+              "source": "lbb.in",
+              "url": "https://lbb.in/mumbai/best-work-friendly-cafes-mumbai/",
+              "kind": "fact"
+            },
+            {
+              "claim": "A work-cafe directory lists free wifi among its amenities",
+              "quote": "Free Wifi",
+              "source": "coworkingers.com",
+              "url": "https://coworkingers.com/best-work-cafe-in-mumbai/",
+              "kind": "fact"
+            }
+          ]
+        },
+        "power": {
+          "score": null,
+          "confidence": "none",
+          "evidence": []
+        },
+        "seating": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": [
+            {
+              "claim": "Reviewers describe three distinct seating zones including a leafy outdoor section",
+              "quote": "Seating is split into three moods",
+              "source": "wanderlog.com",
+              "url": "https://wanderlog.com/place/details/1407990/the-yoga-house-studio--cafe",
+              "kind": "fact"
+            },
+            {
+              "claim": "Guests can choose a proper table or floor cushions",
+              "quote": "cushion on the floor",
+              "source": "lbb.in",
+              "url": "https://lbb.in/mumbai/best-work-friendly-cafes-mumbai/",
+              "kind": "fact"
+            },
+            {
+              "claim": "A work-cafe directory records multiple seating levels from tables to cushions",
+              "quote": "tables to floor cushions",
+              "source": "coworkingers.com",
+              "url": "https://coworkingers.com/best-work-cafe-in-mumbai/",
+              "kind": "fact"
+            },
+            {
+              "claim": "A Bandra work-cafe roundup notes a community table",
+              "quote": "community table",
+              "source": "sid-thewanderer.com",
+              "url": "https://www.sid-thewanderer.com/2018/03/best-cafes-bandra-khar-mumbai.html",
+              "kind": "fact"
+            },
+            {
+              "claim": "A work-cafe blog notes window seating",
+              "source": "district.in",
+              "url": "https://www.district.in/blog/work-friendly-cafes-mumbai",
+              "kind": "fact"
+            },
+            {
+              "claim": "One caveat for a long session in Mumbai: a roundup reports no air conditioning",
+              "quote": "no air conditioning, but the place is still genuinely cool",
+              "source": "sid-thewanderer.com",
+              "url": "https://www.sid-thewanderer.com/2018/03/best-cafes-bandra-khar-mumbai.html",
+              "kind": "fact"
+            }
+          ]
+        },
+        "longStay": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": [
+            {
+              "claim": "Reviewers aggregated on Wanderlog describe it as a place to settle in and read or work",
+              "quote": "quiet location to read books or work",
+              "source": "wanderlog.com",
+              "url": "https://wanderlog.com/place/details/1407990/the-yoga-house-studio--cafe",
+              "kind": "fact"
+            },
+            {
+              "claim": "LBB includes it in its Mumbai work-from-cafe guide and frames it as a retreat for extended sessions",
+              "quote": "peaceful retreat",
+              "source": "lbb.in",
+              "url": "https://lbb.in/mumbai/best-work-friendly-cafes-mumbai/",
+              "kind": "fact"
+            },
+            {
+              "claim": "A work-cafe blog features it as work-friendly and notes it opens early",
+              "quote": "quiet and productive",
+              "source": "district.in",
+              "url": "https://www.district.in/blog/work-friendly-cafes-mumbai",
+              "kind": "fact"
+            },
+            {
+              "claim": "A work-cafe directory features it as a Mumbai cafe to work from",
+              "source": "coworkingers.com",
+              "url": "https://coworkingers.com/best-work-cafe-in-mumbai/",
+              "kind": "fact"
+            }
+          ]
+        },
+        "focus": {
+          "score": 5,
+          "confidence": "high",
+          "evidence": [
+            {
+              "claim": "Reviewers stress how quiet it is despite the location",
+              "quote": "Peaceful. Not crowded. Bandra energy without the traffic noise",
+              "source": "wanderlog.com",
+              "url": "https://wanderlog.com/place/details/1407990/the-yoga-house-studio--cafe",
+              "kind": "fact"
+            },
+            {
+              "claim": "The setting is described as tucked away and serene",
+              "quote": "tucked away location that keeps it serene",
+              "source": "wanderlog.com",
+              "url": "https://wanderlog.com/place/details/1407990/the-yoga-house-studio--cafe",
+              "kind": "fact"
+            },
+            {
+              "claim": "LBB describes it as a quiet corner and a peaceful retreat",
+              "quote": "quiet corner",
+              "source": "lbb.in",
+              "url": "https://lbb.in/mumbai/best-work-friendly-cafes-mumbai/",
+              "kind": "fact"
+            },
+            {
+              "claim": "A work-cafe blog characterises the atmosphere as quiet and productive",
+              "quote": "quiet and productive",
+              "source": "district.in",
+              "url": "https://www.district.in/blog/work-friendly-cafes-mumbai",
+              "kind": "fact"
+            },
+            {
+              "claim": "A Bandra guide describes the outdoor seating as feeling like a treehouse, away from street bustle",
+              "quote": "Seating outside feels like a small treehouse",
+              "source": "mumbaipune.co.in",
+              "url": "https://mumbaipune.co.in/cafes-in-bandra-25-best-coffee-spots-brunch-places-and-hidden/",
+              "kind": "fact"
+            }
+          ]
+        },
+        "calls": {
+          "score": null,
+          "confidence": "none",
+          "evidence": []
+        },
+        "food": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": [
+            {
+              "claim": "The official site describes a full healthy global menu, not just drinks",
+              "quote": "healthy global cuisine made with ayurvedic principles",
+              "source": "yogahouse.in (official)",
+              "url": "https://www.yogahouse.in",
+              "kind": "fact"
+            },
+            {
+              "claim": "Reviewers name substantial dishes",
+              "quote": "flavorful yet healthy food options like risotto and Avocado toast",
+              "source": "wanderlog.com",
+              "url": "https://wanderlog.com/place/details/1407990/the-yoga-house-studio--cafe",
+              "kind": "fact"
+            },
+            {
+              "claim": "LBB notes holistic juices and salads",
+              "quote": "holistic and healthy juices, salads",
+              "source": "lbb.in",
+              "url": "https://lbb.in/mumbai/best-work-friendly-cafes-mumbai/",
+              "kind": "fact"
+            },
+            {
+              "claim": "A Bandra guide lists smoothie bowls, khichdi bowls and light sandwiches",
+              "source": "mumbaipune.co.in",
+              "url": "https://mumbaipune.co.in/cafes-in-bandra-25-best-coffee-spots-brunch-places-and-hidden/",
+              "kind": "fact"
+            },
+            {
+              "claim": "Reviewers repeatedly flag that it is expensive",
+              "quote": "premium",
+              "source": "wanderlog.com",
+              "url": "https://wanderlog.com/place/details/1407990/the-yoga-house-studio--cafe",
+              "kind": "fact"
+            }
+          ]
+        },
+        "outdoor": {
+          "score": 5,
+          "confidence": "high",
+          "evidence": [
+            {
+              "claim": "Reviewers describe a leafy outdoor section as one of the three seating zones",
+              "quote": "A leafy outdoor section for sunshine and breezes",
+              "source": "wanderlog.com",
+              "url": "https://wanderlog.com/place/details/1407990/the-yoga-house-studio--cafe",
+              "kind": "fact"
+            },
+            {
+              "claim": "A vegan restaurant directory records outdoor seating as an amenity",
+              "quote": "Outdoor seating",
+              "source": "happycow.net",
+              "url": "https://www.happycow.net/reviews/the-yoga-house-studio-and-cafe-mumbai-441534",
+              "kind": "fact"
+            },
+            {
+              "claim": "A Bandra work-cafe roundup records outdoor seating as available",
+              "quote": "Yes",
+              "source": "sid-thewanderer.com",
+              "url": "https://www.sid-thewanderer.com/2018/03/best-cafes-bandra-khar-mumbai.html",
+              "kind": "fact"
+            },
+            {
+              "claim": "A Bandra guide likens the outdoor seating to a treehouse",
+              "quote": "Seating outside feels like a small treehouse",
+              "source": "mumbaipune.co.in",
+              "url": "https://mumbaipune.co.in/cafes-in-bandra-25-best-coffee-spots-brunch-places-and-hidden/",
+              "kind": "fact"
+            }
+          ]
+        },
+        "bathroom": {
+          "score": null,
+          "confidence": "none",
+          "evidence": []
+        }
+      },
+      "synthesis": "Consistently described as quiet, leafy and work-friendly with wifi, varied seating and real healthy meals; no source mentions power outlets, and one notes there is no air conditioning.",
+      "sourcesFetched": [
+        "https://www.yogahouse.in",
+        "https://wanderlog.com/place/details/1407990/the-yoga-house-studio--cafe",
+        "https://www.happycow.net/reviews/the-yoga-house-studio-and-cafe-mumbai-441534",
+        "https://www.sid-thewanderer.com/2018/03/best-cafes-bandra-khar-mumbai.html",
+        "https://lbb.in/mumbai/best-work-friendly-cafes-mumbai/",
+        "https://coworkingers.com/best-work-cafe-in-mumbai/",
+        "https://www.district.in/blog/work-friendly-cafes-mumbai",
+        "https://mumbaipune.co.in/cafes-in-bandra-25-best-coffee-spots-brunch-places-and-hidden/"
+      ],
+      "notes": "Address confirmed as Nargis Villa, Sherly Rajan Road, Bandra West by Wanderlog and HappyCow; the official site (live) gives Sherly Rajan Rd. Only one Yoga House location was found. Power: no source I fetched mentions sockets or charging, so the score is null, not low. Hours conflict: Wanderlog and HappyCow both say daily 8am–10pm, but the 2018 sid-thewanderer roundup says closed Mondays — I have used the two current sources and flag the older claim as possibly outdated. Ratings differ sharply by platform (Google 4.8/2925, Tripadvisor 4.0/72, coworkingers cites 4.9, HappyCow 5.0 from a single review); the Google figure via Wanderlog is used. Zomato and EazyDiner not fetched (Zomato disallowed by robots.txt)."
+    },
+    "earth-cafe-waterfield-road": {
+      "trading": "confirmed",
+      "hours": "Daily, roughly 8am–11pm — sources disagree (Wanderlog 8am–11pm; magicpin 8am–10:30pm; HappyCow 9am–10pm; Tripadvisor 10am–11pm)",
+      "publicRating": {
+        "value": 4.6,
+        "count": 2697,
+        "source": "wanderlog.com (citing Google)",
+        "url": "https://wanderlog.com/place/details/423260/earth-cafe--waterfield"
+      },
+      "factors": {
+        "wifi": {
+          "score": 4,
+          "confidence": "medium",
+          "evidence": [
+            {
+              "claim": "A vegan restaurant directory records free wifi for this outlet and a reviewer reports it working",
+              "quote": "Wifi and charging outlets working",
+              "source": "happycow.net",
+              "url": "https://www.happycow.net/reviews/earth-cafe-mumbai-154371",
+              "kind": "fact"
+            },
+            {
+              "claim": "A restaurant aggregator lists wi-fi among the venue's features",
+              "quote": "Wi-Fi",
+              "source": "restaurant-guru.in",
+              "url": "https://restaurant-guru.in/Earth-Cafe-Waterfield-Mumbai",
+              "kind": "fact"
+            },
+            {
+              "claim": "The Tripadvisor listing for this outlet also shows free wifi as a feature",
+              "quote": "Free Wifi",
+              "source": "tripadvisor.in",
+              "url": "https://www.tripadvisor.in/Restaurant_Review-g304554-d16929154-Reviews-Earth_Cafe-Mumbai_Maharashtra.html",
+              "kind": "fact"
+            }
+          ]
+        },
+        "power": {
+          "score": 3,
+          "confidence": "low",
+          "evidence": [
+            {
+              "claim": "One directory reviewer reports charging points in working order, the only mention of power found",
+              "quote": "Wifi and charging outlets working",
+              "source": "happycow.net",
+              "url": "https://www.happycow.net/reviews/earth-cafe-mumbai-154371",
+              "kind": "fact"
+            }
+          ]
+        },
+        "seating": {
+          "score": 3,
+          "confidence": "medium",
+          "evidence": [
+            {
+              "claim": "The room is bright with large windows and furnished with tables and soft seating",
+              "quote": "marble top tables and cane sofas",
+              "source": "tripadvisor.in",
+              "url": "https://www.tripadvisor.in/Restaurant_Review-g304554-d16929154-Reviews-Earth_Cafe-Mumbai_Maharashtra.html",
+              "kind": "fact"
+            },
+            {
+              "claim": "An LBB review of this outlet emphasises natural light through big windows",
+              "quote": "huge windows that allow all manners of natural light",
+              "source": "lbb.in",
+              "url": "https://lbb.in/mumbai/earth-caf-waterfield-road-113f89/",
+              "kind": "fact"
+            },
+            {
+              "claim": "Against that, reviewers aggregated on Wanderlog say it gets busy and feels cramped at times",
+              "quote": "can get busy due to its popularity",
+              "source": "wanderlog.com",
+              "url": "https://wanderlog.com/place/details/423260/earth-cafe--waterfield",
+              "kind": "fact"
+            }
+          ]
+        },
+        "longStay": {
+          "score": 2,
+          "confidence": "low",
+          "evidence": [
+            {
+              "claim": "A Tripadvisor reviewer says staff told her laptops were not permitted, shortly after she ordered",
+              "quote": "I was told that laptops are not allowed the cafe!",
+              "source": "tripadvisor.in",
+              "url": "https://www.tripadvisor.in/Restaurant_Review-g304554-d16929154-Reviews-Earth_Cafe-Mumbai_Maharashtra.html",
+              "kind": "fact"
+            },
+            {
+              "claim": "A restaurant aggregator frames the venue as somewhere to network or relax rather than to work",
+              "quote": "Great place to network or relax",
+              "source": "restaurant-guru.in",
+              "url": "https://restaurant-guru.in/Earth-Cafe-Waterfield-Mumbai",
+              "kind": "fact"
+            },
+            {
+              "claim": "An LBB review imagines a freelancer working there, but does not confirm laptops are welcome",
+              "quote": "a boho-chic freelancer typing away furiously",
+              "source": "lbb.in",
+              "url": "https://lbb.in/mumbai/earth-caf-waterfield-road-113f89/",
+              "kind": "inference"
+            }
+          ]
+        },
+        "focus": {
+          "score": 3,
+          "confidence": "low",
+          "evidence": [
+            {
+              "claim": "An LBB review describes background music pitched for conversation rather than quiet",
+              "quote": "The music is easygoing, and lets conversation flow",
+              "source": "lbb.in",
+              "url": "https://lbb.in/mumbai/earth-caf-waterfield-road-113f89/",
+              "kind": "fact"
+            },
+            {
+              "claim": "Reviewers note the cafe fills up because it is popular",
+              "quote": "can get busy due to its popularity",
+              "source": "wanderlog.com",
+              "url": "https://wanderlog.com/place/details/423260/earth-cafe--waterfield",
+              "kind": "fact"
+            }
+          ]
+        },
+        "calls": {
+          "score": null,
+          "confidence": "none",
+          "evidence": []
+        },
+        "food": {
+          "score": 4,
+          "confidence": "high",
+          "evidence": [
+            {
+              "claim": "A full all-vegan menu of pizza, pasta, wraps, bowls and salads means a real meal is available",
+              "source": "lbb.in",
+              "url": "https://lbb.in/mumbai/earth-caf-waterfield-road-113f89/",
+              "kind": "fact"
+            },
+            {
+              "claim": "Reviewers aggregated on Wanderlog rate the cooking highly",
+              "quote": "The pizza was the showstopper",
+              "source": "wanderlog.com",
+              "url": "https://wanderlog.com/place/details/423260/earth-cafe--waterfield",
+              "kind": "fact"
+            },
+            {
+              "claim": "A vegan directory's reviewers praise the food while calling it pricey",
+              "quote": "super delicious food! the best pizza i've ever had here!!",
+              "source": "happycow.net",
+              "url": "https://www.happycow.net/reviews/earth-cafe-mumbai-154371",
+              "kind": "fact"
+            },
+            {
+              "claim": "A Bandra guide notes Jain, keto, vegan and gluten-free options",
+              "quote": "Jain, Keto, Vegan, and Gluten-free food",
+              "source": "holidify.com",
+              "url": "https://www.holidify.com/pages/cafes-in-bandra-858.html",
+              "kind": "fact"
+            }
+          ]
+        },
+        "outdoor": {
+          "score": 3,
+          "confidence": "low",
+          "evidence": [
+            {
+              "claim": "A venue listing for this outlet mentions a terrace for outdoor dining",
+              "quote": "The restaurant also has a terrace, perfect for al fresco dining",
+              "source": "magicpin.in",
+              "url": "https://magicpin.in/Mumbai/Bandra-West/Restaurant/Earth-Cafe-@-Waterfiled/store/539ca1",
+              "kind": "fact"
+            }
+          ]
+        },
+        "bathroom": {
+          "score": 4,
+          "confidence": "medium",
+          "evidence": [
+            {
+              "claim": "Reviewers aggregated on Wanderlog single out how clean the restrooms are kept",
+              "quote": "Clean the restrooms were kept. Really shows that the staff cares",
+              "source": "wanderlog.com",
+              "url": "https://wanderlog.com/place/details/423260/earth-cafe--waterfield",
+              "kind": "fact"
+            },
+            {
+              "claim": "A Tripadvisor reviewer makes the same point",
+              "quote": "great clean bathrooms",
+              "source": "tripadvisor.in",
+              "url": "https://www.tripadvisor.in/Restaurant_Review-g304554-d16929154-Reviews-Earth_Cafe-Mumbai_Maharashtra.html",
+              "kind": "fact"
+            }
+          ]
+        }
+      },
+      "synthesis": "Bright, well-liked all-vegan cafe with wifi, clean bathrooms and good food, but a 2024 reviewer was told laptops are not allowed, which undercuts a three-hour session.",
+      "sourcesFetched": [
+        "https://earthcafeindia.com/",
+        "https://lbb.in/mumbai/earth-caf-waterfield-road-113f89/",
+        "https://www.happycow.net/reviews/earth-cafe-mumbai-154371",
+        "https://wanderlog.com/place/details/423260/earth-cafe--waterfield",
+        "https://www.tripadvisor.in/Restaurant_Review-g304554-d16929154-Reviews-Earth_Cafe-Mumbai_Maharashtra.html",
+        "https://restaurant-guru.in/Earth-Cafe-Waterfield-Mumbai",
+        "https://magicpin.in/Mumbai/Bandra-West/Restaurant/Earth-Cafe-@-Waterfiled/store/539ca1",
+        "https://www.holidify.com/pages/cafes-in-bandra-858.html"
+      ],
+      "notes": "Trading confirmed: the official site lists 'Bandra, Waterfield Road: Durga Chambers, Waterfield Road, Bandra West' as one of five Earth Cafe outlets. Address corroborated by LBB ('Durga Chambers, opposite AK Motiwala Jewellers'), Wanderlog ('Durga Chambers, above Pernia's Pop Up MEN') and magicpin. Earth Cafe has five outlets; I EXCLUDED the BKC (Wanderlog 9431977, Zomato BKC page), Juhu, Churchgate and Lower Parel branches — one HappyCow/Tripadvisor comment about a 'very cramped' Juhu outlet was not used. IMPORTANT: the longStay finding rests on a single Tripadvisor review (Dr. Gauri Awasthi, August 2024) reporting she was asked not to use her laptop; I re-fetched the Tripadvisor listing on the .in domain to verify the quote and reviewer. It is one review, hence low confidence, and it sits awkwardly beside the wifi/charging listings — an editor may want to call the cafe. Hours vary by platform, so a range is given. Zomato pages disallowed by robots.txt."
+    }
+  }
+}

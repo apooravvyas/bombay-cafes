@@ -11,6 +11,13 @@ import {
   scoreLogic,
 } from "@/lib/spots";
 import { SpotFeedback } from "@/components/wa/feedback";
+import {
+  EvidenceReviewed,
+  PublicRating,
+  SourceTransparency,
+  WorkabilityAnalysis,
+  WorkabilityBreakdown,
+} from "@/components/wa/workability";
 
 /**
  * The dark side panel. Two modes, same shell — list, then detail — because
@@ -40,7 +47,7 @@ export function SpotPanel({
 }) {
   return (
     <aside
-      className="wa-panel wa-slide pointer-events-auto absolute inset-x-0 bottom-0 z-30 flex max-h-[78dvh] flex-col overflow-hidden rounded-t-2xl md:inset-y-3 md:left-auto md:right-3 md:max-h-none md:w-[min(460px,42vw)] md:rounded-2xl"
+      className="wa-panel wa-panel-enter pointer-events-auto absolute inset-x-0 bottom-0 z-30 flex max-h-[78dvh] flex-col overflow-hidden rounded-t-2xl md:inset-y-3 md:left-auto md:right-3 md:max-h-none md:w-[min(460px,42vw)] md:rounded-2xl"
       aria-label={mode === "detail" ? spot?.name : "Cafe list"}
     >
       {/* Header bar — sticky so the close control never scrolls away. */}
@@ -132,6 +139,7 @@ function shortHours(hours: string): string {
 /* ── Detail ───────────────────────────────────────────────────────────────── */
 function SpotDetail({ spot }: { spot: Spot }) {
   const logic = scoreLogic(spot);
+  const researched = Boolean(spot.research && spot.work);
   const rated = ratedCount(spot.scores);
   const pct = spot.workability != null ? (spot.workability / 5) * 100 : 0;
 
@@ -156,19 +164,34 @@ function SpotDetail({ spot }: { spot: Spot }) {
           {spot.dataLayer === "curated" ? "Curated · Bombay Cafes" : "Community scored"}
         </p>
 
-        {/* Headline score. Big, tabular, with the bar underneath. */}
-        <div className="mt-6 flex items-end gap-3">
-          <span className="font-sans text-[54px] font-semibold leading-none tabular-nums text-paper">
-            {spot.workability != null ? spot.workability.toFixed(1) : "—"}
-          </span>
-          <span className="pb-2 text-[15px] text-paper/55">/ 5 for working</span>
-        </div>
-        <div className="mt-3 h-[3px] w-full overflow-hidden rounded-full bg-white/12">
-          <div className="h-full rounded-full bg-paper" style={{ width: `${pct}%` }} />
-        </div>
-        <p className="wa-mono mt-2 text-paper/35">
-          {rated === 5 ? "All five signals rated" : `Based on ${rated} of 5 signals`}
-        </p>
+        {/* The headline.
+
+            A researched spot gets the evidence model — score, confidence,
+            coverage and a synthesis sentence written against the sources. A
+            spot still awaiting research keeps the curated five-signal read,
+            clearly labelled as such, rather than showing an empty analysis. */}
+        {researched ? (
+          <WorkabilityAnalysis spot={spot} />
+        ) : (
+          <>
+            <div className="mt-6 flex items-end gap-3">
+              <span className="font-sans text-[54px] font-semibold leading-none tabular-nums text-paper">
+                {spot.workability != null ? spot.workability.toFixed(1) : "—"}
+              </span>
+              <span className="pb-2 text-[15px] text-paper/55">/ 5 for working</span>
+            </div>
+            <div className="mt-3 h-[3px] w-full overflow-hidden rounded-full bg-white/12">
+              <div
+                className="h-full rounded-full bg-paper transition-[width] duration-[900ms] ease-out"
+                style={{ width: `${pct}%` }}
+              />
+            </div>
+            <p className="wa-mono mt-2 text-paper/35">
+              Curated read · {rated === 5 ? "all five signals" : `${rated} of 5 signals`} · sources
+              not yet reviewed
+            </p>
+          </>
+        )}
 
         {/* Work score logic — the three chips the reference leads with. */}
         {logic.length > 0 && (
@@ -190,6 +213,14 @@ function SpotDetail({ spot }: { spot: Spot }) {
         <p className="mt-6 font-display text-[19px] italic leading-relaxed text-paper/90">
           {spot.editorialNote}
         </p>
+
+        {researched && (
+          <>
+            <WorkabilityBreakdown spot={spot} />
+            <PublicRating spot={spot} />
+            <EvidenceReviewed spot={spot} />
+          </>
+        )}
 
         {/* Attribute grid: mono label, plain-language value. An em dash where
             nothing is known — never a guessed middle value. */}
@@ -264,6 +295,10 @@ function SpotDetail({ spot }: { spot: Spot }) {
           <SpotFeedback slug={spot.slug} name={spot.name} />
         </div>
 
+        {/* Source transparency, for researched spots: how many sources, how
+            many findings, and every URL on request. */}
+        {researched && <SourceTransparency spot={spot} />}
+
         {/* Provenance. The reference footnotes which layer is which; ours says
             what is sourced and what is an editorial read. */}
         <div className="mt-8 border-t border-white/10 pt-5">
@@ -274,8 +309,9 @@ function SpotDetail({ spot }: { spot: Spot }) {
           )}
           <p className="font-mono text-[11.5px] leading-relaxed text-paper/40">
             Names, addresses and hours come from what the cafe or a credible source publishes.
-            WiFi, charging, noise and seating are only rated where a source or a visit supports it
-            — {rated} of 5 here. Work friendliness is our own read.
+            {researched
+              ? " Every factor above is scored only where a fetched source supports it."
+              : ` WiFi, charging, noise and seating are only rated where a source or a visit supports it — ${rated} of 5 here. Work friendliness is our own read.`}
             {!isMapped(spot)
               ? " The map position has not been verified yet, so this spot has no pin."
               : spot.locationAccuracy === "approximate"

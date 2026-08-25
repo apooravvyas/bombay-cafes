@@ -100,13 +100,20 @@ export function WaMapImpl({
   /* ── markers ───────────────────────────────────────────────────────────── */
   const renderMarkers = (map: GlMapLike) => {
     const seen = new Set<string>();
+    let entering = 0;
 
     for (const spot of spotsRef.current) {
       seen.add(spot.slug);
       if (markersRef.current.has(spot.slug)) continue;
 
       const wrap = document.createElement("div");
-      wrap.className = "wa-pin-wrap";
+      wrap.className = "wa-pin-wrap is-entering";
+      // Stagger entry so thirty pins read as a set arriving rather than a
+      // sheet of them switching on. Capped so a large city never crawls, and
+      // the class is dropped afterwards so a later filter change is instant.
+      wrap.style.setProperty("--wa-pin-delay", `${Math.min(entering * 22, 520)}ms`);
+      entering += 1;
+      window.setTimeout(() => wrap.classList.remove("is-entering"), 1200);
 
       const pin = document.createElement("button");
       pin.type = "button";
