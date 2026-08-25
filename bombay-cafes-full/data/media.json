@@ -1,0 +1,126 @@
+{
+  "_note": "Photography and menu links, keyed by slug. Populated ONLY from URLs a human or a researcher has verified points at this exact outlet. An empty images array is the normal state and renders a deliberate graphic fallback — never a stock photo standing in for a cafe we have not photographed.",
+  "_imageFields": "images[] = {url, alt, credit, creditUrl, source}. url must be absolute and permitted for display; credit is required whenever the licence asks for attribution.",
+  "spots": {
+    "subko-coffee-mary-lodge-chapel-road": {
+      "images": [],
+      "menuUrl": null
+    },
+    "bombay-coffee-house-waterfield-road": {
+      "images": [],
+      "menuUrl": null
+    },
+    "shelter-cafe-x-coffee-by-javaphile-sherly-rajan-road": {
+      "images": [],
+      "menuUrl": null
+    },
+    "kitchen-garden-by-suzette-st-john-street": {
+      "images": [],
+      "menuUrl": null
+    },
+    "taj-mahal-tea-house-st-john-baptist-road": {
+      "images": [],
+      "menuUrl": null
+    },
+    "candies-pali-hill": {
+      "images": [],
+      "menuUrl": null
+    },
+    "the-bagel-shop-carter-road": {
+      "images": [],
+      "menuUrl": null
+    },
+    "blue-tokai-coffee-roasters-perry-road-perry-road": {
+      "images": [],
+      "menuUrl": null
+    },
+    "the-yoga-house-sherly-rajan-road": {
+      "images": [],
+      "menuUrl": null
+    },
+    "earth-cafe-waterfield-road": {
+      "images": [],
+      "menuUrl": null
+    },
+    "mokai-pali-naka": {
+      "images": [],
+      "menuUrl": null
+    },
+    "boojee-cafe-perry-road": {
+      "images": [],
+      "menuUrl": null
+    },
+    "veronica-s-waroda-road": {
+      "images": [],
+      "menuUrl": null
+    },
+    "poetry-by-love-and-cheesecake-24th-road": {
+      "images": [],
+      "menuUrl": "https://ordernow.loveandcheesecake.com/order/poetry-by-love-cheesecake-bandra-west-mumbai"
+    },
+    "kcroasters-by-koinonia-chuim-village": {
+      "images": [],
+      "menuUrl": null
+    },
+    "kala-ghoda-cafe-kala-ghoda": {
+      "images": [],
+      "menuUrl": null
+    },
+    "blue-tokai-new-excelsior-fort": {
+      "images": [],
+      "menuUrl": null
+    },
+    "araku-coffee-apollo-bunder": {
+      "images": [],
+      "menuUrl": null
+    },
+    "subko-the-cacao-mill-colaba": {
+      "images": [],
+      "menuUrl": null
+    },
+    "nandan-coffee-kala-ghoda": {
+      "images": [],
+      "menuUrl": null
+    },
+    "starbucks-horniman-circle-horniman-circle": {
+      "images": [],
+      "menuUrl": null
+    },
+    "bombay-coffee-house-ballard-estate-ballard-estate": {
+      "images": [],
+      "menuUrl": null
+    },
+    "kyani-co-marine-lines": {
+      "images": [],
+      "menuUrl": null
+    },
+    "cafe-mondegar-colaba": {
+      "images": [],
+      "menuUrl": null
+    },
+    "leopold-cafe-bar-colaba": {
+      "images": [],
+      "menuUrl": null
+    },
+    "cafe-military-fort": {
+      "images": [],
+      "menuUrl": null
+    },
+    "ideal-corner-fort": {
+      "images": [],
+      "menuUrl": null
+    },
+    "yazdani-bakery-fort": {
+      "images": [],
+      "menuUrl": null
+    },
+    "third-wave-coffee-churchgate-churchgate": {
+      "images": [],
+      "menuUrl": null
+    },
+    "blue-tokai-nariman-point-nariman-point": {
+      "images": [],
+      "menuUrl": null
+    }
+  }
+}

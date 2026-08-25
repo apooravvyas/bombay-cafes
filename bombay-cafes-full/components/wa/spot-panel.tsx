@@ -11,6 +11,8 @@ import {
   scoreLogic,
 } from "@/lib/spots";
 import { SpotFeedback } from "@/components/wa/feedback";
+import { SpotHero } from "@/components/wa/spot-image";
+import { mediaFor } from "@/lib/media";
 import {
   EvidenceReviewed,
   PublicRating,
@@ -138,6 +140,7 @@ function shortHours(hours: string): string {
 
 /* ── Detail ───────────────────────────────────────────────────────────────── */
 function SpotDetail({ spot }: { spot: Spot }) {
+  const media = mediaFor(spot.slug);
   const logic = scoreLogic(spot);
   const researched = Boolean(spot.research && spot.work);
   const rated = ratedCount(spot.scores);
@@ -145,8 +148,19 @@ function SpotDetail({ spot }: { spot: Spot }) {
 
   return (
     <div className="pb-10">
-      <div className="px-6">
-        <h2 className="font-display text-[34px] font-normal leading-[1.06] tracking-tight text-paper text-balance">
+      {/* Photography leads, as the reference does. Full-bleed, edge to edge,
+          pulled up under the sticky header. */}
+      <SpotHero
+        slug={spot.slug}
+        name={spot.name}
+        area={spot.area}
+        neighborhood={spot.neighborhood}
+        images={media.images}
+      />
+
+      <div className="px-6 pt-5">
+        <p className="wa-mono text-paper/45">{spot.neighborhood}</p>
+        <h2 className="mt-1.5 font-display text-[34px] font-normal leading-[1.06] tracking-tight text-paper text-balance">
           {spot.name}
         </h2>
         <p className="mt-2 font-mono text-[12px] leading-relaxed text-paper/50">
@@ -170,6 +184,8 @@ function SpotDetail({ spot }: { spot: Spot }) {
             coverage and a synthesis sentence written against the sources. A
             spot still awaiting research keeps the curated five-signal read,
             clearly labelled as such, rather than showing an empty analysis. */}
+        {researched && <PublicRating spot={spot} />}
+
         {researched ? (
           <WorkabilityAnalysis spot={spot} />
         ) : (
@@ -217,7 +233,6 @@ function SpotDetail({ spot }: { spot: Spot }) {
         {researched && (
           <>
             <WorkabilityBreakdown spot={spot} />
-            <PublicRating spot={spot} />
             <EvidenceReviewed spot={spot} />
           </>
         )}
@@ -262,8 +277,22 @@ function SpotDetail({ spot }: { spot: Spot }) {
               <ArrowRight className="h-4 w-4" strokeWidth={2} />
             </a>
           )}
-          {(spot.website || spot.instagram) && (
-            <div className="grid grid-cols-2 gap-2.5">
+          {/* Outbound links, compact. Each one renders only when the URL
+              actually exists — a Menu button that leads nowhere is worse than
+              no Menu button, and none of these are constructed. */}
+          {(spot.website || spot.instagram || media.menuUrl) && (
+            <div className="grid grid-cols-[minmax(0,1fr)_minmax(0,1fr)] gap-2.5">
+              {media.menuUrl && (
+                <a
+                  href={media.menuUrl}
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  className="flex items-center justify-between rounded-xl border border-white/16 px-4 py-3.5 text-[14px] text-paper transition-colors hover:bg-white/[0.08]"
+                >
+                  Menu
+                  <ArrowUpRight className="h-3.5 w-3.5" strokeWidth={2} />
+                </a>
+              )}
               {spot.website && (
                 <a
                   href={spot.website}

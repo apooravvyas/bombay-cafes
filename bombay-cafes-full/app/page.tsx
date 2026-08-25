@@ -32,9 +32,15 @@ export const metadata: Metadata = {
  * the streets — comes from the dataset, so coverage cannot drift out of sync
  * with what the map actually holds.
  */
+/**
+ * One editorial line per area — the character of the place, not its position
+ * on a map. Everything else on the card is read from the dataset.
+ */
 const BLURB: Record<AreaGroup, string> = {
-  bandra: "Village lanes, bakeries, and the best odds of a table at 3pm.",
-  "south-bombay": "Stone arcades, Irani cafes, and rooms open for a century.",
+  bandra:
+    "Bungalow lanes and bakeries turned coffee rooms. Independent, unhurried, and the best odds in the city of a table at three in the afternoon.",
+  "south-bombay":
+    "Stone arcades, Irani cafes that have kept the same tables for a century, and new roasters in the old banking streets.",
 };
 
 const ORDER: AreaGroup[] = ["bandra", "south-bombay"];
@@ -48,8 +54,8 @@ export default async function LandingPage() {
   const researched = spots.filter((s) => s.research).length;
 
   return (
-    <main className="flex min-h-dvh flex-col bg-ink text-paper">
-      <header className="flex items-baseline justify-between gap-4 px-6 pt-7 sm:px-10">
+    <main className="wa-grid flex min-h-dvh flex-col bg-ink text-paper">
+      <header className="wa-rise relative z-10 flex items-baseline justify-between gap-4 px-6 pt-7 sm:px-10">
         <h1 className="font-display text-[clamp(1.5rem,3.4vw,2rem)] leading-none tracking-tight">
           bombay <em className="font-semibold not-italic italic">cafes</em>
         </h1>
@@ -57,11 +63,11 @@ export default async function LandingPage() {
           href={`/${city.slug}`}
           className="wa-mono hidden items-center gap-1.5 text-paper/45 transition-colors hover:text-paper sm:flex"
         >
-          Areas <span className="text-[13px] leading-none">+</span>
+          Explore Mumbai <span className="text-[13px] leading-none">+</span>
         </Link>
       </header>
 
-      <div className="flex flex-1 flex-col justify-center px-6 py-10 sm:px-10">
+      <div className="relative z-10 flex flex-1 flex-col justify-center px-6 py-10 sm:px-10">
         <p className="wa-mono mb-4 text-paper/45 sm:hidden">Explore Mumbai</p>
 
         {/* Two cards, side by side on desktop, stacked on a phone. The
@@ -97,27 +103,28 @@ export default async function LandingPage() {
                 className="wa-fade group relative flex aspect-[4/3] flex-col justify-end overflow-hidden rounded-2xl border border-white/12 sm:aspect-[16/10]"
                 style={{ animationDelay: `${i * 90}ms` }}
               >
-                <AreaArt group={group} />
+                <span className="absolute inset-0 transition-transform duration-[900ms] ease-out group-hover:scale-[1.035]">
+                  <AreaArt group={group} />
+                </span>
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent" />
 
                 <div className="relative flex items-end justify-between gap-4 p-5 sm:p-7">
                   <div className="min-w-0">
-                    <p className="wa-mono text-white/55">
-                      {count} {count === 1 ? "cafe" : "cafes"}
-                    </p>
-                    <h2 className="mt-1.5 font-display text-[clamp(2rem,5.2vw,3.4rem)] font-light leading-none tracking-tight text-white">
+                    {/* No cafe count here. A database figure is the least
+                        interesting thing about a neighbourhood, and it is the
+                        first thing a reader would have read. */}
+                    <p className="wa-mono text-white/45">Mumbai</p>
+                    <h2 className="mt-2 font-display text-[clamp(2.1rem,5.4vw,3.6rem)] font-light leading-[0.95] tracking-[-0.015em] text-white">
                       {AREA_GROUP_LABEL[group]}
                     </h2>
-                    <p className="mt-2.5 max-w-[34ch] text-[14px] leading-snug text-white/70">
+                    <p className="mt-3 max-w-[38ch] text-[14.5px] leading-relaxed text-white/70">
                       {BLURB[group]}
                     </p>
-                    {/* Two lines at most: on a phone four street names wrap to
-                        three and start crowding the arrow. */}
-                    <p className="wa-mono mt-3 line-clamp-2 text-white/40">{named.join(" · ")}</p>
+                    <p className="wa-mono mt-3.5 line-clamp-2 text-white/35">{named.join(" · ")}</p>
                   </div>
-                  <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-white/40 text-white transition-all duration-300 group-hover:bg-white group-hover:text-ink sm:h-14 sm:w-14">
-                    <ArrowUpRight className="h-5 w-5" strokeWidth={1.75} />
+                  <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-white/35 text-white transition-all duration-[420ms] ease-out group-hover:scale-[1.06] group-hover:border-white group-hover:bg-white group-hover:text-ink sm:h-14 sm:w-14">
+                    <ArrowUpRight className="h-5 w-5 transition-transform duration-[420ms] ease-out group-hover:translate-x-[2px] group-hover:-translate-y-[2px]" strokeWidth={1.75} />
                   </span>
                 </div>
               </Link>
@@ -125,9 +132,13 @@ export default async function LandingPage() {
           })}
         </div>
 
-        <p className="mt-8 max-w-lg text-[15px] leading-relaxed text-paper/55">
-          {spots.length} cafes across {areas} Mumbai neighbourhoods, scored on what decides whether
-          you can actually get three hours of work done.{" "}
+        <p className="wa-rise mt-8 max-w-lg text-[15px] leading-relaxed text-paper/55" style={{ animationDelay: "260ms" }}>
+          Cafes you can actually work from, scored on what decides whether you last three hours:
+          somewhere to plug in, somewhere to sit, a connection that holds, and whether anyone
+          minds you staying.{" "}
+          <span className="text-paper/40">
+            {spots.length} across {areas} neighbourhoods.
+          </span>{" "}
           {researched > 0 && (
             <span className="text-paper/40">
               {researched} are graded from published evidence across nine factors, with every
@@ -137,7 +148,7 @@ export default async function LandingPage() {
         </p>
       </div>
 
-      <footer className="flex flex-wrap items-center justify-between gap-3 px-6 pb-7 sm:px-10">
+      <footer className="relative z-10 flex flex-wrap items-center justify-between gap-3 px-6 pb-7 sm:px-10">
         <span className="wa-mono text-paper/30">© {new Date().getFullYear()} Bombay Cafes</span>
         <nav className="flex gap-5">
           <Link href={`/${city.slug}`} className="wa-mono text-paper/45 transition-colors hover:text-paper">
