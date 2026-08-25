@@ -194,20 +194,39 @@ export function MapScreen({
         <div className="absolute inset-0 grid place-items-center bg-[#EDEAE2] px-8 text-center">
           <div className="max-w-sm">
             <p className="font-display text-[22px] text-ink">
-              {mapDead ? "Map unavailable" : `${filtered.length} spots, no map yet`}
+              {mapDead
+                ? "Map unavailable"
+                : filtered.length === 0
+                  ? "Nothing matches that"
+                  : `${filtered.length} spots, no map yet`}
             </p>
             <p className="mt-2 text-[14.5px] leading-relaxed text-stone-dark">
               {mapDead
                 ? "The basemap did not load. Browse the spots — every listing still works."
-                : "This city has listings but no positions yet. Every listing still works."}
+                : filtered.length === 0
+                  ? "No spot matches this search and filter combination. Loosen one, or clear them and start again."
+                  : "These listings have no positions yet. Every one of them still works."}
             </p>
-            <button
-              type="button"
-              onClick={() => setPanel("list")}
-              className="wa-btn wa-btn--solid mt-5"
-            >
-              Browse spots
-            </button>
+            {filtered.length === 0 ? (
+              <button
+                type="button"
+                onClick={() => {
+                  setFilters({ ...EMPTY_FILTERS, area: filters.area });
+                  setSearchOpen(false);
+                }}
+                className="wa-btn wa-btn--solid mt-5"
+              >
+                Clear filters
+              </button>
+            ) : (
+              <button
+                type="button"
+                onClick={() => setPanel("list")}
+                className="wa-btn wa-btn--solid mt-5"
+              >
+                Browse spots
+              </button>
+            )}
           </div>
         </div>
       )}
