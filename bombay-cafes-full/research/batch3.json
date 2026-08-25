@@ -1,0 +1,857 @@
+[
+ {
+  "slug": "mokai-pali-naka",
+  "trading": "confirmed",
+  "hours": "Daily 8am–11:30pm (district.in); magicpin lists 7am–10pm",
+  "publicRating": {
+   "value": 4.3,
+   "count": 707,
+   "source": "district.in",
+   "url": "https://www.district.in/dining/mumbai/mokai-pali-hill-bandra-west"
+  },
+  "factors": {
+   "wifi": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "power": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "seating": {
+    "score": 3,
+    "confidence": "medium",
+    "evidence": [
+     {
+      "claim": "The listing describes comfortable seating spread over two levels, with the coffee bar on the ground floor and a matcha bar on the first",
+      "quote": "cosy, comfortable",
+      "source": "district.in",
+      "url": "https://www.district.in/dining/mumbai/mokai-pali-hill-bandra-west",
+      "kind": "fact"
+     },
+     {
+      "claim": "A launch feature on this outlet describes lounge-style seating including a bed and cushioned couches",
+      "quote": "a life-size lounging bed",
+      "source": "freepressjournal.in",
+      "url": "https://www.freepressjournal.in/lifestyle/experience-a-slice-of-japan-in-mumbai-step-inside-mokai-bandras-aesthetic-viral-matcha-cafe-with-a-floating-bar",
+      "kind": "fact"
+     },
+     {
+      "claim": "A reviewer notes one table has a bed instead of chairs, which suits lounging rather than typing",
+      "quote": "a whole bed",
+      "source": "district.in",
+      "url": "https://www.district.in/dining/mumbai/mokai-pali-hill-bandra-west",
+      "kind": "fact"
+     },
+     {
+      "claim": "Lounging beds and low couches are poor ergonomics for a three-hour laptop session, so the comfortable seating is not necessarily workable seating",
+      "source": "reading of freepressjournal.in and district.in descriptions",
+      "url": "https://www.freepressjournal.in/lifestyle/experience-a-slice-of-japan-in-mumbai-step-inside-mokai-bandras-aesthetic-viral-matcha-cafe-with-a-floating-bar",
+      "kind": "inference"
+     }
+    ]
+   },
+   "longStay": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "focus": {
+    "score": 2,
+    "confidence": "low",
+    "evidence": [
+     {
+      "claim": "The directory listing for this address names live music among the outlet's features",
+      "quote": "Live Music",
+      "source": "magicpin.in",
+      "url": "https://magicpin.in/Mumbai/Bandra-West/Restaurant/Mokai/store/1678121",
+      "kind": "fact"
+     },
+     {
+      "claim": "Scheduled live music in a two-floor room works against sustained concentration",
+      "source": "reading of the magicpin feature list",
+      "url": "https://magicpin.in/Mumbai/Bandra-West/Restaurant/Mokai/store/1678121",
+      "kind": "inference"
+     }
+    ]
+   },
+   "calls": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "food": {
+    "score": 4,
+    "confidence": "medium",
+    "evidence": [
+     {
+      "claim": "The outlet runs an all-day menu of substantial savoury plates alongside matcha drinks",
+      "quote": "avocado toast, Korean chicken burger, banh mi, wontons, and shakshuka",
+      "source": "freepressjournal.in",
+      "url": "https://www.freepressjournal.in/lifestyle/experience-a-slice-of-japan-in-mumbai-step-inside-mokai-bandras-aesthetic-viral-matcha-cafe-with-a-floating-bar",
+      "kind": "fact"
+     },
+     {
+      "claim": "The listing records Japanese and Continental cuisine served from 8am to 11:30pm, and reviewers single out noodles and a katsu sandwich",
+      "source": "district.in",
+      "url": "https://www.district.in/dining/mumbai/mokai-pali-hill-bandra-west",
+      "kind": "fact"
+     }
+    ]
+   },
+   "outdoor": {
+    "score": 3,
+    "confidence": "low",
+    "evidence": [
+     {
+      "claim": "Outdoor seating is listed as a feature of this Hill Crest Building outlet",
+      "quote": "Outdoor Seating",
+      "source": "magicpin.in",
+      "url": "https://magicpin.in/Mumbai/Bandra-West/Restaurant/Mokai/store/1678121",
+      "kind": "fact"
+     }
+    ]
+   },
+   "bathroom": {
+    "score": 3,
+    "confidence": "medium",
+    "evidence": [
+     {
+      "claim": "A washroom exists and is a design feature, with a novelty disco button inside",
+      "quote": "a button in the toilet that starts a disco ball",
+      "source": "district.in",
+      "url": "https://www.district.in/dining/mumbai/mokai-pali-hill-bandra-west",
+      "kind": "fact"
+     },
+     {
+      "claim": "The launch feature independently confirms the washroom and its disco treatment",
+      "quote": "Mini disco in the washroom",
+      "source": "freepressjournal.in",
+      "url": "https://www.freepressjournal.in/lifestyle/experience-a-slice-of-japan-in-mumbai-step-inside-mokai-bandras-aesthetic-viral-matcha-cafe-with-a-floating-bar",
+      "kind": "fact"
+     }
+    ]
+   }
+  },
+  "synthesis": "A five-month-old experience-led matcha cafe over two floors with lounging beds, live music and no reported wifi or outlets — pleasant, but unevidenced as a workspace.",
+  "sourcesFetched": [
+   "https://www.district.in/dining/mumbai/mokai-pali-hill-bandra-west",
+   "https://www.timeout.com/mumbai/news/this-famous-cafe-is-shifting-from-bandra-to-bandra-031826",
+   "https://www.freepressjournal.in/lifestyle/experience-a-slice-of-japan-in-mumbai-step-inside-mokai-bandras-aesthetic-viral-matcha-cafe-with-a-floating-bar",
+   "https://magicpin.in/Mumbai/Bandra-West/Restaurant/Mokai/store/1678121",
+   "https://curlytales.com/india/trending/mumbaikars-your-go-to-coffee-spot-mokai-gets-a-new-address-and-its-in/",
+   "https://lbb.in/mumbai/cafes-in-bandra/"
+  ],
+  "notes": "This address is new. Time Out reports Mokai 'closed its doors at their Chapel Road location on March 13' and 'reopens as Mokai 2.0 in Pali Hill on March 19' (2026); Curly Tales corroborates the Chapel Road closure and the 19 March 8am opening. EXCLUDED as belonging to the now-closed Chapel Road outlet: the Wanderlog entry (4.4/1,425, Chapel Rd address, with its uncomfortable-low-chairs, 45-minute-wait and outdoor-area detail), the 1bitejourney review (no address given, queue and lingering detail), the LBB Bandra list (Chapel Road), and the mappls Newton House/Chapel Road record. Wait-time and crowding evidence therefore does NOT carry over, which is why focus rests only on the magicpin 'Live Music' feature. Hours conflict: district.in 8am–11:30pm, magicpin 7am–10pm; no official Mokai site found, Instagram not fetched. Rating counts also conflict — district.in 4.3/707 (used, address-matched), magicpin cites 4.3 across 3,238 aggregated online reviews. Blocked/failed fetches: justdial (403), corner.inc (robots.txt), boldoutline.in (404), zomato (not attempted, robots). No source at any address mentions wifi or plug points, so both are null rather than negative."
+ },
+ {
+  "slug": "boojee-cafe-perry-road",
+  "trading": "confirmed",
+  "hours": "Daily 7am–11pm",
+  "publicRating": {
+   "value": 4.4,
+   "count": 4380,
+   "source": "wanderlog.com (citing Google)",
+   "url": "https://wanderlog.com/place/details/2590802/boojee-cafe"
+  },
+  "factors": {
+   "wifi": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "power": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "seating": {
+    "score": 3,
+    "confidence": "high",
+    "evidence": [
+     {
+      "claim": "A Bandra cafe guide describes the Perry Cross Road outlet as comfortable and laid-back across a two-storey layout",
+      "quote": "Cosy laid-back vibes, comfy seat, good coffee",
+      "source": "lbb.in",
+      "url": "https://lbb.in/mumbai/cafes-in-bandra/",
+      "kind": "fact"
+     },
+     {
+      "claim": "Wanderlog's review digest for the New Kantwadi Road address describes very small tables and low clearance",
+      "quote": "Green walls and teeny table corners",
+      "source": "wanderlog.com",
+      "url": "https://wanderlog.com/place/details/2590802/boojee-cafe",
+      "kind": "fact"
+     },
+     {
+      "claim": "The same digest warns tall visitors about the seating design",
+      "quote": "If you're tall please mind your head",
+      "source": "wanderlog.com",
+      "url": "https://wanderlog.com/place/details/2590802/boojee-cafe",
+      "kind": "fact"
+     },
+     {
+      "claim": "The dining listing for this address offers a choice of indoor and outdoor seating and calls it a cosy cafe",
+      "source": "district.in",
+      "url": "https://www.district.in/dining/mumbai/boojee-cafe-carter-road-bandra-west",
+      "kind": "fact"
+     },
+     {
+      "claim": "Tiny corner tables suit a coffee and a pastry rather than a laptop plus notebook",
+      "source": "reading of the wanderlog seating description",
+      "url": "https://wanderlog.com/place/details/2590802/boojee-cafe",
+      "kind": "inference"
+     }
+    ]
+   },
+   "longStay": {
+    "score": 2,
+    "confidence": "high",
+    "evidence": [
+     {
+      "claim": "Wanderlog records the typical visit to this address as 25 minutes",
+      "source": "wanderlog.com",
+      "url": "https://wanderlog.com/place/details/2590802/boojee-cafe",
+      "kind": "fact"
+     },
+     {
+      "claim": "A reviewer found it full mid-afternoon and had to wait for a table",
+      "quote": "The café was crowded even at 4 PM and we had to wait to get a place",
+      "source": "restaurant-guru.in",
+      "url": "https://restaurant-guru.in/Boojee-Cafe-Mumbai",
+      "kind": "fact"
+     },
+     {
+      "claim": "Tripadvisor reviewers of the New Kantwadi Road outlet name the wait as its main drawback, and note three Boojee outlets share the building to absorb the crowd",
+      "quote": "The only problem is the waiting time",
+      "source": "tripadvisor.com",
+      "url": "https://www.tripadvisor.com/ShowUserReviews-g304554-d18458567-r982713968-Boojee_Cafe-Mumbai_Maharashtra.html",
+      "kind": "fact"
+     },
+     {
+      "claim": "A travel feature reports a queue outside even on ordinary weekdays",
+      "quote": "queueing up outside, even on an average weekday",
+      "source": "oteats.outlooktraveller.com",
+      "url": "https://oteats.outlooktraveller.com/features/we-promise-that-these-cafes-in-bandra-are-worth-the-queue",
+      "kind": "fact"
+     },
+     {
+      "claim": "The dining listing for this address nonetheless flags the outlet as work friendly",
+      "quote": "Work friendly",
+      "source": "district.in",
+      "url": "https://www.district.in/dining/mumbai/boojee-cafe-carter-road-bandra-west",
+      "kind": "fact"
+     },
+     {
+      "claim": "With a queue outside and 25-minute average visits, holding a table for three hours would be conspicuous and probably resisted",
+      "source": "reading of wanderlog, restaurant-guru and outlooktraveller together",
+      "url": "https://wanderlog.com/place/details/2590802/boojee-cafe",
+      "kind": "inference"
+     }
+    ]
+   },
+   "focus": {
+    "score": 2,
+    "confidence": "medium",
+    "evidence": [
+     {
+      "claim": "Wanderlog advises avoiding peak hours because seating areas get crowded, and reports 10–15 minute waits",
+      "quote": "visit during weekdays or off-peak hours to avoid crowded seating areas",
+      "source": "wanderlog.com",
+      "url": "https://wanderlog.com/place/details/2590802/boojee-cafe",
+      "kind": "fact"
+     },
+     {
+      "claim": "Tripadvisor reviewers describe an energetic, animated room",
+      "quote": "Full of energy",
+      "source": "tripadvisor.com",
+      "url": "https://www.tripadvisor.com/ShowUserReviews-g304554-d18458567-r982713968-Boojee_Cafe-Mumbai_Maharashtra.html",
+      "kind": "fact"
+     },
+     {
+      "claim": "A reviewer was seated and then moved upstairs, where no table was free",
+      "source": "restaurant-guru.in",
+      "url": "https://restaurant-guru.in/Boojee-Cafe-Mumbai",
+      "kind": "fact"
+     }
+    ]
+   },
+   "calls": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "food": {
+    "score": 4,
+    "confidence": "high",
+    "evidence": [
+     {
+      "claim": "A full bakery and brunch menu is served, with the coffee singled out by reviewers",
+      "quote": "THE BEST coffee I have tasted in India",
+      "source": "wanderlog.com",
+      "url": "https://wanderlog.com/place/details/2590802/boojee-cafe",
+      "kind": "fact"
+     },
+     {
+      "claim": "Tripadvisor reviewers of this address list substantial dishes including several eggs benedict variants and pastries",
+      "quote": "Smoked salmon Benedict, Mexican lamb Benedict, Egg Florentine",
+      "source": "tripadvisor.com",
+      "url": "https://www.tripadvisor.com/ShowUserReviews-g304554-d18458567-r982713968-Boojee_Cafe-Mumbai_Maharashtra.html",
+      "kind": "fact"
+     },
+     {
+      "claim": "Reviewers praise cooked plates such as cheese sandwiches, hash browns and smoked salmon, plus Basque cheesecakes",
+      "source": "restaurant-guru.in",
+      "url": "https://restaurant-guru.in/Boojee-Cafe-Mumbai",
+      "kind": "fact"
+     },
+     {
+      "claim": "A travel feature calls it a sunlit hybrid of Parisian bakery and cafe",
+      "quote": "a perfectly curated hybrid of Parisian bakery charm and a sleek, sunlit café",
+      "source": "oteats.outlooktraveller.com",
+      "url": "https://oteats.outlooktraveller.com/features/we-promise-that-these-cafes-in-bandra-are-worth-the-queue",
+      "kind": "fact"
+     }
+    ]
+   },
+   "outdoor": {
+    "score": 4,
+    "confidence": "medium",
+    "evidence": [
+     {
+      "claim": "Outdoor seating is listed as available at this New Kantwadi / Perry Cross Road address",
+      "quote": "Outdoor Seating: Available",
+      "source": "district.in",
+      "url": "https://www.district.in/dining/mumbai/boojee-cafe-carter-road-bandra-west",
+      "kind": "fact"
+     },
+     {
+      "claim": "A reviewer confirms diners choose between indoor and outdoor tables",
+      "quote": "Select between indoor and outdoor seating",
+      "source": "restaurant-guru.in",
+      "url": "https://restaurant-guru.in/Boojee-Cafe-Mumbai",
+      "kind": "fact"
+     }
+    ]
+   },
+   "bathroom": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   }
+  },
+  "synthesis": "Excellent coffee and brunch, indoor and outdoor tables, and a district listing calling it work-friendly — but queues on ordinary weekdays, tiny tables and 25-minute average visits.",
+  "sourcesFetched": [
+   "https://boojeecafe.com/pages/contact-us",
+   "https://wanderlog.com/place/details/2590802/boojee-cafe",
+   "https://restaurant-guru.in/Boojee-Cafe-Mumbai",
+   "https://www.tripadvisor.com/ShowUserReviews-g304554-d18458567-r982713968-Boojee_Cafe-Mumbai_Maharashtra.html",
+   "https://oteats.outlooktraveller.com/features/we-promise-that-these-cafes-in-bandra-are-worth-the-queue",
+   "https://lbb.in/mumbai/cafes-in-bandra/",
+   "https://www.district.in/dining/mumbai/boojee-cafe-carter-road-bandra-west"
+  ],
+  "notes": "Trading confirmed by the official locations page, which lists 'BOOJEE A, B, C — Shop No. 6, New Kantwadi road, off Perry Cross road, Bandra West' — three units in one building, matching the Tripadvisor reviewer's 'three outlets in the same building'. The official page gives no opening hours. EXCLUDED because they describe the separate BOOJEE 16 outlet at Sat Kartar building, 16th Road: both laptopfriendlycafe.com listings (/cafes/mumbai/boojee-cafe and /cafes/maharashtra/boojee-cafe). Those were the only sources found anywhere that stated 'Free Wi-Fi', 'Good for working on laptop' and wheelchair-accessible/gender-neutral toilets — dropping them is why wifi, power and bathroom are null here despite a work-friendly flag existing for the brand. Also excluded: foodhistjourney.blogspot.com (2019, Carter Road opening) and the official BOOJEE FORT, ESPRESSO BAR WORLI and MORII CAFE outlets. Shop-number variance to note: official says Shop No. 6, Wanderlog 'Shop No 6, 29, New Kantwadi Rd', district.in 'Shop 3 A, CHS, New Kantwadi, Perry Cross Road' — treated as the same three-unit cluster, but district.in's rating (4.3/745) is kept out of publicRating for that reason. district.in also flags this address as 'Work friendly'. Rating counts diverge widely across aggregators (4.4/4,380 Google via Wanderlog; 4.5/1,038 restaurant-guru; 4.3/745 district.in; Tripadvisor 36 reviews). Blocked/failed fetches: wanderboat.ai (403), zomato (not attempted, robots)."
+ },
+ {
+  "slug": "veronica-s-waroda-road",
+  "trading": "confirmed",
+  "hours": "Bandra: Mon–Thu 8am–11pm; Fri–Sun 8–11am, 12–3:30pm, 5–11pm (official; service split into breakfast, bakes, lunch and dinner windows)",
+  "publicRating": {
+   "value": 4.2,
+   "count": 1964,
+   "source": "wanderlog.com (citing Google)",
+   "url": "https://wanderlog.com/place/details/6732114/veronicas"
+  },
+  "factors": {
+   "wifi": {
+    "score": 3,
+    "confidence": "low",
+    "evidence": [
+     {
+      "claim": "The dining listing for the Ranwar / Waroda Road address records wifi as available, with no reviewer corroboration found",
+      "quote": "WiFi available",
+      "source": "district.in",
+      "url": "https://www.district.in/dining/mumbai/veronicas-bandstand-bandra-west",
+      "kind": "fact"
+     }
+    ]
+   },
+   "power": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "seating": {
+    "score": 2,
+    "confidence": "high",
+    "evidence": [
+     {
+      "claim": "A Tripadvisor reviewer of the Waroda Road address says the room is deliberately tight",
+      "quote": "The place is small and claustrophobic, clearly designed to keep seating limited",
+      "source": "tripadvisor.in",
+      "url": "https://www.tripadvisor.in/Restaurant_Review-g304554-d25440872-Reviews-Veronica_s-Mumbai_Maharashtra.html",
+      "kind": "fact"
+     },
+     {
+      "claim": "Another reviewer describes the space at the table as minimal",
+      "quote": "barely enough elbow room",
+      "source": "tripadvisor.in",
+      "url": "https://www.tripadvisor.in/Restaurant_Review-g304554-d25440872-Reviews-Veronica_s-Mumbai_Maharashtra.html",
+      "kind": "fact"
+     },
+     {
+      "claim": "The dining listing echoes the constraint and adds long weekend waits",
+      "quote": "less space with limited seating",
+      "source": "district.in",
+      "url": "https://www.district.in/dining/mumbai/veronicas-bandstand-bandra-west",
+      "kind": "fact"
+     },
+     {
+      "claim": "A Bandra cafe guide notes the Waroda Road outlet is a casual setup that gets crowded on evenings and weekends",
+      "source": "lbb.in",
+      "url": "https://lbb.in/mumbai/cafes-in-bandra/",
+      "kind": "fact"
+     }
+    ]
+   },
+   "longStay": {
+    "score": 2,
+    "confidence": "medium",
+    "evidence": [
+     {
+      "claim": "A review of the Waroda Road shop frames it as somewhere to settle in for a long session",
+      "quote": "a place where you can sniff, slurp, and settle for hours of chatter",
+      "source": "in-focusindia.com",
+      "url": "https://in-focusindia.com/2023/03/02/veronicas-review-saved-by-a-sandwich/",
+      "kind": "fact"
+     },
+     {
+      "claim": "Against that, Wanderlog records the typical visit at 30 minutes and a reviewer reports an hour-long queue at peak times",
+      "quote": "a waiting queue of almost an hour",
+      "source": "wanderlog.com",
+      "url": "https://wanderlog.com/place/details/6732114/veronicas",
+      "kind": "fact"
+     },
+     {
+      "claim": "Tripadvisor reviewers report being made to wait in stages before being seated",
+      "quote": "We queued for 30 minutes only to be told to wait another 50 minutes",
+      "source": "tripadvisor.in",
+      "url": "https://www.tripadvisor.in/Restaurant_Review-g304554-d25440872-Reviews-Veronica_s-Mumbai_Maharashtra.html",
+      "kind": "fact"
+     },
+     {
+      "claim": "The official Bandra timings split the day into breakfast, bakes, lunch and dinner windows, with a 3:30–5pm gap on Friday to Sunday, so an afternoon block would be interrupted",
+      "source": "veronicasbombay.com (official)",
+      "url": "https://veronicasbombay.com/",
+      "kind": "fact"
+     },
+     {
+      "claim": "Deliberately limited seating plus an hour-long queue means a three-hour laptop stay would be occupying a table others are waiting for",
+      "source": "reading of tripadvisor.in, wanderlog.com and the official service windows",
+      "url": "https://www.tripadvisor.in/Restaurant_Review-g304554-d25440872-Reviews-Veronica_s-Mumbai_Maharashtra.html",
+      "kind": "inference"
+     }
+    ]
+   },
+   "focus": {
+    "score": 2,
+    "confidence": "high",
+    "evidence": [
+     {
+      "claim": "A Tripadvisor reviewer is explicit that this is not a quiet cafe",
+      "quote": "It's loud — and unapologetically so. The music and young crowd bring a lot of energy",
+      "source": "tripadvisor.in",
+      "url": "https://www.tripadvisor.in/Restaurant_Review-g304554-d25440872-Reviews-Veronica_s-Mumbai_Maharashtra.html",
+      "kind": "fact"
+     },
+     {
+      "claim": "The same review warns readers off directly",
+      "quote": "If you're looking for a quiet café, this may not be it",
+      "source": "tripadvisor.in",
+      "url": "https://www.tripadvisor.in/Restaurant_Review-g304554-d25440872-Reviews-Veronica_s-Mumbai_Maharashtra.html",
+      "kind": "fact"
+     },
+     {
+      "claim": "The dining listing describes an all-day neighbourhood buzz and a reviewer saying it is unsuited to focused talk",
+      "quote": "not a place for serious conversations",
+      "source": "district.in",
+      "url": "https://www.district.in/dining/mumbai/veronicas-bandstand-bandra-west",
+      "kind": "fact"
+     },
+     {
+      "claim": "A Bandra guide independently notes it gets crowded on evenings and weekends",
+      "source": "lbb.in",
+      "url": "https://lbb.in/mumbai/cafes-in-bandra/",
+      "kind": "fact"
+     }
+    ]
+   },
+   "calls": {
+    "score": 2,
+    "confidence": "medium",
+    "evidence": [
+     {
+      "claim": "A reviewer states the room does not support focused conversation",
+      "quote": "not a place for serious conversations",
+      "source": "district.in",
+      "url": "https://www.district.in/dining/mumbai/veronicas-bandstand-bandra-west",
+      "kind": "fact"
+     },
+     {
+      "claim": "Music and a young crowd make the room loud",
+      "quote": "It's loud — and unapologetically so",
+      "source": "tripadvisor.in",
+      "url": "https://www.tripadvisor.in/Restaurant_Review-g304554-d25440872-Reviews-Veronica_s-Mumbai_Maharashtra.html",
+      "kind": "fact"
+     },
+     {
+      "claim": "A room described as loud and unsuited to serious conversation, with tables close together, would make a work call impractical",
+      "source": "reading of district.in and tripadvisor.in",
+      "url": "https://www.district.in/dining/mumbai/veronicas-bandstand-bandra-west",
+      "kind": "inference"
+     }
+    ]
+   },
+   "food": {
+    "score": 3,
+    "confidence": "high",
+    "evidence": [
+     {
+      "claim": "It serves full meals across the day, not just coffee, and the official site frames it as more than a sandwich counter",
+      "quote": "not just your favourite sandwich shop",
+      "source": "veronicasbombay.com (official)",
+      "url": "https://veronicasbombay.com/",
+      "kind": "fact"
+     },
+     {
+      "claim": "Reviewers single out the burgers and breakfast plates",
+      "quote": "The Veronica's smash burger",
+      "source": "wanderlog.com",
+      "url": "https://wanderlog.com/place/details/6732114/veronicas",
+      "kind": "fact"
+     },
+     {
+      "claim": "Against that, Tripadvisor reviewers report severe kitchen delays",
+      "quote": "It took 40 minutes for a cold coffee",
+      "source": "tripadvisor.in",
+      "url": "https://www.tripadvisor.in/Restaurant_Review-g304554-d25440872-Reviews-Veronica_s-Mumbai_Maharashtra.html",
+      "kind": "fact"
+     },
+     {
+      "claim": "The dining listing surfaces undercooked-chicken and food-poisoning complaints and frequent stockouts of signature items",
+      "source": "district.in",
+      "url": "https://www.district.in/dining/mumbai/veronicas-bandstand-bandra-west",
+      "kind": "fact"
+     },
+     {
+      "claim": "Kombucha on tap, wines and lattes are available alongside the food",
+      "source": "in-focusindia.com",
+      "url": "https://in-focusindia.com/2023/03/02/veronicas-review-saved-by-a-sandwich/",
+      "kind": "fact"
+     }
+    ]
+   },
+   "outdoor": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "bathroom": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   }
+  },
+  "synthesis": "Wifi is listed and one review invites lingering, but reviewers call it loud, claustrophobic and deliberately short on seats, with hour-long queues and a weekend afternoon closure.",
+  "sourcesFetched": [
+   "https://veronicasbombay.com/",
+   "https://www.district.in/dining/mumbai/veronicas-bandstand-bandra-west",
+   "https://in-focusindia.com/2023/03/02/veronicas-review-saved-by-a-sandwich/",
+   "https://www.tripadvisor.in/Restaurant_Review-g304554-d25440872-Reviews-Veronica_s-Mumbai_Maharashtra.html",
+   "https://wanderlog.com/place/details/6732114/veronicas",
+   "https://lbb.in/mumbai/cafes-in-bandra/"
+  ],
+  "notes": "All evidence is tied to the Waroda Road / Ranwar address. The official site lists two outlets — Lower Parel and Bandra — and the Lower Parel outlet's evidence and hours (daily 8am–1am) are EXCLUDED; the official site never prints the Bandra street address, so the Waroda Road identification rests on district.in ('69, Jude, Ranwar, Waroda Road'), Wanderlog ('9 Waroda Rd, Beside Agna Square, Ranwar'), Tripadvisor ('Waroda Rd Ranwar'), in-focusindia ('Waroda Road, off. Hill Road, Ranwar') and LBB ('Waroda Road'). district.in files it under a 'Bandstand' label but its own address text says Ranwar/Waroda Road — same place. Hours conflict badly: official Bandra windows used; Tripadvisor says closed Monday and Tue–Sun 8am–11pm; district.in says 8am–4pm; Wanderlog gives per-day windows close to the official ones. The Monday closure is only claimed by Tripadvisor and is unresolved. Ratings conflict: 4.2/1,964 Google via Wanderlog (used) versus 4.4/1,941 on district.in and 3.5/12 on Tripadvisor. in-focusindia is dated March 2023 and its 'settle for hours' line predates the current queueing pattern — treat as dated. No source at this address mentions plug points, outdoor seating or restrooms, so those stay null. Zomato not fetched (robots)."
+ },
+ {
+  "slug": "poetry-by-love-and-cheesecake-24th-road",
+  "trading": "confirmed",
+  "hours": "Daily 8am–11pm (official ordering site); Swiggy and Wanderlog list 8am–11:30pm",
+  "publicRating": {
+   "value": 4.4,
+   "count": 890,
+   "source": "wanderlog.com (citing Google)",
+   "url": "https://wanderlog.com/place/details/1418748"
+  },
+  "factors": {
+   "wifi": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "power": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "seating": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "longStay": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "focus": {
+    "score": 3,
+    "confidence": "low",
+    "evidence": [
+     {
+      "claim": "Wanderlog's digest for this address describes a pleasant room but notes it can feel over-lit and empty at off-peak times, implying genuine quiet periods",
+      "quote": "excessively bright",
+      "source": "wanderlog.com",
+      "url": "https://wanderlog.com/place/details/1418748",
+      "kind": "fact"
+     },
+     {
+      "claim": "A cafe reported as lacking atmosphere during quiet periods is likely to be workable off-peak, though nothing states the noise level directly",
+      "source": "reading of the wanderlog digest",
+      "url": "https://wanderlog.com/place/details/1418748",
+      "kind": "inference"
+     }
+    ]
+   },
+   "calls": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "food": {
+    "score": 4,
+    "confidence": "medium",
+    "evidence": [
+     {
+      "claim": "The Khar West 24th Road outlet serves full savoury plates alongside the bakery range",
+      "quote": "Continental, Desserts, Beverages, Fast Food, Latin American",
+      "source": "swiggy.com (dineout listing)",
+      "url": "https://www.swiggy.com/restaurants/poetry-by-love-and-cheesecake-khar-west-mumbai-933418/dineout",
+      "kind": "fact"
+     },
+     {
+      "claim": "Reviewers of this address name mains and sandwiches as well as desserts",
+      "quote": "Veg Stroganoff, and pesto chicken sandwiches",
+      "source": "wanderlog.com",
+      "url": "https://wanderlog.com/place/details/1418748",
+      "kind": "fact"
+     },
+     {
+      "claim": "The listing prices a meal for two at about ₹1000 and highlights salads and pastas",
+      "source": "swiggy.com (dineout listing)",
+      "url": "https://www.swiggy.com/restaurants/poetry-by-love-and-cheesecake-khar-west-mumbai-933418/dineout",
+      "kind": "fact"
+     },
+     {
+      "claim": "Cheesecake reviews for this address are mixed, with some calling them dry rather than creamy",
+      "source": "wanderlog.com",
+      "url": "https://wanderlog.com/place/details/1418748",
+      "kind": "fact"
+     }
+    ]
+   },
+   "outdoor": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "bathroom": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   }
+  },
+  "synthesis": "Confirmed trading with long daily hours and a proper savoury menu, but no source tied to this address mentions wifi, sockets, seating or how long anyone stays.",
+  "sourcesFetched": [
+   "https://www.swiggy.com/restaurants/poetry-by-love-and-cheesecake-khar-west-mumbai-933418/dineout",
+   "https://ordernow.loveandcheesecake.com/order/poetry-by-love-cheesecake-bandra-west-mumbai",
+   "https://wanderlog.com/place/details/1418748",
+   "https://loveandcheesecake.com/pages/contact",
+   "https://poetry-by-love-and-cheesecake.wheree.com/",
+   "https://www.tripadvisor.com/Restaurant_Review-g304554-d14067036-Reviews-Poetry_Love_and_Cheesecake-Mumbai_Maharashtra.html"
+  ],
+  "notes": "THIN — only three of the fetched sources are tied to this address, and none of them addresses wifi, power, seating or long stays, so seven of nine factors are null. Address confirmed three ways: Swiggy dineout ('Kamal Vishranti Kutir Opposite St Theresa School, 24th Road, Plot 104, D Bandra West, Khar West'), the brand's own ordering site (same address, 'Opens at : 08:00 AM Closes at : 11:00 PM'), and Wanderlog ('Kamal Vishranti Kutir, Rd Number 24, opposite St Theresa School'). Poetry has many outlets and most search results are other branches. EXCLUDED: the 33rd Road / Pali Darshan, Khar West outlet — which is where all the usable workability detail lives ('limited tables', 'The tables are too close to have a private conversation', 'jam packed, the ground floor was full', 'comfortable sofa seatings', 'a lot of books where one can read and eat', 'Indoor seating only') from tripadvisor.com d14067036, poetry-by-love-and-cheesecake.wheree.com, hungryfoody.com and the LBB Bandra list. Also excluded: Lower Parel / Kamala Mills (wanderlog 3817997, 4.4/1,273), Link Square Mall and Linking Road (magicpin, eazydiner), Pali Hill (zomato, district.in), Fort/Kala Ghoda, BKC, Hiranandani Gardens, SDA Market Delhi, Koregaon Park Pune, and the 'Cypress' restaurant-guru aggregate. Note the postcode confusion in the sources themselves: Swiggy and the ordering site give 400052 while Wanderlog gives 400050, and both label it Bandra West and Khar West interchangeably. Rating counts differ: Wanderlog 4.4/890 Google (used) versus Swiggy 4.4/931. Failed fetches: mappls.com record for the exact address returned only a login wall (twice); loveandcheesecake.com store locator lists no branch addresses; swiggy.com/city/mumbai outlet index returned empty; magicpin has no listing for 24th Road; zomato not attempted (robots)."
+ },
+ {
+  "slug": "kcroasters-by-koinonia-chuim-village",
+  "trading": "unconfirmed",
+  "hours": "Daily 7:30am–10pm (official site, Chuim Village roastery/tasting room)",
+  "publicRating": {
+   "value": 4.7,
+   "count": 1017,
+   "source": "district.in",
+   "url": "https://www.district.in/dining/mumbai/kcroasters-a-koinonia-project-khar"
+  },
+  "factors": {
+   "wifi": {
+    "score": 3,
+    "confidence": "low",
+    "evidence": [
+     {
+      "claim": "One directory lists free wifi for this address, but the page carries no user reviews and states its summary is AI-generated, so treat it as weak",
+      "quote": "Free Wi-Fi",
+      "source": "wheree.com",
+      "url": "https://kcroasters-by-koinonia.wheree.com/",
+      "kind": "fact"
+     }
+    ]
+   },
+   "power": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "seating": {
+    "score": 2,
+    "confidence": "high",
+    "evidence": [
+     {
+      "claim": "A reviewer puts the room's capacity at five or six people at once",
+      "quote": "small place with limited seating capacity (max 5-6 place at once)",
+      "source": "district.in",
+      "url": "https://www.district.in/dining/mumbai/kcroasters-a-koinonia-project-khar",
+      "kind": "fact"
+     },
+     {
+      "claim": "Wanderlog's digest says the seating is inadequate and reviewers call the room very small",
+      "quote": "There most definitely isn't enough seating inside",
+      "source": "wanderlog.com",
+      "url": "https://wanderlog.com/place/details/1506624/kcroasters-by-koinonia",
+      "kind": "fact"
+     },
+     {
+      "claim": "A third directory lists small space and limited seating among the cons while calling it cosy",
+      "quote": "It's small but cozy place",
+      "source": "yappe.in",
+      "url": "https://yappe.in/maharashtra/mumbai/kcroasters-by-koinonia/116246",
+      "kind": "fact"
+     },
+     {
+      "claim": "The room is dominated by a working roaster, which further limits usable table space",
+      "quote": "a big coffee roaster inside",
+      "source": "wanderlog.com",
+      "url": "https://wanderlog.com/place/details/1506624/kcroasters-by-koinonia",
+      "kind": "fact"
+     }
+    ]
+   },
+   "longStay": {
+    "score": 2,
+    "confidence": "low",
+    "evidence": [
+     {
+      "claim": "The dining listing names work-friendly among the outlet's amenities, alongside indoor seating and takeaway",
+      "quote": "work-friendly",
+      "source": "district.in",
+      "url": "https://www.district.in/dining/mumbai/kcroasters-a-koinonia-project-khar",
+      "kind": "fact"
+     },
+     {
+      "claim": "In a room seating five or six, occupying a table for three hours would consume a large share of the cafe regardless of any work-friendly label",
+      "source": "reading of the district.in capacity review against its own work-friendly tag",
+      "url": "https://www.district.in/dining/mumbai/kcroasters-a-koinonia-project-khar",
+      "kind": "inference"
+     }
+    ]
+   },
+   "focus": {
+    "score": 3,
+    "confidence": "low",
+    "evidence": [
+     {
+      "claim": "The interior is described as warm, wood-lined and cosy rather than busy",
+      "quote": "Warm wood-lined interiors",
+      "source": "wanderlog.com",
+      "url": "https://wanderlog.com/place/details/1506624/kcroasters-by-koinonia",
+      "kind": "fact"
+     },
+     {
+      "claim": "A record player with vinyl provides the soundtrack rather than a sound system",
+      "quote": "a record player with a few vinyls set up by The Revolver Club",
+      "source": "district.in",
+      "url": "https://www.district.in/dining/mumbai/kcroasters-a-koinonia-project-khar",
+      "kind": "fact"
+     }
+    ]
+   },
+   "calls": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "food": {
+    "score": 2,
+    "confidence": "high",
+    "evidence": [
+     {
+      "claim": "The offer is coffee plus a small pastry selection, with no meal service reported",
+      "quote": "Pastries and baked goods available alongside coffee",
+      "source": "wanderlog.com",
+      "url": "https://wanderlog.com/place/details/1506624/kcroasters-by-koinonia",
+      "kind": "fact"
+     },
+     {
+      "claim": "A directory describes the food range as deliberately narrow",
+      "quote": "high quality tasty limited desserts",
+      "source": "yappe.in",
+      "url": "https://yappe.in/maharashtra/mumbai/kcroasters-by-koinonia/116246",
+      "kind": "fact"
+     },
+     {
+      "claim": "Reviews centre on croissants and pastries rather than any savoury plate",
+      "quote": "delectable pastries, particularly the croissants",
+      "source": "wheree.com",
+      "url": "https://kcroasters-by-koinonia.wheree.com/",
+      "kind": "fact"
+     },
+     {
+      "claim": "The official site describes the site as a roastery and tasting room, not a kitchen",
+      "quote": "The Roastery / tasting room",
+      "source": "kcroasters.com (official)",
+      "url": "https://kcroasters.com/pages/visit",
+      "kind": "fact"
+     }
+    ]
+   },
+   "outdoor": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "bathroom": {
+    "score": 3,
+    "confidence": "low",
+    "evidence": [
+     {
+      "claim": "Toilets are listed as on-site, but on a page with no user reviews and an AI-generated summary",
+      "quote": "Toilets",
+      "source": "wheree.com",
+      "url": "https://kcroasters-by-koinonia.wheree.com/",
+      "kind": "fact"
+     }
+    ]
+   }
+  },
+  "synthesis": "Serious coffee in a five-to-six-seat roastery with no real food, and two directories now report it permanently closed while the official site still lists daily hours.",
+  "sourcesFetched": [
+   "https://kcroasters.com/pages/visit",
+   "https://www.district.in/dining/mumbai/kcroasters-a-koinonia-project-khar",
+   "https://wanderlog.com/place/details/1506624/kcroasters-by-koinonia",
+   "https://kcroasters-by-koinonia.wheree.com/",
+   "https://yappe.in/maharashtra/mumbai/kcroasters-by-koinonia/116246"
+  ],
+  "notes": "TRADING IS DISPUTED — marked unconfirmed, not closed, because the evidence points both ways. Against: Wanderlog states 'Permanently Closed' for 6 Chuim Village Rd, and district.in surfaces recent reviews saying 'Place doesn't exist. Its permanently closed. Kindly update this info on Google' and 'these guys are shutting down and are operating only to finish their leftover stock'. For: the official kcroasters.com visit page still advertises 'The Roastery / tasting room' at Chuim Village as 'Open every day from 7:30 AM - 10 PM', and yappe.in and wheree.com both show it open. Verify by phone (+91 96196 82668) before travelling. Address variants across sources: the brief and district.in say 66 Chuim Village Road, while Wanderlog, yappe and wheree say 6 Chuim Village Rd — same phone-linked business, treated as one place. wheree.com is the only source for wifi and toilets and it explicitly carries an AI-generated summary with zero posted reviews, hence confidence low on both; do not upgrade those without a second source. Ratings conflict: 4.7/1,017 district.in (used), 4.5/680 Wanderlog, 4.60/733 yappe, and wheree shows 8.6/10 with 0 reviews. Hours conflict: official 7:30am–10pm (used), district.in 7:30am–9:30pm, yappe and wheree 7am–10pm. EXCLUDED: the separate KCROASTERS Coffee Lab inside the FOOHALL flagship store (8:30am–10pm), which is a different site. Blocked/failed fetches: corner.inc (robots.txt), swiggy dineout listing (not fetched), zomato (robots). No source mentions plug points, outdoor seating or calls."
+ }
+]

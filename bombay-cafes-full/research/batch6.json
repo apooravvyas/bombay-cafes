@@ -1,0 +1,772 @@
+[
+ {
+  "slug": "cafe-military-fort",
+  "trading": "confirmed",
+  "hours": "Approx 8:30am–9:30pm; Wanderlog reports Mon–Sat 10:30am–9:30pm and closed Sunday (sources conflict)",
+  "publicRating": {
+   "value": 4.1,
+   "count": 3182,
+   "source": "wanderlog.com (citing Google)",
+   "url": "https://wanderlog.com/place/details/1323659/cafe-military"
+  },
+  "factors": {
+   "wifi": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "power": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "seating": {
+    "score": 2,
+    "confidence": "medium",
+    "evidence": [
+     {
+      "claim": "Tripadvisor's feature list records no air conditioning, and reviewers frame the room as a bare-bones Irani cafe",
+      "quote": "no frills, no class, no AC",
+      "source": "tripadvisor.com",
+      "url": "https://www.tripadvisor.com/Restaurant_Review-g304554-d4339242-Reviews-Cafe_Millitary-Mumbai_Maharashtra.html",
+      "kind": "fact"
+     },
+     {
+      "claim": "Aggregated District reviews say some diners find the space cramped and the tables small",
+      "source": "district.in",
+      "url": "https://www.district.in/dining/mumbai/cafe-military-fort",
+      "kind": "fact"
+     },
+     {
+      "claim": "A guide describes the original 1933 fit-out: wooden tables with cloths, chairs and ceiling fans",
+      "quote": "wooden tables with checkered tablecloths, chairs, fans",
+      "source": "lbb.in",
+      "url": "https://lbb.in/mumbai/military-cafe-fort/",
+      "kind": "fact"
+     },
+     {
+      "claim": "A first-hand account describes the room as dimly lit with old creaking fans",
+      "quote": "creak a little",
+      "source": "thebetterindia.com",
+      "url": "https://thebetterindia.com/72036/mumbai-cafe-military-iconic-widely-loved-why/",
+      "kind": "fact"
+     }
+    ]
+   },
+   "longStay": {
+    "score": 3,
+    "confidence": "medium",
+    "evidence": [
+     {
+      "claim": "A Tripadvisor reviewer says nobody moves you on once you are seated",
+      "quote": "sit there forever-no questions asked",
+      "source": "tripadvisor.com",
+      "url": "https://www.tripadvisor.com/Restaurant_Review-g304554-d4339242-Reviews-Cafe_Millitary-Mumbai_Maharashtra.html",
+      "kind": "fact"
+     },
+     {
+      "claim": "Aggregated District reviews report the opposite at busy times — staff sometimes hurry diners along",
+      "quote": "staff occasionally rush diners",
+      "source": "district.in",
+      "url": "https://www.district.in/dining/mumbai/cafe-military-fort",
+      "kind": "fact"
+     },
+     {
+      "claim": "Reviewers report a wait for a table at peak meal times, which cuts against settling in",
+      "quote": "you might have to wait for 15-20 mins for a table",
+      "source": "tripadvisor.com",
+      "url": "https://www.tripadvisor.com/Restaurant_Review-g304554-d4339242-Reviews-Cafe_Millitary-Mumbai_Maharashtra.html",
+      "kind": "fact"
+     }
+    ]
+   },
+   "focus": {
+    "score": 2,
+    "confidence": "medium",
+    "evidence": [
+     {
+      "claim": "Reviewers describe it as heavily crowded across both lunch and dinner peaks",
+      "quote": "usually very crowded during peak hours of lunch and dinner",
+      "source": "tripadvisor.com",
+      "url": "https://www.tripadvisor.com/Restaurant_Review-g304554-d4339242-Reviews-Cafe_Millitary-Mumbai_Maharashtra.html",
+      "kind": "fact"
+     },
+     {
+      "claim": "Wanderlog's review digest advises weekday visits to avoid the crowds",
+      "quote": "during weekdays to avoid crowds",
+      "source": "wanderlog.com",
+      "url": "https://wanderlog.com/place/details/1323659/cafe-military",
+      "kind": "fact"
+     },
+     {
+      "claim": "A District reviewer found every table taken on a Saturday at 7:30pm",
+      "quote": "tables were full",
+      "source": "district.in",
+      "url": "https://www.district.in/dining/mumbai/cafe-military-fort",
+      "kind": "fact"
+     },
+     {
+      "claim": "Service is repeatedly described as very fast, implying a high-turnover lunchroom rather than a quiet room",
+      "quote": "Service is too fast",
+      "source": "tripadvisor.com",
+      "url": "https://www.tripadvisor.com/Restaurant_Review-g304554-d4339242-Reviews-Cafe_Millitary-Mumbai_Maharashtra.html",
+      "kind": "inference"
+     }
+    ]
+   },
+   "calls": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "food": {
+    "score": 4,
+    "confidence": "high",
+    "evidence": [
+     {
+      "claim": "A full Parsi and Mughlai menu with generous portions — kheema pav, mutton biryani, caramel custard — plus beer at MRP",
+      "quote": "generous and satisfying",
+      "source": "wanderlog.com",
+      "url": "https://wanderlog.com/place/details/1323659/cafe-military",
+      "kind": "fact"
+     },
+     {
+      "claim": "Reviewers praise the traditional Irani range, though plates are plastic",
+      "quote": "excellent choice of typical Irani stuff",
+      "source": "tripadvisor.com",
+      "url": "https://www.tripadvisor.com/Restaurant_Review-g304554-d4339242-Reviews-Cafe_Millitary-Mumbai_Maharashtra.html",
+      "kind": "fact"
+     },
+     {
+      "claim": "A meal for two is cheap, quoted at about INR 350 without beer",
+      "quote": "A meal for two without beer will cost you around INR 350",
+      "source": "lbb.in",
+      "url": "https://lbb.in/mumbai/military-cafe-fort/",
+      "kind": "fact"
+     },
+     {
+      "claim": "Breakfast, lunch and dinner service are all listed",
+      "source": "district.in",
+      "url": "https://www.district.in/dining/mumbai/cafe-military-fort",
+      "kind": "fact"
+     }
+    ]
+   },
+   "outdoor": {
+    "score": 3,
+    "confidence": "low",
+    "evidence": [
+     {
+      "claim": "Restaurant Guru's attribute list includes outdoor seating",
+      "quote": "Outdoor seating",
+      "source": "restaurant-guru.in",
+      "url": "https://restaurant-guru.in/Cafe-Military-Mumbai",
+      "kind": "fact"
+     },
+     {
+      "claim": "District's amenity list records indoor seating only, contradicting the above",
+      "quote": "Indoor seating",
+      "source": "district.in",
+      "url": "https://www.district.in/dining/mumbai/cafe-military-fort",
+      "kind": "fact"
+     }
+    ]
+   },
+   "bathroom": {
+    "score": 2,
+    "confidence": "low",
+    "evidence": [
+     {
+      "claim": "Wanderlog's review digest flags toilet cleanliness for both men and women as needing improvement",
+      "quote": "cleanliness around the toilets for both men and women",
+      "source": "wanderlog.com",
+      "url": "https://wanderlog.com/place/details/1323659/cafe-military",
+      "kind": "fact"
+     },
+     {
+      "claim": "A reviewer advises bringing your own water because the glassware is not clean",
+      "quote": "The water glass is not clean, pls carry your own water",
+      "source": "restaurant-guru.in",
+      "url": "https://restaurant-guru.in/Cafe-Military-Mumbai",
+      "kind": "fact"
+     }
+    ]
+   }
+  },
+  "synthesis": "A crowded, fanned 1933 Irani lunchroom: one reviewer says you can sit forever unbothered, others report rushed service and waits for tables. No wifi or outlets are mentioned anywhere.",
+  "sourcesFetched": [
+   "https://wanderlog.com/place/details/1323659/cafe-military",
+   "https://www.tripadvisor.com/Restaurant_Review-g304554-d4339242-Reviews-Cafe_Millitary-Mumbai_Maharashtra.html",
+   "https://www.district.in/dining/mumbai/cafe-military-fort",
+   "https://lbb.in/mumbai/military-cafe-fort/",
+   "https://thebetterindia.com/72036/mumbai-cafe-military-iconic-widely-loved-why/",
+   "https://restaurant-guru.in/Cafe-Military-Mumbai",
+   "https://magicpin.in/Mumbai/Fort/Restaurant/Cafe-Military/store/23a2a"
+  ],
+  "notes": "Hours conflict: Tripadvisor 8am–9:30pm daily; magicpin and District 8:30am–9:30pm; Wanderlog Mon–Sat 10:30am–9:30pm with Sunday closed. No source resolves the Sunday question. Rating figures also diverge — Wanderlog 4.1/3,182 (Google), restaurant-guru 4.1/4,103, magicpin 4.1/1,761, District 4.4/962, Tripadvisor 3.9/59; the Wanderlog Google figure was used. Wifi and outlets scored null deliberately: no source mentions either, and the amenity lists on restaurant-guru, magicpin and District simply omit them, which is absence of evidence rather than a stated negative. Cash only per Wanderlog and restaurant-guru — worth knowing before a long session. Zomato, eazydiner and indianfoodfreak were not fetched (zomato blocked in earlier batches); magicpin was fetched but added only hours and a generic blurb."
+ },
+ {
+  "slug": "ideal-corner-fort",
+  "trading": "confirmed",
+  "hours": "Closed Mondays; roughly Tue–Sun 12pm–9:30pm (sources conflict)",
+  "publicRating": {
+   "value": 4.3,
+   "count": 988,
+   "source": "wanderlog.com (citing Google)",
+   "url": "https://wanderlog.com/place/details/4647030/ideal-corner"
+  },
+  "factors": {
+   "wifi": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "power": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "seating": {
+    "score": 2,
+    "confidence": "high",
+    "evidence": [
+     {
+      "claim": "Wanderlog's digest describes a small room with limited seating capacity",
+      "quote": "small and cozy",
+      "source": "wanderlog.com",
+      "url": "https://wanderlog.com/place/details/4647030/ideal-corner",
+      "kind": "fact"
+     },
+     {
+      "claim": "Tripadvisor reviewers call it a tiny place with only just enough tables for service",
+      "quote": "tiny joint",
+      "source": "tripadvisor.com",
+      "url": "https://www.tripadvisor.com/Restaurant_Review-g304554-d1199661-Reviews-Ideal_Corner-Mumbai_Maharashtra.html",
+      "kind": "fact"
+     },
+     {
+      "claim": "A District reviewer found it physically tight",
+      "quote": "cramped with no place to move",
+      "source": "district.in",
+      "url": "https://www.district.in/dining/mumbai/ideal-corner-fort",
+      "kind": "fact"
+     },
+     {
+      "claim": "A guide describes it as a small, unassuming restaurant on a Gunbow Street corner",
+      "quote": "small, unassuming restaurant",
+      "source": "lbb.in",
+      "url": "https://lbb.in/mumbai/ideal-corner-parsi-food-fort/",
+      "kind": "fact"
+     }
+    ]
+   },
+   "longStay": {
+    "score": 2,
+    "confidence": "medium",
+    "evidence": [
+     {
+      "claim": "Wanderlog records a typical visit of about ten minutes and quick service",
+      "quote": "quick service",
+      "source": "wanderlog.com",
+      "url": "https://wanderlog.com/place/details/4647030/ideal-corner",
+      "kind": "fact"
+     },
+     {
+      "claim": "A blogger reports food arriving within two minutes of ordering",
+      "quote": "the order reached us within two minutes",
+      "source": "sid-thewanderer.com",
+      "url": "https://www.sid-thewanderer.com/2016/06/ideal-corner-restaurant-authentic-parsi-food-in-mumbai.html",
+      "kind": "fact"
+     },
+     {
+      "claim": "Tripadvisor reviewers note the day's dishes arrive fast — a turn-and-go lunch counter",
+      "quote": "dishes of the day which comes fast on ordering",
+      "source": "tripadvisor.com",
+      "url": "https://www.tripadvisor.com/Restaurant_Review-g304554-d1199661-Reviews-Ideal_Corner-Mumbai_Maharashtra.html",
+      "kind": "fact"
+     },
+     {
+      "claim": "Wanderlog notes it trades essentially as a lunch service that runs until the day's stock is gone",
+      "quote": "only for lunch until the day's stock runs out",
+      "source": "wanderlog.com",
+      "url": "https://wanderlog.com/place/details/4647030/ideal-corner",
+      "kind": "fact"
+     }
+    ]
+   },
+   "focus": {
+    "score": 3,
+    "confidence": "medium",
+    "evidence": [
+     {
+      "claim": "Restaurant Guru's review digest describes a quiet atmosphere in which customers feel relaxed",
+      "quote": "quiet atmosphere",
+      "source": "restaurant-guru.in",
+      "url": "https://restaurant-guru.in/Ideal-Corner-Mumbai",
+      "kind": "fact"
+     },
+     {
+      "claim": "Wanderlog describes a low-level hum of long-standing regulars rather than silence",
+      "quote": "that comforting buzz of regulars",
+      "source": "wanderlog.com",
+      "url": "https://wanderlog.com/place/details/4647030/ideal-corner",
+      "kind": "fact"
+     },
+     {
+      "claim": "A Tripadvisor reviewer found it nearly empty mid-afternoon on a Sunday",
+      "quote": "fairly empty when we went (Sunday afternoon at 3 pm)",
+      "source": "tripadvisor.com",
+      "url": "https://www.tripadvisor.com/Restaurant_Review-g304554-d1199661-Reviews-Ideal_Corner-Mumbai_Maharashtra.html",
+      "kind": "fact"
+     }
+    ]
+   },
+   "calls": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "food": {
+    "score": 4,
+    "confidence": "high",
+    "evidence": [
+     {
+      "claim": "A proper Parsi lunch menu with day-specific dishes — mutton dhansak, salli boti, lagan nu custard",
+      "source": "wanderlog.com",
+      "url": "https://wanderlog.com/place/details/4647030/ideal-corner",
+      "kind": "fact"
+     },
+     {
+      "claim": "A blogger records a full two-person meal for about INR 450–500",
+      "quote": "Keep a budget of about Rs 450-500 for two people",
+      "source": "sid-thewanderer.com",
+      "url": "https://www.sid-thewanderer.com/2016/06/ideal-corner-restaurant-authentic-parsi-food-in-mumbai.html",
+      "kind": "fact"
+     },
+     {
+      "claim": "A guide calls the food fresh, affordable Parsi cooking, with mutton falling off the bone",
+      "quote": "delicious, fresh and affordable Parsi food",
+      "source": "lbb.in",
+      "url": "https://lbb.in/mumbai/ideal-corner-parsi-food-fort/",
+      "kind": "fact"
+     },
+     {
+      "claim": "Lunch service, takeaway and home delivery are all listed",
+      "source": "district.in",
+      "url": "https://www.district.in/dining/mumbai/ideal-corner-fort",
+      "kind": "fact"
+     }
+    ]
+   },
+   "outdoor": {
+    "score": 3,
+    "confidence": "low",
+    "evidence": [
+     {
+      "claim": "Restaurant Guru's attribute list includes outdoor seating",
+      "quote": "Outdoor seating",
+      "source": "restaurant-guru.in",
+      "url": "https://restaurant-guru.in/Ideal-Corner-Mumbai",
+      "kind": "fact"
+     },
+     {
+      "claim": "District's amenity list records indoor seating only, contradicting the above",
+      "quote": "Indoor seating",
+      "source": "district.in",
+      "url": "https://www.district.in/dining/mumbai/ideal-corner-fort",
+      "kind": "fact"
+     }
+    ]
+   },
+   "bathroom": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   }
+  },
+  "synthesis": "A tiny, cramped Parsi lunch counter where the typical visit is about ten minutes and food arrives in two; quiet at 3pm, but nothing suggests wifi, outlets or laptop tolerance.",
+  "sourcesFetched": [
+   "https://wanderlog.com/place/details/4647030/ideal-corner",
+   "https://www.tripadvisor.com/Restaurant_Review-g304554-d1199661-Reviews-Ideal_Corner-Mumbai_Maharashtra.html",
+   "https://www.district.in/dining/mumbai/ideal-corner-fort",
+   "https://lbb.in/mumbai/ideal-corner-parsi-food-fort/",
+   "https://www.sid-thewanderer.com/2016/06/ideal-corner-restaurant-authentic-parsi-food-in-mumbai.html",
+   "https://restaurant-guru.in/Ideal-Corner-Mumbai"
+  ],
+  "notes": "Hours conflict sharply: Wanderlog says Sun 8am–9:30pm, Mon closed, Tue–Sat 12–9:30pm; Tripadvisor says closed Mon, Tue–Sun 12pm–9:45pm; District says 9:30am–9:30pm with no day breakdown; sid-thewanderer (2016) says 12–4pm plus 7–10:45pm, closed Monday. Wanderlog also warns it may run only until the day's stock is gone. Treat the evening window as unreliable. Ratings diverge: Wanderlog 4.3/988 (Google), District 4.1/449, restaurant-guru 4.2/448 (Zomato), Tripadvisor 4.1/78. The sid-thewanderer post is from 2016 and District notes a repaint since ('the old world charm is gone to some extent'), so fit-out detail may be dated. Wifi, outlets and bathroom all scored null — genuinely no mention in any of the six sources, not a stated absence. Zomato, eazydiner and justdial not fetched."
+ },
+ {
+  "slug": "yazdani-bakery-fort",
+  "trading": "confirmed",
+  "hours": "Daily approx 7am–7pm",
+  "publicRating": {
+   "value": 4.2,
+   "count": 2521,
+   "source": "wanderlog.com (citing Google)",
+   "url": "https://wanderlog.com/place/details/54399/yazdani-restaurant--bakery"
+  },
+  "factors": {
+   "wifi": {
+    "score": 1,
+    "confidence": "medium",
+    "evidence": [
+     {
+      "claim": "A detailed first-hand account states plainly that there is no wifi here, alongside no toilets or air conditioning",
+      "quote": "Do not expect to find parking, toilets, wifi or air-conditioning here",
+      "source": "finelychopped.net",
+      "url": "https://finelychopped.net/yazdani-bakery-mumbai-foodocracy-india/",
+      "kind": "fact"
+     }
+    ]
+   },
+   "power": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "seating": {
+    "score": 2,
+    "confidence": "high",
+    "evidence": [
+     {
+      "claim": "District's aggregated reviews describe modest tables and benches and say there is barely anywhere to sit",
+      "quote": "little to no place to sit",
+      "source": "district.in",
+      "url": "https://www.district.in/dining/mumbai/yazdani-bakery-restaurant-fort",
+      "kind": "fact"
+     },
+     {
+      "claim": "Tripadvisor reviewers report few tables and warn you may not get a seat at peak hours",
+      "quote": "not too many tables",
+      "source": "tripadvisor.com",
+      "url": "https://www.tripadvisor.com/Restaurant_Review-g304554-d946004-Reviews-Yazdani_Bakery-Mumbai_Maharashtra.html",
+      "kind": "fact"
+     },
+     {
+      "claim": "Seating is communal — you share a table with strangers",
+      "quote": "sharing tables alongside others",
+      "source": "finelychopped.net",
+      "url": "https://finelychopped.net/yazdani-bakery-mumbai-foodocracy-india/",
+      "kind": "fact"
+     },
+     {
+      "claim": "A first-hand piece describes red benches and wooden booths in an open-fronted room",
+      "quote": "red benches",
+      "source": "homegrown.co.in",
+      "url": "https://homegrown.co.in/homegrown-explore/chai-and-bun-maska-at-one-of-forts-oldest-irani-bakeries",
+      "kind": "fact"
+     }
+    ]
+   },
+   "longStay": {
+    "score": 2,
+    "confidence": "high",
+    "evidence": [
+     {
+      "claim": "Wanderlog records a typical visit of about fifteen minutes",
+      "source": "wanderlog.com",
+      "url": "https://wanderlog.com/place/details/54399/yazdani-restaurant--bakery",
+      "kind": "fact"
+     },
+     {
+      "claim": "A detailed account describes it as a stop to pause briefly before heading back out, not a place to settle",
+      "quote": "catch their breath and to feel refreshed before they step out again",
+      "source": "finelychopped.net",
+      "url": "https://finelychopped.net/yazdani-bakery-mumbai-foodocracy-india/",
+      "kind": "fact"
+     },
+     {
+      "claim": "District reviewers say the lack of seats pushes them to takeaway instead",
+      "quote": "usually go for takeaways",
+      "source": "district.in",
+      "url": "https://www.district.in/dining/mumbai/yazdani-bakery-restaurant-fort",
+      "kind": "fact"
+     },
+     {
+      "claim": "A first-hand piece describes constant turnover of customers squeezing onto the benches",
+      "quote": "constant ebb and flow of Uncles squeezing their bellies into the red benches",
+      "source": "homegrown.co.in",
+      "url": "https://homegrown.co.in/homegrown-explore/chai-and-bun-maska-at-one-of-forts-oldest-irani-bakeries",
+      "kind": "fact"
+     }
+    ]
+   },
+   "focus": {
+    "score": 2,
+    "confidence": "medium",
+    "evidence": [
+     {
+      "claim": "An open-fronted room where street noise mixes with continuous conversation",
+      "quote": "constant chatter that fills the bakery",
+      "source": "homegrown.co.in",
+      "url": "https://homegrown.co.in/homegrown-explore/chai-and-bun-maska-at-one-of-forts-oldest-irani-bakeries",
+      "kind": "fact"
+     },
+     {
+      "claim": "Wanderlog advises arriving early to avoid long queues at peak hours",
+      "quote": "visit early to avoid long lines during peak hours",
+      "source": "wanderlog.com",
+      "url": "https://wanderlog.com/place/details/54399/yazdani-restaurant--bakery",
+      "kind": "fact"
+     },
+     {
+      "claim": "There is no air conditioning, so the room stays open to the street",
+      "quote": "toilets, wifi or air-conditioning",
+      "source": "finelychopped.net",
+      "url": "https://finelychopped.net/yazdani-bakery-mumbai-foodocracy-india/",
+      "kind": "fact"
+     }
+    ]
+   },
+   "calls": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "food": {
+    "score": 3,
+    "confidence": "medium",
+    "evidence": [
+     {
+      "claim": "The offer is bakery items and chai — brun maska, mawa cake, apple pie, cookies — rather than a meal",
+      "quote": "soft bun with butter",
+      "source": "wanderlog.com",
+      "url": "https://wanderlog.com/place/details/54399/yazdani-restaurant--bakery",
+      "kind": "fact"
+     },
+     {
+      "claim": "A first-hand account lists brun maska, chai, ginger cookies and cakes at roughly INR 100 for two",
+      "quote": "oven-fresh delicacies",
+      "source": "homegrown.co.in",
+      "url": "https://homegrown.co.in/homegrown-explore/chai-and-bun-maska-at-one-of-forts-oldest-irani-bakeries",
+      "kind": "fact"
+     },
+     {
+      "claim": "Eazydiner puts the cost for two at about INR 200 and classifies it as a cafe",
+      "source": "eazydiner.com",
+      "url": "https://www.eazydiner.com/mumbai/yazdani-bakery-restaurant-fort-223342/about",
+      "kind": "fact"
+     },
+     {
+      "claim": "District nonetheless lists breakfast, lunch and dinner service",
+      "source": "district.in",
+      "url": "https://www.district.in/dining/mumbai/yazdani-bakery-restaurant-fort",
+      "kind": "fact"
+     }
+    ]
+   },
+   "outdoor": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "bathroom": {
+    "score": 1,
+    "confidence": "medium",
+    "evidence": [
+     {
+      "claim": "A detailed first-hand account states there are no toilets here",
+      "quote": "Do not expect to find parking, toilets, wifi or air-conditioning here",
+      "source": "finelychopped.net",
+      "url": "https://finelychopped.net/yazdani-bakery-mumbai-foodocracy-india/",
+      "kind": "fact"
+     }
+    ]
+   }
+  },
+  "synthesis": "Explicitly no wifi, no toilets and no air conditioning; shared benches, few seats and a typical fifteen-minute visit. A chai-and-brun stop, not a place to work for three hours.",
+  "sourcesFetched": [
+   "https://finelychopped.net/yazdani-bakery-mumbai-foodocracy-india/",
+   "https://wanderlog.com/place/details/54399/yazdani-restaurant--bakery",
+   "https://www.district.in/dining/mumbai/yazdani-bakery-restaurant-fort",
+   "https://www.tripadvisor.com/Restaurant_Review-g304554-d946004-Reviews-Yazdani_Bakery-Mumbai_Maharashtra.html",
+   "https://homegrown.co.in/homegrown-explore/chai-and-bun-maska-at-one-of-forts-oldest-irani-bakeries",
+   "https://www.eazydiner.com/mumbai/yazdani-bakery-restaurant-fort-223342/about"
+  ],
+  "notes": "Address confirmed as the Fort branch on Cawasji Patel Street in every source used — finelychopped names 'Cawasji Patel Street, Fort, Mumbai – 400001, Near Parsi Fire Temple, St Thomas Cathedral' and Wanderlog gives '11A, Cawasji Patel St, Kala Ghoda, Fort'. Deliberately EXCLUDED: Tripadvisor listing d8565081 (Antop Hill) and Wanderlog 1416188 (Yazdani Bakery Girgaon), which are different premises. Hours: Wanderlog, District and eazydiner all agree 7am–7pm; Tripadvisor's 5am–11pm is an outlier and was not used. Ratings diverge: Wanderlog 4.2/2,521 (Google), District 4.5/699, Tripadvisor 4.4/107, eazydiner 5.0/1 (ignore). Power scored null, not 1: the finelychopped sentence names parking, toilets, wifi and AC but never sockets. The strong inference is that a place with no wifi and no AC has no customer power either, but no source says so. Zomato not fetched (robots)."
+ },
+ {
+  "slug": "third-wave-coffee-churchgate-churchgate",
+  "trading": "confirmed",
+  "hours": "Official store page lists daily 8:00am–11:59pm plus 12:00am–3:00am — an effectively near-24-hour listing that is probably a data artefact",
+  "publicRating": null,
+  "factors": {
+   "wifi": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "power": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "seating": {
+    "score": 3,
+    "confidence": "low",
+    "evidence": [
+     {
+      "claim": "The official store page for this address lists dine-in among its services, confirming seating exists, but gives no detail on tables or comfort",
+      "quote": "Delivery, Dining, Takeaway",
+      "source": "stores.thirdwavecoffeeroasters.com (official)",
+      "url": "https://stores.thirdwavecoffeeroasters.com/store-pages/third-wave-coffee-churchgate-mumbai/",
+      "kind": "fact"
+     }
+    ]
+   },
+   "longStay": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "focus": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "calls": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "food": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "outdoor": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "bathroom": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   }
+  },
+  "synthesis": "Only the official store page could be tied to this address: it confirms the Churchgate outlet trades and offers dine-in. No evidence at all on wifi, power, noise or long stays.",
+  "sourcesFetched": [
+   "https://stores.thirdwavecoffeeroasters.com/store-pages/third-wave-coffee-churchgate-mumbai/",
+   "https://www.tripadvisor.com/Restaurants-g304554-c8-zfn15621359-Mumbai_Maharashtra.html"
+  ],
+  "notes": "This outlet appears to be very new and has essentially no independent coverage. The official Third Wave store page confirms the exact address ('Unit No. 116A, HP Petrol Pump, Jamshedji Tata Road, Eros Cinema, Churchgate') and lists Delivery, Dining, Takeaway; it shows no rating widget and no amenity list. Tripadvisor's Churchgate cafes listing was fetched and does not include this outlet at all. Deliberately EXCLUDED as other outlets: yappe.in/280455 (Juhu Church Road), restaurant-guru Third-Wave-Coffee-Mumbai-10 (Chowpatty/Marine Lines), magicpin store 18333aa (labelled 'Crossroads Mall, Churchgate' by magicpin but its address is Express Towers, Nariman Point), the 200th-store press coverage on worldcoffeeportal and verdictfoodservice (Sindhi Society, Chembur), travell.cc's Mumbai work-cafe guide (its Third Wave entry is Andheri), yatrirailways (Third Wave Chowpatty), and wanderlog 9546404/9544850/11973439 (Gurugram and Pune). Blocked or failed fetches: justdial listing 403, top-rated.online 403, cafe.thirdwavecoffee.in has no Churchgate entry, swiggy returned no content. Recommend a physical visit or a Google Maps check before publishing anything about this outlet's workability."
+ },
+ {
+  "slug": "blue-tokai-nariman-point-nariman-point",
+  "trading": "confirmed",
+  "hours": "Approx 7:00/7:30am–9:00/10:00pm daily (sources conflict; the official store page shows a 24-hour placeholder)",
+  "publicRating": {
+   "value": 4.4,
+   "count": 250,
+   "source": "yappe.in",
+   "url": "https://yappe.in/maharashtra/mumbai/blue-tokai-coffee-roasters-nariman-point/156549"
+  },
+  "factors": {
+   "wifi": {
+    "score": 4,
+    "confidence": "medium",
+    "evidence": [
+     {
+      "claim": "Blue Tokai's own store page for this Nariman Point address lists wifi as an available facility",
+      "quote": "WI-FI Available",
+      "source": "stores.bluetokaicoffee.com (official)",
+      "url": "https://stores.bluetokaicoffee.com/blue-tokai-coffee-roasters-nariman-point-cafe-nariman-point-mumbai-436767/Home",
+      "kind": "fact"
+     }
+    ]
+   },
+   "power": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "seating": {
+    "score": 3,
+    "confidence": "low",
+    "evidence": [
+     {
+      "claim": "A directory digest describes big glass walls looking onto trees and a clean, calm room, but gives no detail on tables or chairs",
+      "quote": "huge glass panes",
+      "source": "yappe.in",
+      "url": "https://yappe.in/maharashtra/mumbai/blue-tokai-coffee-roasters-nariman-point/156549",
+      "kind": "fact"
+     },
+     {
+      "claim": "One reviewer criticises the ambience because the unit shares space with a car dealership",
+      "quote": "poor ambiance",
+      "source": "yappe.in",
+      "url": "https://yappe.in/maharashtra/mumbai/blue-tokai-coffee-roasters-nariman-point/156549",
+      "kind": "fact"
+     }
+    ]
+   },
+   "longStay": {
+    "score": 3,
+    "confidence": "low",
+    "evidence": [
+     {
+      "claim": "The one aggregated review digest available frames it as suited to working professionals, but no source addresses how long anyone actually stays",
+      "quote": "calm and clean place",
+      "source": "yappe.in",
+      "url": "https://yappe.in/maharashtra/mumbai/blue-tokai-coffee-roasters-nariman-point/156549",
+      "kind": "fact"
+     }
+    ]
+   },
+   "focus": {
+    "score": 4,
+    "confidence": "low",
+    "evidence": [
+     {
+      "claim": "Reviewer testimonials collected by a directory stress privacy and silence and call the environment tranquil",
+      "quote": "privacy, silence",
+      "source": "yappe.in",
+      "url": "https://yappe.in/maharashtra/mumbai/blue-tokai-coffee-roasters-nariman-point/156549",
+      "kind": "fact"
+     }
+    ]
+   },
+   "calls": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "food": {
+    "score": 3,
+    "confidence": "medium",
+    "evidence": [
+     {
+      "claim": "Listed as cafe and dessert cuisine with veg and non-veg options, no alcohol, about INR 600 for two",
+      "source": "eazydiner.com",
+      "url": "https://www.eazydiner.com/mumbai/blue-tokai-nariman-point-south-mumbai-671277",
+      "kind": "fact"
+     },
+     {
+      "claim": "Reviewers name coffee and pastries — croissants, pour-over — and note the menu variety is somewhat limited",
+      "source": "yappe.in",
+      "url": "https://yappe.in/maharashtra/mumbai/blue-tokai-coffee-roasters-nariman-point/156549",
+      "kind": "fact"
+     }
+    ]
+   },
+   "outdoor": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   },
+   "bathroom": {
+    "score": null,
+    "confidence": "none",
+    "evidence": []
+   }
+  },
+  "synthesis": "Blue Tokai's own page for this address confirms wifi, and the one review digest available calls it a calm, clean room that suits working professionals. Nothing on outlets or long stays.",
+  "sourcesFetched": [
+   "https://stores.bluetokaicoffee.com/blue-tokai-coffee-roasters-nariman-point-cafe-nariman-point-mumbai-436767/Home",
+   "https://www.eazydiner.com/mumbai/blue-tokai-nariman-point-south-mumbai-671277",
+   "https://yappe.in/maharashtra/mumbai/blue-tokai-coffee-roasters-nariman-point/156549"
+  ],
+  "notes": "All three sources are address-matched: official store page 'Unit No 25 & 26, Commercial Center CR2, Nariman Point'; yappe 'Unit No 25 & 26, Ground Floor, Commercial Center, CR2, Nariman Point, Mumbai 400020'; eazydiner '18, CR 2 Mall, Barrister Rajni Patel Marg, Nariman Point' (same mall, slightly different unit number). Deliberately EXCLUDED: yatrirailways' Mumbai work-cafe guide, whose Blue Tokai entry is Pali Hill ('single seater sections built for laptop work with sockets in the furniture') — that outlet's socket detail must NOT be carried over here; also travell.cc, which lists no Nariman Point Blue Tokai. No Perry Road or New Excelsior evidence was reused. Hours conflict: official page shows 'Mon to Sun : 12:00 AM to 11:59 PM' (a placeholder), eazydiner 7:30am–10pm, yappe 7am–9pm. Ratings diverge: yappe 4.4/250 (used), official page 4.8, eazydiner 4.9/14 (too thin). Blocked or failed fetches: bluetokaicoffee.com/pages 403, restaurant-guru 503 twice, justdial 403, mappls returned a login wall, mindtrip.ai returned metadata only. Power, calls, outdoor and bathroom are null because no address-tied source mentions them — note that a mall unit would normally have mall restrooms, but nothing states it. Eazydiner also lists mall parking and pet-friendly."
+ }
+]
